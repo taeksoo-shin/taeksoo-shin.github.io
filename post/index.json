@@ -1,0 +1,83 @@
+[
+    
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/header/",
+                "title": "header",
+                "section": "post",
+                "date" : "2021.06.08",
+                "body": "header 개요  header는 소개 및 네비게이션에 대한 정보를 담는 태그  예제  단순한 header 사용 방법  \u0026lt;header\u0026gt; \u0026lt;p\u0026gt;Welcome to...\u0026lt;/p\u0026gt; \u0026lt;h1\u0026gt;Voidwars!\u0026lt;/h1\u0026gt; \u0026lt;/header\u0026gt; 출력결과  Welcome to...\nVoidwars!  hgroup을 이용한 heading 집약  \u0026lt;header\u0026gt; \u0026lt;hgroup\u0026gt; \u0026lt;h1\u0026gt;Fullscreen API\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;Living Standard — Last Updated 19 October 2015\u0026lt;/h2\u0026gt; \u0026lt;/hgroup\u0026gt; \u0026lt;dl\u0026gt; \u0026lt;dt\u0026gt;Participate:\u0026lt;/dt\u0026gt; \u0026lt;dd\u0026gt;\u0026lt;a href=\u0026#34;https://github.com/whatwg/fullscreen\u0026#34;\u0026gt;GitHub whatwg/fullscreen\u0026lt;/a\u0026gt;\u0026lt;/dd\u0026gt; \u0026lt;dt\u0026gt;Commits:\u0026lt;/dt\u0026gt; \u0026lt;dd\u0026gt;\u0026lt;a href=\u0026#34;https://github.com/whatwg/fullscreen/commits\u0026#34;\u0026gt;GitHub whatwg/fullscreen/commits\u0026lt;/a\u0026gt;\u0026lt;/dd\u0026gt; \u0026lt;/dl\u0026gt; \u0026lt;/header\u0026gt; 출력결과   Fullscreen API Living Standard — Last Updated 19 October 2015   Participate: GitHub whatwg/fullscreen Commits: GitHub whatwg/fullscreen/commits   설명  heading(h1 - h6)를 반드시 포함할 필요는 없다. nav 태그를 포함해도 된다.  디자인적 계획에 따라서 포함하지 않아도 괜찮다.   footer, address, 다른 header는 포함할 수 없다.  참고  WHATWG  MDN   "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/br/",
+                "title": "br",
+                "section": "post",
+                "date" : "2021.06.07",
+                "body": "br 개요  문서 내부에서 줄 바꿈을 한다.  예제 \u0026lt;p\u0026gt;P. Sherman\u0026lt;br\u0026gt; 42 Wallaby Way\u0026lt;br\u0026gt; Sydney\u0026lt;/p\u0026gt; 출력결과 P. Sherman\n42 Wallaby Way\nSydney\n설명  태그 자체에 주어진 의미가 없다. 줄바꿈 자체가 의미가 있는 경우에만 사용한다.(주소, 시(poem) 등) margin을 생성하기 위해서 사용하면 안된다.  참고  WHATWG  MDN   "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
+                "title": "Ruby 현재 프로젝트에서 모든 테스트 실행하기",
+                "section": "post",
+                "date" : "2021.02.03",
+                "body": "테스트는 두근두근해 프로젝트의 rspec_helper가 위치하고 있는 디렉토리에서 아래의 커맨드를 실행\nrspec -P ./**/*_spec.rb "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%98-%EC%B0%A8%EC%9D%B4/",
+                "title": "쉘 스크립트에서 ;, \u0026, \u0026\u0026의 차이",
+                "section": "post",
+                "date" : "2021.02.02",
+                "body": "쉘 스크립트에서 ;, \u0026amp;, \u0026amp;\u0026amp;의 차이 선요약  ; - 앞의 명령어의 실패와 관계 없이 다음 명령어 실행(동기) \u0026amp;\u0026amp; - 앞의 명령어가 성공시 다음 명령어 실행(동기) \u0026amp; - 앞의 명령어를 백그라운드로 돌리고 동시에 뒤의 명령어를 실행(비동기)  서론 컴퓨터를 취미로 하고 있고 컴퓨터 관련 일을 하고 있기 때문에 상황에 따라 다른 컴퓨터를 만질 일이 굉장히 많다.\n환경이 변할 때 마다 각종 vim 설정, 쉘 설정을 가져오기 위해서 기본적인 쉘 설정과 vim 설정 등을 github 위에 올려서 관리를 하고 있다.\n초기에는 아래와 같이 cd를 하고 git pull을 해서 일일이 가져왔다.\ncd $some_directory_1 git pull cd $some_directory_2 git pull ... 초기에는 가져올 설정이 별로 없어서 빠르게 가져올 수 있었는데 설정이 점점 비대해짐에 따라서 여러 디렉토리에서 git pull을 해오는 여러 방법을 강구할 필요가 생겼다.\n본론 지금까지 여러 방법을 시도해 왔다.\n방법 1: shell 함수를 만들자😎\n처음에는 cd를 할 필요 없이 하나의 명령만 하면 git pull을 가져올 수 있다면 정말로 행복하겠다는 생각이 들었다.\n그래서 즉각적으로 shell 함수를 만들었다.\nfunction git_pull_ruby() { cd $HOME/Documents/problem/ruby pwd git pull return 0; } cd를 할 필요가 없다는 것 자체로만으로 너무나도 행복했다!\n하지만 우리 프로그래머의 행복은 최장 1주일 정도이고 그 뒤에 무언가 불편한것을 인식하게 되고 그것을 고치지 않으면 안되는 병(일단 나는 그 병의 이름을 세팅병 이라고 명명하고 있다.)에 걸려 있기 때문에 행복을 느낀 2일째가 되는 날 단순히 커맨드를 입력하는 것도 귀찮음을 느꼈다(...)\n방법 2: 쉘 스크립트를 만들자😎 세팅병이 걸린 나는 바로 쉘 스크립트를 작성했다.\n그 당시 작성했던 쉘 스크립트는 아래와 같다.\n#!/bin/bash STUDY_DIR=\u0026#34;$HOME/Documents/study\u0026#34; GP=\u0026#34;git pull\u0026#34; git_pull_study() { cd $STUDY_DIR/$1 pwd $GP return 0; } cd ~/Documents/vimwiki; pwd; $GP; cd ~/Dotfiles; pwd; $GP; git_pull_study \u0026#34;ruby\u0026#34;; git_pull_study \u0026#34;java\u0026#34;; git_pull_study \u0026#34;javascript\u0026#34;; git_pull_study \u0026#34;go\u0026#34;; git_pull_study \u0026#34;python\u0026#34;; git_pull_study \u0026#34;shell\u0026#34;; 너무나도 행복했다.\n단순히 cd와 pwd 그리고 git pull로만 이루어진 간단한 스크립트 이지만 컴퓨터 박사가 된 기분👨‍💻\n(이 스크립트는 나의 첫 쉘 스크립트였다.)  단순한 쉘 스크립트 하나를 작성 했을 뿐이었는데 엄청난 고수가 된 기분이란!   그리고 오랜시간 문제 없이 만족하면서 사용했다.\n방법 3: 스크립트를 리팩토링😎\n오랫동안 만족하면서 사용해 왔던 스크립트에서 약점이 보이기 시작했다.\n비동기의 필요성의 이해와 사용을 몸으로 익힌 최근에 비동기적으로 처리하면 훨씬 빠르게 처리를 할 수 있지 않을까라는 생각이 문득 떠올랐고 바로 리팩토링에 들어갔다.\n수정 결과 아래와 같이 변경되었다.\n#!/bin/bash STUDY_DIR=\u0026#34;$HOME/Documents/study\u0026#34; GP=\u0026#34;git pull\u0026#34; git_pull_study() { cd $STUDY_DIR/$1 pwd $GP return 0; } cd ~/Documents/vimwiki; pwd; $GP \u0026amp; cd ~/Dotfiles; pwd; $GP \u0026amp; git_pull_study \u0026#34;ruby\u0026#34; \u0026amp; git_pull_study \u0026#34;java\u0026#34; \u0026amp; git_pull_study \u0026#34;javascript\u0026#34; \u0026amp; git_pull_study \u0026#34;go\u0026#34; \u0026amp; git_pull_study \u0026#34;python\u0026#34; \u0026amp; git_pull_study \u0026#34;shell\u0026#34;; ;로 끝나는 문장에서에서 \u0026amp;로 끝나는 변경되었다.\n처음 요약한 내용을 다시 살펴보자\n ; - 앞의 명령어의 실패와 관계 없이 다음 명령어 실행(동기) \u0026amp;\u0026amp; - 앞의 명령어가 성공시 다음 명령어 실행(동기) \u0026amp; - 앞의 명령어를 백그라운드로 돌리고 동시에 뒤의 명령어를 실행(비동기) 즉 위의 코드는 각각의 장소에 cd를 해서 git pull을 하고 있는 코드다!  체감 속도 정확히 30배는 더 빠르다.(위의 스크립트는 내가 만든 스크립트의 일부다) 더욱 행복해졌다☺️\n결론 일년간 여러가지 코드를 작성했는데,\n지금 보면 왜 이런 코드를 작성했을까? 라는 생각이 드는 코드가 있다.\n그건 분명 그 때의 자신 보다 더 좋은 코드를 작성 할 수 있는 사람이 되었기에 이런 생각을 가질 수 있다고 생각한다.\n오늘의 나보다 더 뛰어난 내가 되기 위해서 매일 노력하는 프로그래머가 될거다!\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/v-toolbar__content%EC%9D%98-padding-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B2%95/",
+                "title": ".v-toolbar__content의 padding 제거하는 법",
+                "section": "post",
+                "date" : "2021.01.30",
+                "body": ".v-toolbar__content의 padding 제거하는 법 선요약 바쁜 사람들을 위한 선요약\n.parent_class ::v-deep .v-toolbar__content { padding: 0 !important; } 서론 vuetify를 회사에서 프로젝트에서 사용하고 있는데 동료에게 app-bar의 padding을 지워달라는 부탁을 받았다.\n 이게 그렇게 어려운 문제가 될지는 아무도 몰랐다.   본론 padding을 지우는 문제야 뭐 대수인가 단순히 아래의 코드를 넣으면 되는게 아닌가?\n코드 내부를 살펴보자...🤔\n* { padding: 0; } 이미 떡하니 존재하고 있다...❓\n선택자를 이용해서 app-bar를 선택하고 내부의 속성을 분석해 보자  padding: 0;의 부분에 취소선이 그어져 있고 padding 4px 16이 되있었다.\n전략1 - !important 사용(실패) 일단 가장 기본적으로 할 수 있는 전략 !important\n* { padding: 0 !important; } 안된다...😭\n전략2 - 직접 css 지정 (실패) 다음 전략으로 넘어가자 직접적으로 .v-toolbar__content의 css를 지정해서 padding의 0을 넣어본다.\n.v-toolbar__content { padding: 0 !important; } 역시 안된다...😭\n전략3 - 구글링을 통한 집단 지성 이용 (성공) 기타 할 수 있는 방법은 시도해 본 후 구글링에 들어갔다.\n구글링의 결과 vue에서 scoped를 이용해서 style을 적용을 할 경우\n하위 컴포넌트의 style에 단순하게 접근할 수 없고 deep selector를 이용해서 접근을 해야한다고 한다.\ndeep selector를 사용하는 방법은 아래와 같다.\n.parent_class ::v-deep .v-toolbar__content { padding: 0 !important; } .parent_class /deep/ .v-toolbar__content { padding: 0 !important; } .parent_class \u0026gt;\u0026gt;\u0026gt; .v-toolbar__content { padding: 0 !important; } 3가지 중에 하나를 골라서 쓰면 되는데 \u0026ldquo;\u0026gt;\u0026gt;\u0026gt;\u0026ldquo;는 적용이 잘 되지 않았지만 \u0026ldquo;::v-deep\u0026quot;를 이용하니 적용이 되었다. 세개 모두 적용을 해보는 것을 추천한다.😊\n결론 다른 사람들이 잘 모르겠다고 하는 것을 해결하면서 성장하는 중이다.\n( 1년차인데 내가 항상 누구를 가리쳐 주고 있는 건 기분 탓인가? )\nreference\n https://stackoverflow.com/questions/60001222/removing-default-padding-on-vuetify-v-app-bar https://vue-loader.vuejs.org/guide/scoped-css.html#mixing-local-and-global-styles https://blog.mahoroi.com/posts/2019/03/scoped-css-v-deep/  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/go-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
+                "title": "Go 현재 프로젝트의 모든 테스트 실행하기",
+                "section": "post",
+                "date" : "2021.01.29",
+                "body": "Go 현재 프로젝트의 모든 테스트 실행하기 Go 프로젝트에서 모든 테스트를 전부 돌려보기 위해서는 프로젝트의 root에서 아래의 커맨드를 입력하면된다.\ngo test ./... ...의 의미가 궁금해서 찾아봤는데\n...은 \u0026ldquo;/를 포함하는 일치하는 모든 것 문자\u0026quot;의 의미를 가진 wild card라고 한다.\n아니 왜 처음 보지..?\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/bundler/",
+                "title": "Bundler",
+                "section": "post",
+                "date" : "2021.01.27",
+                "body": "bundler Install 자신의 터미널에서 아래의 커맨드를 입력한다.\ngem install bundler (만약 gem 커맨드를 사용 할 수 없다면 rubygem을 참고해서 설치 할 것)\n설치 후 아래의 커맨드를 이용해서 설치가 되었는지 확인 할 것\nbundler -v How to use  번들러 init bundler를 사용하고자 하는 디렉토리에서 아래의 커맨드를 입력한다.  bundle init gem 파일 기록 그 후 사용하고자 하는 gemfile 목록을 목적에 맞게 Gemfile 내부에 기록할 것  목적 1. 단순히 gem을 원하는 경우\ngem 'rubocop' 목적 2. application에서 자동으로 require가 되지 않도록 하기 위한 설정을 추가하는 경우\ngem 'rubocop', require: false rubocop의 경우는 require가 될 필요가 없으므로(CLI 환경에서 필요한 도구이다.) require: false를 넣어주는 것이 타당하다.\n참고: rubocopをbundlerでインストールするときにrequire: falseにする理由 - Qiita ruby - Why does rubocop recommend require: false in Gemfile? - Stack Overflow\n목적 3. 특정 버전을 지정하는 경우\ngem 'rubocop', '~\u0026gt; 1.8', require: false 대부분의 경우 위와 같이 사용할 것\ngemfile 인스톨 기록한 gem파일을 설치하기 위해서는 아래의 커맨드를 입력해 준다.  bundle install --path {path_name} gem 파일을 인스톨할 장소를 {path_name}에 기록해 주면 ok\ngem 파일 리스트를 변경 하고 인스톨 할 때마다 path를 기록할 필요없이 bundle install을 입력하면 처음에 입력한 path에 자동으로 인스톨 해준다.\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/",
+                "title": "기존에 관리하고 있던 파일 .gitignore 적용하기",
+                "section": "post",
+                "date" : "2021.01.25",
+                "body": "기존에 관리하고 있던 파일 .gitignore 적용하기 매번 검색하는게 귀찮아서 여기에 기록\n.gitignore 파일 추가 이전에 commit한 파일이 .gitignore의 대상이 되었음에도 불구하고 계속 stage에 남아있는 경우 git의 캐시 가 문제\n이 경우 캐시를 전부 삭제 하고 다시 모든 파일을 commit 하면 .gitignore를 적용 하면 해결 가능\ngit rm -r --cached . git add . git commit -m \u0026#34;Apply .gitignore\u0026#34; success!\n"
+            }
+        
+    
+]
