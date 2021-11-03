@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>vuetify on Teaksoo Shin&#39;s Webpage</title>
-		<link>https://taeksooshin.github.io/categories/vuetify/</link>
-		<description>Recent content in vuetify </description>
+		<title>how to on Teaksoo Shin&#39;s Webpage</title>
+		<link>https://taeksooshin.github.io/categories/how-to/</link>
+		<description>Recent content in how to </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>ko</language>
 		
-		<managingEditor>Page(/categories/vuetify) (Taeksoo Shin)</managingEditor>
+		<managingEditor>Page(/categories/how-to) (Taeksoo Shin)</managingEditor>
     	
-  		<lastBuildDate>Sat, 30 Jan 2021 12:47:03 +0900</lastBuildDate>
+  		<lastBuildDate>Wed, 03 Nov 2021 19:15:50 +0900</lastBuildDate>
 		
-		<atom:link href="/categories/vuetify/" rel="self" type="application/rss+xml" />
+		<atom:link href="/categories/how-to/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>모니터 사용 전략</title>

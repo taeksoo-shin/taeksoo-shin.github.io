@@ -14,6 +14,16 @@
 		<atom:link href="/tags/tip/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>모니터 사용 전략</title>
+			<link>https://taeksooshin.github.io/post/%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9-%EC%A0%84%EB%9E%B5/</link>
+			<pubDate>Wed, 03 Nov 2021 19:15:50 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9-%EC%A0%84%EB%9E%B5/</guid>
+			<description>모니터 사용 전략 개요 많은 모니터를 쓰더라도 창이동을 피할 수 없는데, 최대한 창이동을 하지 않고 사용하기 위한 나의 노력을 기록해 봤다.
+집에서 작업을 할 때에는 트리플 모니터(27인치 한대, 23인치 두대 + 별도의 노트북), 회사에서는 듀얼 모니터(맥북 16인치, 23인치 한대 + 별도의 노트북)를 사용하고 있다.
+트리플 모니터 27인치 모니터  주로 사용하는 모니터. 모든 작업이 여기서 이루어진다. 검색을 할 때는 웹브라우저를 여기로 가지고 와서 검색을 한 후에 원래의 장소로 되돌린다. 일정표, TODO 리스트도 작성할 필요가 있는 것은 여기로 가져와서 작업하고 원래의 장소로 되돌린다.</description>
+		</item>
+      	
+		<item>
 			<title>header</title>
 			<link>https://taeksooshin.github.io/post/header/</link>
 			<pubDate>Tue, 08 Jun 2021 07:12:26 +0900</pubDate>
