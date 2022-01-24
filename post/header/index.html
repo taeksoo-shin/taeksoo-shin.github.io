@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -127,12 +127,9 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h1 id="header">header</h1>
-<h2 id="개요">개요</h2>
-<ul>
-<li>header는 소개 및 네비게이션에 대한 정보를 담는 태그</li>
-</ul>
-<h2 id="예제">예제</h2>
+  <h1 id="개요">개요</h1>
+<p>header는 소개 및 네비게이션에 대한 정보를 담는 태그</p>
+<h1 id="예제">예제</h1>
 <ol>
 <li>단순한 header 사용 방법</li>
 </ol>
@@ -181,17 +178,13 @@
 </header>
 
 </p>
-<h2 id="설명">설명</h2>
+<h1 id="설명">설명</h1>
 <ul>
 <li>heading(h1 - h6)를 반드시 포함할 필요는 없다.</li>
-<li>nav 태그를 포함해도 된다.
-<ul>
-<li>디자인적 계획에 따라서 포함하지 않아도 괜찮다.</li>
-</ul>
-</li>
+<li>nav 태그를 포함해도 된다. (디자인적 계획에 따라서 포함하지 않아도 괜찮다.)</li>
 <li>footer, address, 다른 header는 포함할 수 없다.</li>
 </ul>
-<h2 id="참고">참고</h2>
+<h1 id="참고">참고</h1>
 <ul>
 <li><a href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element" target="_blank">WHATWG</a>
 
@@ -207,10 +200,10 @@
       
         <div class="blog-tags">
           
-            <a href="https://taeksooshin.github.io//tags/tag/">tag</a
+            <a href="https://taeksooshin.github.io//tags/html/">html</a
             >&nbsp;
           
-            <a href="https://taeksooshin.github.io//tags/html/">html</a
+            <a href="https://taeksooshin.github.io//tags/tag/">tag</a
             >&nbsp;
           
         </div>
@@ -252,7 +245,7 @@
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -266,6 +259,23 @@
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>

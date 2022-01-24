@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -188,7 +188,7 @@
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -202,6 +202,23 @@
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>

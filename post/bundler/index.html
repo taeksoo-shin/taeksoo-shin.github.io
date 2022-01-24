@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-<title>Bundler</title>
+<title>bundler</title>
 
 
   
@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -95,7 +95,7 @@
         <div class="post-heading">
           
             <h1>
-              Bundler
+              bundler
             </h1>
           
           
@@ -127,14 +127,13 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h1 id="bundler">bundler</h1>
-<h2 id="install">Install</h2>
+  <h1 id="install">Install</h1>
 <p>자신의 터미널에서 아래의 커맨드를 입력한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gem install bundler
 </code></pre></div><p>(만약 gem 커맨드를 사용 할 수 없다면 <a href="https://rubygems.org/pages/download">rubygem</a>을 참고해서 설치 할 것)</p>
 <p>설치 후 아래의 커맨드를 이용해서 설치가 되었는지 확인 할 것</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bundler -v
-</code></pre></div><h2 id="how-to-use">How to use</h2>
+</code></pre></div><h1 id="how-to-use">How to use</h1>
 <ol>
 <li>번들러 init
 bundler를 사용하고자 하는 디렉토리에서 아래의 커맨드를 입력한다.</li>
@@ -174,7 +173,7 @@ bundle install을 입력하면 처음에 입력한 path에 자동으로 인스�
             <a href="https://taeksooshin.github.io//tags/ruby/">ruby</a
             >&nbsp;
           
-            <a href="https://taeksooshin.github.io//tags/how-to/">how to</a
+            <a href="https://taeksooshin.github.io//tags/package-manager/">package manager</a
             >&nbsp;
           
         </div>
@@ -216,7 +215,7 @@ bundle install을 입력하면 처음에 입력한 path에 자동으로 인스�
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -230,6 +229,23 @@ bundle install을 입력하면 처음에 입력한 path에 자동으로 인스�
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>

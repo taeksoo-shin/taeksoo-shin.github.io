@@ -1,0 +1,103 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>vue on Teaksoo Shin&#39;s Webpage</title>
+		<link>https://taeksooshin.github.io/categories/vue/</link>
+		<description>Recent content in vue </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>ko</language>
+		
+		<managingEditor>Page(/categories/vue) (Taeksoo Shin)</managingEditor>
+    	
+  		<lastBuildDate>Mon, 24 Jan 2022 22:55:21 +0900</lastBuildDate>
+		
+		<atom:link href="/categories/vue/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>vue</title>
+			<link>https://taeksooshin.github.io/post/vue/</link>
+			<pubDate>Mon, 24 Jan 2022 22:55:21 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/vue/</guid>
+			<description>Tips  [[v-toolbar__content의 padding 제거하는 법]]  </description>
+		</item>
+      	
+		<item>
+			<title>shell</title>
+			<link>https://taeksooshin.github.io/post/shell/</link>
+			<pubDate>Mon, 24 Jan 2022 22:55:05 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/shell/</guid>
+			<description>Tips  [[쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이]]  </description>
+		</item>
+      	
+		<item>
+			<title>git</title>
+			<link>https://taeksooshin.github.io/post/git/</link>
+			<pubDate>Mon, 24 Jan 2022 22:38:31 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/git/</guid>
+			<description>How to  [[기존에 관리하고 있던 파일 .gitignore 적용하기]]  </description>
+		</item>
+      	
+		<item>
+			<title>ruby</title>
+			<link>https://taeksooshin.github.io/post/ruby/</link>
+			<pubDate>Mon, 24 Jan 2022 08:32:29 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/ruby/</guid>
+			<description>테스트  [[ruby 현재 프로젝트에서 모든 테스트 실행하기]]  패키지 관리  [[bundler]]  </description>
+		</item>
+      	
+		<item>
+			<title>go</title>
+			<link>https://taeksooshin.github.io/post/go/</link>
+			<pubDate>Sun, 23 Jan 2022 23:34:42 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/go/</guid>
+			<description>테스트  [[go 현재 프로젝트의 모든 테스트 실행하기]]  </description>
+		</item>
+      	
+		<item>
+			<title>home</title>
+			<link>https://taeksooshin.github.io/post/home/</link>
+			<pubDate>Sun, 23 Jan 2022 23:33:25 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/home/</guid>
+			<description>Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Tools  [[git]]  </description>
+		</item>
+      	
+		<item>
+			<title>html</title>
+			<link>https://taeksooshin.github.io/post/html/</link>
+			<pubDate>Sun, 23 Jan 2022 23:22:12 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/html/</guid>
+			<description>tags  [[br]] [[header]]  </description>
+		</item>
+      	
+		<item>
+			<title>header</title>
+			<link>https://taeksooshin.github.io/post/header/</link>
+			<pubDate>Tue, 08 Jun 2021 07:12:26 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/header/</guid>
+			<description>개요 header는 소개 및 네비게이션에 대한 정보를 담는 태그
+예제  단순한 header 사용 방법  &amp;lt;header&amp;gt; &amp;lt;p&amp;gt;Welcome to...&amp;lt;/p&amp;gt; &amp;lt;h1&amp;gt;Voidwars!&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; 출력결과  Welcome to...
+Voidwars!  hgroup을 이용한 heading 집약  &amp;lt;header&amp;gt; &amp;lt;hgroup&amp;gt; &amp;lt;h1&amp;gt;Fullscreen API&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Living Standard — Last Updated 19 October 2015&amp;lt;/h2&amp;gt; &amp;lt;/hgroup&amp;gt; &amp;lt;dl&amp;gt; &amp;lt;dt&amp;gt;Participate:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen&amp;#34;&amp;gt;GitHub whatwg/fullscreen&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt;Commits:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen/commits&amp;#34;&amp;gt;GitHub whatwg/fullscreen/commits&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt; &amp;lt;/header&amp;gt; 출력결과   Fullscreen API Living Standard — Last Updated 19 October 2015   Participate: GitHub whatwg/fullscreen Commits: GitHub whatwg/fullscreen/commits   설명  heading(h1 - h6)를 반드시 포함할 필요는 없다.</description>
+		</item>
+      	
+		<item>
+			<title>br</title>
+			<link>https://taeksooshin.github.io/post/br/</link>
+			<pubDate>Mon, 07 Jun 2021 22:38:31 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/br/</guid>
+			<description>개요  문서 내부에서 줄 바꿈을 한다.  예제 &amp;lt;p&amp;gt;P. Sherman&amp;lt;br&amp;gt; 42 Wallaby Way&amp;lt;br&amp;gt; Sydney&amp;lt;/p&amp;gt; 출력결과 P. Sherman
+42 Wallaby Way
+Sydney
+설명  태그 자체에 주어진 의미가 없다. 줄바꿈 자체가 의미가 있는 경우에만 사용한다.(주소, 시(poem) 등) margin을 생성하기 위해서 사용하면 안된다.  참고  WHATWG  MDN   </description>
+		</item>
+      	
+		<item>
+			<title>ruby 현재 프로젝트에서 모든 테스트 실행하기</title>
+			<link>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
+			<pubDate>Wed, 03 Feb 2021 22:33:28 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
+			<description>본문 프로젝트의 rspec_helper가 위치하고 있는 디렉토리에서 아래의 커맨드를 실행
+rspec -P ./**/*_spec.rb </description>
+		</item>
+      	
+	</channel>
+</rss>

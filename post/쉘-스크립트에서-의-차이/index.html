@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -127,14 +127,13 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h1 id="쉘-스크립트에서---의-차이">쉘 스크립트에서 ;, &amp;, &amp;&amp;의 차이</h1>
-<h2 id="선요약">선요약</h2>
+  <h1 id="선요약">선요약</h1>
 <ul>
 <li>; - 앞의 명령어의 실패와 관계 없이 다음 명령어 실행(동기)</li>
 <li>&amp;&amp; - 앞의 명령어가 성공시 다음 명령어 실행(동기)</li>
 <li>&amp;  - 앞의 명령어를 백그라운드로 돌리고 동시에 뒤의 명령어를 실행(비동기)</li>
 </ul>
-<h2 id="서론">서론</h2>
+<h1 id="서론">서론</h1>
 <p>컴퓨터를 취미로 하고 있고 컴퓨터 관련 일을 하고 있기 때문에 상황에 따라 다른
 컴퓨터를 만질 일이 굉장히 많다.<br>
 환경이 변할 때 마다 각종 vim 설정, 쉘 설정을 가져오기 위해서 기본적인 쉘 설정과
@@ -149,7 +148,7 @@ git pull
 </code></pre></div><p>초기에는 가져올 설정이 별로 없어서 빠르게 가져올 수 있었는데
 설정이 점점 비대해짐에 따라서 여러 디렉토리에서 git pull을 해오는 여러 방법을
 강구할 필요가 생겼다.</p>
-<h2 id="본론">본론</h2>
+<h1 id="본론">본론</h1>
 <p>지금까지 여러 방법을 시도해 왔다.</p>
 <p><strong>방법 1</strong>: shell 함수를 만들자😎<br>
 처음에는 cd를 할 필요 없이 하나의 명령만 하면 git pull을 가져올 수 있다면
@@ -241,7 +240,7 @@ git_pull_study <span style="color:#e6db74">&#34;shell&#34;</span>;
 </ul>
 <p>체감 속도 정확히 30배는 더 빠르다.(위의 스크립트는 내가 만든 스크립트의 일부다)
 더욱 행복해졌다☺️</p>
-<h2 id="결론">결론</h2>
+<h1 id="결론">결론</h1>
 <p>일년간 여러가지 코드를 작성했는데,<br>
 지금 보면 왜 이런 코드를 작성했을까? 라는 생각이 드는 코드가 있다.<br>
 그건 분명 그 때의 자신 보다 더 좋은 코드를 작성 할 수 있는 사람이 되었기에
@@ -299,7 +298,7 @@ git_pull_study <span style="color:#e6db74">&#34;shell&#34;</span>;
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -313,6 +312,23 @@ git_pull_study <span style="color:#e6db74">&#34;shell&#34;</span>;
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>

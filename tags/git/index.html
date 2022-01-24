@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -114,6 +114,33 @@
 
       
         <article class="post-preview">
+  <a href="https://taeksooshin.github.io/post/git/">
+    <h2 class="post-title">git</h2>
+  </a>
+
+  <div class="postmeta">
+    <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    Jan 24, 2022
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://taeksooshin.github.io//categories/git/">git</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+  </div>
+</article>
+
+      
+        <article class="post-preview">
   <a href="https://taeksooshin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">
     <h2 class="post-title">기존에 관리하고 있던 파일 .gitignore 적용하기</h2>
   </a>
@@ -167,7 +194,7 @@
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -181,6 +208,23 @@
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>

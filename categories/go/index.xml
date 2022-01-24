@@ -9,18 +9,64 @@
 		
 		<managingEditor>Page(/categories/go) (Taeksoo Shin)</managingEditor>
     	
-  		<lastBuildDate>Fri, 29 Jan 2021 23:06:07 +0900</lastBuildDate>
+  		<lastBuildDate>Sun, 23 Jan 2022 23:34:42 +0900</lastBuildDate>
 		
 		<atom:link href="/categories/go/" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>모니터 사용 전략</title>
-			<link>https://taeksooshin.github.io/post/%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9-%EC%A0%84%EB%9E%B5/</link>
-			<pubDate>Wed, 03 Nov 2021 19:15:50 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/%EB%AA%A8%EB%8B%88%ED%84%B0-%EC%82%AC%EC%9A%A9-%EC%A0%84%EB%9E%B5/</guid>
-			<description>모니터 사용 전략 개요 많은 모니터를 쓰더라도 창이동을 피할 수 없는데, 최대한 창이동을 하지 않고 사용하기 위한 나의 노력을 기록해 봤다.
-집에서 작업을 할 때에는 트리플 모니터(27인치 한대, 23인치 두대 + 별도의 노트북), 회사에서는 듀얼 모니터(맥북 16인치, 23인치 한대 + 별도의 노트북)를 사용하고 있다.
-트리플 모니터 27인치 모니터  주로 사용하는 모니터. 모든 작업이 여기서 이루어진다. 검색을 할 때는 웹브라우저를 여기로 가지고 와서 검색을 한 후에 원래의 장소로 되돌린다. 일정표, TODO 리스트도 작성할 필요가 있는 것은 여기로 가져와서 작업하고 원래의 장소로 되돌린다.</description>
+			<title>vue</title>
+			<link>https://taeksooshin.github.io/post/vue/</link>
+			<pubDate>Mon, 24 Jan 2022 22:55:21 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/vue/</guid>
+			<description>Tips  [[v-toolbar__content의 padding 제거하는 법]]  </description>
+		</item>
+      	
+		<item>
+			<title>shell</title>
+			<link>https://taeksooshin.github.io/post/shell/</link>
+			<pubDate>Mon, 24 Jan 2022 22:55:05 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/shell/</guid>
+			<description>Tips  [[쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이]]  </description>
+		</item>
+      	
+		<item>
+			<title>git</title>
+			<link>https://taeksooshin.github.io/post/git/</link>
+			<pubDate>Mon, 24 Jan 2022 22:38:31 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/git/</guid>
+			<description>How to  [[기존에 관리하고 있던 파일 .gitignore 적용하기]]  </description>
+		</item>
+      	
+		<item>
+			<title>ruby</title>
+			<link>https://taeksooshin.github.io/post/ruby/</link>
+			<pubDate>Mon, 24 Jan 2022 08:32:29 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/ruby/</guid>
+			<description>테스트  [[ruby 현재 프로젝트에서 모든 테스트 실행하기]]  패키지 관리  [[bundler]]  </description>
+		</item>
+      	
+		<item>
+			<title>go</title>
+			<link>https://taeksooshin.github.io/post/go/</link>
+			<pubDate>Sun, 23 Jan 2022 23:34:42 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/go/</guid>
+			<description>테스트  [[go 현재 프로젝트의 모든 테스트 실행하기]]  </description>
+		</item>
+      	
+		<item>
+			<title>home</title>
+			<link>https://taeksooshin.github.io/post/home/</link>
+			<pubDate>Sun, 23 Jan 2022 23:33:25 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/home/</guid>
+			<description>Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Tools  [[git]]  </description>
+		</item>
+      	
+		<item>
+			<title>html</title>
+			<link>https://taeksooshin.github.io/post/html/</link>
+			<pubDate>Sun, 23 Jan 2022 23:22:12 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/html/</guid>
+			<description>tags  [[br]] [[header]]  </description>
 		</item>
       	
 		<item>
@@ -28,83 +74,29 @@
 			<link>https://taeksooshin.github.io/post/header/</link>
 			<pubDate>Tue, 08 Jun 2021 07:12:26 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/header/</guid>
-			<description>header 개요  header는 소개 및 네비게이션에 대한 정보를 담는 태그  예제  단순한 header 사용 방법  &amp;lt;header&amp;gt; &amp;lt;p&amp;gt;Welcome to...&amp;lt;/p&amp;gt; &amp;lt;h1&amp;gt;Voidwars!&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; 출력결과  Welcome to...
+			<description>개요 header는 소개 및 네비게이션에 대한 정보를 담는 태그
+예제  단순한 header 사용 방법  &amp;lt;header&amp;gt; &amp;lt;p&amp;gt;Welcome to...&amp;lt;/p&amp;gt; &amp;lt;h1&amp;gt;Voidwars!&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; 출력결과  Welcome to...
 Voidwars!  hgroup을 이용한 heading 집약  &amp;lt;header&amp;gt; &amp;lt;hgroup&amp;gt; &amp;lt;h1&amp;gt;Fullscreen API&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Living Standard — Last Updated 19 October 2015&amp;lt;/h2&amp;gt; &amp;lt;/hgroup&amp;gt; &amp;lt;dl&amp;gt; &amp;lt;dt&amp;gt;Participate:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen&amp;#34;&amp;gt;GitHub whatwg/fullscreen&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt;Commits:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen/commits&amp;#34;&amp;gt;GitHub whatwg/fullscreen/commits&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt; &amp;lt;/header&amp;gt; 출력결과   Fullscreen API Living Standard — Last Updated 19 October 2015   Participate: GitHub whatwg/fullscreen Commits: GitHub whatwg/fullscreen/commits   설명  heading(h1 - h6)를 반드시 포함할 필요는 없다.</description>
 		</item>
       	
 		<item>
 			<title>br</title>
 			<link>https://taeksooshin.github.io/post/br/</link>
-			<pubDate>Mon, 07 Jun 2021 11:25:22 +0900</pubDate>
+			<pubDate>Mon, 07 Jun 2021 22:38:31 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/br/</guid>
-			<description>br 개요  문서 내부에서 줄 바꿈을 한다.  예제 &amp;lt;p&amp;gt;P. Sherman&amp;lt;br&amp;gt; 42 Wallaby Way&amp;lt;br&amp;gt; Sydney&amp;lt;/p&amp;gt; 출력결과 P. Sherman
+			<description>개요  문서 내부에서 줄 바꿈을 한다.  예제 &amp;lt;p&amp;gt;P. Sherman&amp;lt;br&amp;gt; 42 Wallaby Way&amp;lt;br&amp;gt; Sydney&amp;lt;/p&amp;gt; 출력결과 P. Sherman
 42 Wallaby Way
 Sydney
 설명  태그 자체에 주어진 의미가 없다. 줄바꿈 자체가 의미가 있는 경우에만 사용한다.(주소, 시(poem) 등) margin을 생성하기 위해서 사용하면 안된다.  참고  WHATWG  MDN   </description>
 		</item>
       	
 		<item>
-			<title>Ruby 현재 프로젝트에서 모든 테스트 실행하기</title>
+			<title>ruby 현재 프로젝트에서 모든 테스트 실행하기</title>
 			<link>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
 			<pubDate>Wed, 03 Feb 2021 22:33:28 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-			<description>테스트는 두근두근해 프로젝트의 rspec_helper가 위치하고 있는 디렉토리에서 아래의 커맨드를 실행
+			<description>본문 프로젝트의 rspec_helper가 위치하고 있는 디렉토리에서 아래의 커맨드를 실행
 rspec -P ./**/*_spec.rb </description>
-		</item>
-      	
-		<item>
-			<title>쉘 스크립트에서 ;, &amp;, &amp;&amp;의 차이</title>
-			<link>https://taeksooshin.github.io/post/%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%98-%EC%B0%A8%EC%9D%B4/</link>
-			<pubDate>Tue, 02 Feb 2021 20:30:58 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%98-%EC%B0%A8%EC%9D%B4/</guid>
-			<description>쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이 선요약  ; - 앞의 명령어의 실패와 관계 없이 다음 명령어 실행(동기) &amp;amp;&amp;amp; - 앞의 명령어가 성공시 다음 명령어 실행(동기) &amp;amp; - 앞의 명령어를 백그라운드로 돌리고 동시에 뒤의 명령어를 실행(비동기)  서론 컴퓨터를 취미로 하고 있고 컴퓨터 관련 일을 하고 있기 때문에 상황에 따라 다른 컴퓨터를 만질 일이 굉장히 많다.
-환경이 변할 때 마다 각종 vim 설정, 쉘 설정을 가져오기 위해서 기본적인 쉘 설정과 vim 설정 등을 github 위에 올려서 관리를 하고 있다.</description>
-		</item>
-      	
-		<item>
-			<title>.v-toolbar__content의 padding 제거하는 법</title>
-			<link>https://taeksooshin.github.io/post/v-toolbar__content%EC%9D%98-padding-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B2%95/</link>
-			<pubDate>Sat, 30 Jan 2021 12:47:03 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/v-toolbar__content%EC%9D%98-padding-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B2%95/</guid>
-			<description>.v-toolbar__content의 padding 제거하는 법 선요약 바쁜 사람들을 위한 선요약
-.parent_class ::v-deep .v-toolbar__content { padding: 0 !important; } 서론 vuetify를 회사에서 프로젝트에서 사용하고 있는데 동료에게 app-bar의 padding을 지워달라는 부탁을 받았다.
- 이게 그렇게 어려운 문제가 될지는 아무도 몰랐다.   본론 padding을 지우는 문제야 뭐 대수인가 단순히 아래의 코드를 넣으면 되는게 아닌가?
-코드 내부를 살펴보자...🤔
-* { padding: 0; } 이미 떡하니 존재하고 있다...❓
-선택자를 이용해서 app-bar를 선택하고 내부의 속성을 분석해 보자  padding: 0;의 부분에 취소선이 그어져 있고 padding 4px 16이 되있었다.</description>
-		</item>
-      	
-		<item>
-			<title>Go 현재 프로젝트의 모든 테스트 실행하기</title>
-			<link>https://taeksooshin.github.io/post/go-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
-			<pubDate>Fri, 29 Jan 2021 23:06:07 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/go-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-			<description>Go 현재 프로젝트의 모든 테스트 실행하기 Go 프로젝트에서 모든 테스트를 전부 돌려보기 위해서는 프로젝트의 root에서 아래의 커맨드를 입력하면된다.
-go test ./... ...의 의미가 궁금해서 찾아봤는데
-...은 &amp;ldquo;/를 포함하는 일치하는 모든 것 문자&amp;quot;의 의미를 가진 wild card라고 한다.
-아니 왜 처음 보지..?</description>
-		</item>
-      	
-		<item>
-			<title>Bundler</title>
-			<link>https://taeksooshin.github.io/post/bundler/</link>
-			<pubDate>Wed, 27 Jan 2021 20:14:39 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/bundler/</guid>
-			<description>bundler Install 자신의 터미널에서 아래의 커맨드를 입력한다.
-gem install bundler (만약 gem 커맨드를 사용 할 수 없다면 rubygem을 참고해서 설치 할 것)
-설치 후 아래의 커맨드를 이용해서 설치가 되었는지 확인 할 것
-bundler -v How to use  번들러 init bundler를 사용하고자 하는 디렉토리에서 아래의 커맨드를 입력한다.  bundle init gem 파일 기록 그 후 사용하고자 하는 gemfile 목록을 목적에 맞게 Gemfile 내부에 기록할 것  목적 1. 단순히 gem을 원하는 경우</description>
-		</item>
-      	
-		<item>
-			<title>기존에 관리하고 있던 파일 .gitignore 적용하기</title>
-			<link>https://taeksooshin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
-			<pubDate>Mon, 25 Jan 2021 19:16:02 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
-			<description>기존에 관리하고 있던 파일 .gitignore 적용하기 매번 검색하는게 귀찮아서 여기에 기록
-.gitignore 파일 추가 이전에 commit한 파일이 .gitignore의 대상이 되었음에도 불구하고 계속 stage에 남아있는 경우 git의 캐시 가 문제
-이 경우 캐시를 전부 삭제 하고 다시 모든 파일을 commit 하면 .gitignore를 적용 하면 해결 가능
-git rm -r --cached . git add . git commit -m &amp;#34;Apply .gitignore&amp;#34; success!</description>
 		</item>
       	
 	</channel>

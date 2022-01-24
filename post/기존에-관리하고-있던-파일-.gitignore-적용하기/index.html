@@ -29,7 +29,7 @@
 
 <script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
 <script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.92.0" />
   </head>
   <body>
     
@@ -127,27 +127,23 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h1 id="기존에-관리하고-있던-파일-gitignore-적용하기">기존에 관리하고 있던 파일 .gitignore 적용하기</h1>
-<p>매번 검색하는게 귀찮아서 여기에 기록<br>
-.gitignore 파일 추가 이전에 commit한 파일이 .gitignore의 대상이 되었음에도 불구하고
-계속 stage에 남아있는 경우 <strong>git의 캐시</strong> 가 문제<br>
-이 경우 캐시를 전부 삭제 하고 다시 모든 파일을 commit 하면 .gitignore를 적용
-하면 해결 가능</p>
+  <h1 id="본문">본문</h1>
+<p>.gitignore 대상 파일이 .gitignore 파일 추가 이전에 commit을 한 경우,
+git의 캐시로 인해서 계속해서 관리 대상으로 들어가버리기 때문에 발생하는 문제</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git rm -r --cached .
 git add .
 git commit -m <span style="color:#e6db74">&#34;Apply .gitignore&#34;</span>
-</code></pre></div><p><em>success!</em></p>
-
+</code></pre></div>
 
 
 
       
         <div class="blog-tags">
           
-            <a href="https://taeksooshin.github.io//tags/tip/">tip</a
+            <a href="https://taeksooshin.github.io//tags/git/">git</a
             >&nbsp;
           
-            <a href="https://taeksooshin.github.io//tags/git/">git</a
+            <a href="https://taeksooshin.github.io//tags/tip/">tip</a
             >&nbsp;
           
         </div>
@@ -189,7 +185,7 @@ git commit -m <span style="color:#e6db74">&#34;Apply .gitignore&#34;</span>
     <p class="credits copyright">
       <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
       &nbsp;&copy;
-      2021
+      2022
       
         &nbsp;/&nbsp;
         <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
@@ -203,6 +199,23 @@ git commit -m <span style="color:#e6db74">&#34;Apply .gitignore&#34;</span>
     </p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
 
   </body>
 </html>
