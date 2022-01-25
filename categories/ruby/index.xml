@@ -14,6 +14,25 @@
 		<atom:link href="/categories/ruby/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>블루 그린 배포 방식</title>
+			<link>https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</link>
+			<pubDate>Wed, 26 Jan 2022 00:26:12 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</guid>
+			<description>개요 블루 그린 배포는 애플리케이션 또는 마이크로서비스의 이전 버전에 있던 사용자 트래픽을 이전 버전과 거의 동일한 새 버전으로 점진적으로 이전하는 애플리케이션 릴리스 모델
+본론 블루 그린 배포를 활용하기 위해서는 똑같은 환경을 지닌 인프라 2세트(블루와 그린으로 지칭)가 필요하다.
+이제 현재 사용하는 인프라를 그린이라고 가정하자. 새로운 기능 &amp;ldquo;폭죽 팡팡&amp;quot;의 개발이 완료가 되었다. 이 때 &amp;ldquo;폭죽 팡팡&amp;quot;은 현재 사용하고 있지 않는 인프라인 블루에 배포를 한다.
+배포가 완료가 되면 블루 인프라에서 여러가지 테스트를 진행하고 문제가 없음을 확인 한 후 그린 인프라에 보내던 트래픽을 블루로 옮겨버린다.</description>
+		</item>
+      	
+		<item>
+			<title>devops</title>
+			<link>https://taeksooshin.github.io/post/devops/</link>
+			<pubDate>Wed, 26 Jan 2022 00:24:52 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/devops/</guid>
+			<description>deploy  [[블루 그린 배포 방식]]  </description>
+		</item>
+      	
+		<item>
 			<title>input</title>
 			<link>https://taeksooshin.github.io/post/input/</link>
 			<pubDate>Tue, 25 Jan 2022 23:04:33 +0900</pubDate>
@@ -66,7 +85,7 @@
 			<link>https://taeksooshin.github.io/post/home/</link>
 			<pubDate>Sun, 23 Jan 2022 23:33:25 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/home/</guid>
-			<description>Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Tools  [[git]]  </description>
+			<description>Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Devops  [[devops]]  Tools  [[git]]  </description>
 		</item>
       	
 		<item>
@@ -75,27 +94,6 @@
 			<pubDate>Sun, 23 Jan 2022 23:22:12 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/html/</guid>
 			<description>tags  [[br]] [[header]] [[input]]  </description>
-		</item>
-      	
-		<item>
-			<title>header</title>
-			<link>https://taeksooshin.github.io/post/header/</link>
-			<pubDate>Tue, 08 Jun 2021 07:12:26 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/header/</guid>
-			<description>개요 header는 소개 및 네비게이션에 대한 정보를 담는 태그
-예제  단순한 header 사용 방법  &amp;lt;header&amp;gt; &amp;lt;p&amp;gt;Welcome to...&amp;lt;/p&amp;gt; &amp;lt;h1&amp;gt;Voidwars!&amp;lt;/h1&amp;gt; &amp;lt;/header&amp;gt; 출력결과  Welcome to...
-Voidwars!  hgroup을 이용한 heading 집약  &amp;lt;header&amp;gt; &amp;lt;hgroup&amp;gt; &amp;lt;h1&amp;gt;Fullscreen API&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Living Standard — Last Updated 19 October 2015&amp;lt;/h2&amp;gt; &amp;lt;/hgroup&amp;gt; &amp;lt;dl&amp;gt; &amp;lt;dt&amp;gt;Participate:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen&amp;#34;&amp;gt;GitHub whatwg/fullscreen&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt;Commits:&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;&amp;lt;a href=&amp;#34;https://github.com/whatwg/fullscreen/commits&amp;#34;&amp;gt;GitHub whatwg/fullscreen/commits&amp;lt;/a&amp;gt;&amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt; &amp;lt;/header&amp;gt; 출력결과   Fullscreen API Living Standard — Last Updated 19 October 2015   Participate: GitHub whatwg/fullscreen Commits: GitHub whatwg/fullscreen/commits   설명  heading(h1 - h6)를 반드시 포함할 필요는 없다.</description>
-		</item>
-      	
-		<item>
-			<title>br</title>
-			<link>https://taeksooshin.github.io/post/br/</link>
-			<pubDate>Mon, 07 Jun 2021 22:38:31 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/br/</guid>
-			<description>개요  문서 내부에서 줄 바꿈을 한다.  예제 &amp;lt;p&amp;gt;P. Sherman&amp;lt;br&amp;gt; 42 Wallaby Way&amp;lt;br&amp;gt; Sydney&amp;lt;/p&amp;gt; 출력결과 P. Sherman
-42 Wallaby Way
-Sydney
-설명  태그 자체에 주어진 의미가 없다. 줄바꿈 자체가 의미가 있는 경우에만 사용한다.(주소, 시(poem) 등) margin을 생성하기 위해서 사용하면 안된다.  참고  WHATWG  MDN   </description>
 		</item>
       	
 	</channel>

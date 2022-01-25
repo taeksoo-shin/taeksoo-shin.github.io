@@ -2,6 +2,26 @@
     
         
             {
+                "ref": "https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/",
+                "title": "블루 그린 배포 방식",
+                "section": "post",
+                "date" : "2022.01.26",
+                "body": "개요 블루 그린 배포는 애플리케이션 또는 마이크로서비스의 이전 버전에 있던 사용자 트래픽을 이전 버전과 거의 동일한 새 버전으로 점진적으로 이전하는 애플리케이션 릴리스 모델\n본론 블루 그린 배포를 활용하기 위해서는 똑같은 환경을 지닌 인프라 2세트(블루와 그린으로 지칭)가 필요하다.\n이제 현재 사용하는 인프라를 그린이라고 가정하자. 새로운 기능 \u0026ldquo;폭죽 팡팡\u0026quot;의 개발이 완료가 되었다. 이 때 \u0026ldquo;폭죽 팡팡\u0026quot;은 현재 사용하고 있지 않는 인프라인 블루에 배포를 한다.\n배포가 완료가 되면 블루 인프라에서 여러가지 테스트를 진행하고 문제가 없음을 확인 한 후 그린 인프라에 보내던 트래픽을 블루로 옮겨버린다.\n릴리즈가 끝난 후 문제가 없으면 초록 인프라는 다른 용도로 사용되거나 idle 상태로 만든다. \u0026ldquo;폭죽 팡팡\u0026rdquo; 기능이 추가된 블루 인프라는 현재 사용하는 인프라로 탈바꿈하게 된다.\n만약 릴리즈가 끝난 후 생각지도 못한 오류가 발생했다면 재빠르게 기존에 움직이고 있던 그린 인프라로 롤백을 하고 블루 인프라의 수정에 들어가면 된다.\n질문  블루와 그린 인프라를 동일하게 유지하기 위해서는?  참고 한국어  https://wallees.wordpress.com/2018/04/22/blue-green-%EB%B0%A9%EC%8B%9D/ https://www.redhat.com/ko/topics/devops/what-is-blue-green-deployment https://jason-lim.tistory.com/3  일본어  https://www.publickey1.jp/blog/14/blue-green_deployment.html  영어  https://martinfowler.com/bliki/BlueGreenDeployment.html  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://taeksooshin.github.io/post/devops/",
+                "title": "devops",
+                "section": "post",
+                "date" : "2022.01.26",
+                "body": "deploy  [[블루 그린 배포 방식]]  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://taeksooshin.github.io/post/input/",
                 "title": "input",
                 "section": "post",
@@ -66,7 +86,7 @@
                 "title": "home",
                 "section": "post",
                 "date" : "2022.01.23",
-                "body": "Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Tools  [[git]]  "
+                "body": "Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Devops  [[devops]]  Tools  [[git]]  "
             }
         
     ,
