@@ -14,6 +14,14 @@
 		<atom:link href="/categories/ruby/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>input</title>
+			<link>https://taeksooshin.github.io/post/input/</link>
+			<pubDate>Tue, 25 Jan 2022 23:04:33 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/input/</guid>
+			<description>auto complete를 방지하는 방법 &amp;lt;input autocomplete=&amp;#34;off&amp;#34;&amp;gt; </description>
+		</item>
+      	
+		<item>
 			<title>vue</title>
 			<link>https://taeksooshin.github.io/post/vue/</link>
 			<pubDate>Mon, 24 Jan 2022 22:55:21 +0900</pubDate>
@@ -66,7 +74,7 @@
 			<link>https://taeksooshin.github.io/post/html/</link>
 			<pubDate>Sun, 23 Jan 2022 23:22:12 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/html/</guid>
-			<description>tags  [[br]] [[header]]  </description>
+			<description>tags  [[br]] [[header]] [[input]]  </description>
 		</item>
       	
 		<item>
@@ -88,15 +96,6 @@ Voidwars!  hgroup을 이용한 heading 집약  &amp;lt;header&amp;gt; &amp;lt;hg
 42 Wallaby Way
 Sydney
 설명  태그 자체에 주어진 의미가 없다. 줄바꿈 자체가 의미가 있는 경우에만 사용한다.(주소, 시(poem) 등) margin을 생성하기 위해서 사용하면 안된다.  참고  WHATWG  MDN   </description>
-		</item>
-      	
-		<item>
-			<title>ruby 현재 프로젝트에서 모든 테스트 실행하기</title>
-			<link>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</link>
-			<pubDate>Wed, 03 Feb 2021 22:33:28 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/</guid>
-			<description>본문 프로젝트의 rspec_helper가 위치하고 있는 디렉토리에서 아래의 커맨드를 실행
-rspec -P ./**/*_spec.rb </description>
 		</item>
       	
 	</channel>

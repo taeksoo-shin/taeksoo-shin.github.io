@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://taeksooshin.github.io/post/input/",
+                "title": "input",
+                "section": "post",
+                "date" : "2022.01.25",
+                "body": "auto complete를 방지하는 방법 \u0026lt;input autocomplete=\u0026#34;off\u0026#34;\u0026gt; "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://taeksooshin.github.io/post/vue/",
                 "title": "vue",
                 "section": "post",
@@ -66,7 +76,7 @@
                 "title": "html",
                 "section": "post",
                 "date" : "2022.01.23",
-                "body": "tags  [[br]] [[header]]  "
+                "body": "tags  [[br]] [[header]] [[input]]  "
             }
         
     ,
