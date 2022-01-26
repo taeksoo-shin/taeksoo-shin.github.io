@@ -14,6 +14,25 @@
 		<atom:link href="/tags/go/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>stat</title>
+			<link>https://taeksooshin.github.io/post/stat/</link>
+			<pubDate>Wed, 26 Jan 2022 12:18:00 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/stat/</guid>
+			<description>개요 ls 확장 버전의 일종으로 시스템 기준의 파일과 속성에 대한 내용을 자세하게 볼 수 있다.
+OPTIONS    옵션 의미 활용     c(&amp;ndash;format) 출력 포맷을 설정     활용법 파일의 크기, 아이노트, 접근 권한, 소유권, 수정시간, 사용시간을 알고싶은 경우
+주의사항 </description>
+		</item>
+      	
+		<item>
+			<title>find</title>
+			<link>https://taeksooshin.github.io/post/find/</link>
+			<pubDate>Wed, 26 Jan 2022 11:05:45 +0900</pubDate>
+			<guid>https://taeksooshin.github.io/post/find/</guid>
+			<description>개요 find는 다양한 속성에 근거하여 주어진 디렉토리(하위 디렉토리를 포함하여)를 검색하여 파일을 찾는다.
+OPTIONS    옵션 의미 활용     type 특정 파일 형식만을 출력한다. 디렉토리, 파일, 심볼릭 링크 등을 지정해서 검색하고 싶은 경우 사용하면 된다.   name 파일의 이름을 특정한다. 와일드카드 패턴을 사용 할 수 있으므로 활용도가 높다.   size 파일의 사이즈의 범위를 지정 가능 파일의 크기가 일정 범위에 있다고 생각 될 경우 사용 하면 편하다.</description>
+		</item>
+      	
+		<item>
 			<title>블루 그린 배포 방식</title>
 			<link>https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</link>
 			<pubDate>Wed, 26 Jan 2022 00:26:12 +0900</pubDate>
@@ -53,7 +72,7 @@
 			<link>https://taeksooshin.github.io/post/shell/</link>
 			<pubDate>Mon, 24 Jan 2022 22:55:05 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/shell/</guid>
-			<description>Tips  [[쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이]]  </description>
+			<description>Command  [[find]] [[stat]]  Tips  [[쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이]]  </description>
 		</item>
       	
 		<item>
@@ -78,22 +97,6 @@
 			<pubDate>Sun, 23 Jan 2022 23:34:42 +0900</pubDate>
 			<guid>https://taeksooshin.github.io/post/go/</guid>
 			<description>테스트  [[go 현재 프로젝트의 모든 테스트 실행하기]]  </description>
-		</item>
-      	
-		<item>
-			<title>home</title>
-			<link>https://taeksooshin.github.io/post/home/</link>
-			<pubDate>Sun, 23 Jan 2022 23:33:25 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/home/</guid>
-			<description>Mark  [[html]]  Language  [[shell]] [[go]] [[ruby]]  Framework  [[vue]]  Devops  [[devops]]  Tools  [[git]]  </description>
-		</item>
-      	
-		<item>
-			<title>html</title>
-			<link>https://taeksooshin.github.io/post/html/</link>
-			<pubDate>Sun, 23 Jan 2022 23:22:12 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/html/</guid>
-			<description>tags  [[br]] [[header]] [[input]]  </description>
 		</item>
       	
 	</channel>

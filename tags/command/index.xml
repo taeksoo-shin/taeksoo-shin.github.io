@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>deploy on Teaksoo Shin&#39;s Webpage</title>
-		<link>https://taeksooshin.github.io/tags/deploy/</link>
-		<description>Recent content in deploy </description>
+		<title>command on Teaksoo Shin&#39;s Webpage</title>
+		<link>https://taeksooshin.github.io/tags/command/</link>
+		<description>Recent content in command </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>ko</language>
 		
-		<managingEditor>Page(/tags/deploy) (Taeksoo Shin)</managingEditor>
+		<managingEditor>Page(/tags/command) (Taeksoo Shin)</managingEditor>
     	
-  		<lastBuildDate>Wed, 26 Jan 2022 00:26:12 +0900</lastBuildDate>
+  		<lastBuildDate>Wed, 26 Jan 2022 12:18:00 +0900</lastBuildDate>
 		
-		<atom:link href="/tags/deploy/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/command/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>stat</title>

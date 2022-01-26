@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>find</title>
+
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://taeksooshin.github.io/index.xml"
+  title="Teaksoo Shin&#39;s Webpage"
+/>
+
+<link rel="stylesheet" href="https://taeksooshin.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://taeksooshin.github.io/css/custom.css" />
+
+
+<script>
+</script>
+
+<script src="https://taeksooshin.github.io/js/main.bundle.js"></script>
+<script src="https://taeksooshin.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.92.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://taeksooshin.github.io/" class="nav-logo">
+        <img
+          src="https://taeksooshin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              find
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    Jan 26, 2022
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://taeksooshin.github.io//categories/shell/">shell</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <h2 id="개요">개요</h2>
+<p>find는 다양한 속성에 근거하여 주어진 디렉토리(하위 디렉토리를 포함하여)를
+검색하여 파일을 찾는다.</p>
+<h2 id="options">OPTIONS</h2>
+<table>
+<thead>
+<tr>
+<th>옵션</th>
+<th>의미</th>
+<th>활용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>특정 파일 형식만을 출력한다.</td>
+<td>디렉토리, 파일, 심볼릭 링크 등을 지정해서 검색하고 싶은 경우 사용하면 된다.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>파일의 이름을 특정한다.</td>
+<td>와일드카드 패턴을 사용 할 수 있으므로 활용도가 높다.</td>
+</tr>
+<tr>
+<td>size</td>
+<td>파일의 사이즈의 범위를 지정 가능</td>
+<td>파일의 크기가 일정 범위에 있다고 생각 될 경우 사용 하면 편하다.</td>
+</tr>
+<tr>
+<td>maxdepth</td>
+<td>테스트와 액션을 실행할 떄 find 명령의 최대 탐색 깊이를 지정</td>
+<td></td>
+</tr>
+<tr>
+<td>mindepth</td>
+<td>테스트와 액션을 실행할 떄 find 명령의 최소 탐색 깊이를 지정</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="type-옵션">type 옵션</h3>
+<table>
+<thead>
+<tr>
+<th>파일 형식</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b</td>
+<td>블록 특수 파일</td>
+</tr>
+<tr>
+<td>c</td>
+<td>문자 특수 파일</td>
+</tr>
+<tr>
+<td>d</td>
+<td>디렉토리</td>
+</tr>
+<tr>
+<td>f</td>
+<td>파일</td>
+</tr>
+<tr>
+<td>l</td>
+<td>심볼릭 링크 파일</td>
+</tr>
+</tbody>
+</table>
+<h3 id="size-옵션">size 옵션</h3>
+<table>
+<thead>
+<tr>
+<th>기호</th>
+<th>크기 단위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b</td>
+<td>512바이트 단위의 블록(기본값)</td>
+</tr>
+<tr>
+<td>c</td>
+<td>바이트</td>
+</tr>
+<tr>
+<td>w</td>
+<td>2바이트 크기와 워드</td>
+</tr>
+<tr>
+<td>k</td>
+<td>킬로바이트(1024바이트)</td>
+</tr>
+<tr>
+<td>M</td>
+<td>메가바이트</td>
+</tr>
+<tr>
+<td>G</td>
+<td>기가바이트</td>
+</tr>
+</tbody>
+</table>
+<h3 id="논리-연산자">논리 연산자</h3>
+<table>
+<thead>
+<tr>
+<th>연산자</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>and(a)</td>
+<td>연산자를 기준으로 양쪽 테스트 조건이 모두 참인 경우에 검색, 아무런 연산자가 없는 경우 default</td>
+</tr>
+<tr>
+<td>or(o)</td>
+<td>연산자를 기준으로 양쪽 테스트 중 하나라도 참인 경우에 검색</td>
+</tr>
+<tr>
+<td>not(!)</td>
+<td>연산자 다음에 나오는 테스트가 거짓인 경우에 검색</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>테스트와 연산자를 조합하여 표현한 내용을 하나로 그룹화할 때 사용(주로 백스래시와 함께 사용)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="액션">액션</h3>
+<table>
+<thead>
+<tr>
+<th>액션</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>delete</td>
+<td>현재 검색된 파일을 삭제한다.</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>검색된 파일에 대하여 ls -dils와 같은 명령을 실행. 출력은 표준 출력으로 전송된다.</td>
+</tr>
+<tr>
+<td>print</td>
+<td>검색 결과의 전체 경로명을 표준 출력으로 출력한다. 별도의 액션 지정이 없을 경우 default</td>
+</tr>
+<tr>
+<td>quit</td>
+<td>검색 조건에 해당하는 결과가 하나라도 나올 경우 검색 종료.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="사용자-정의-액션">사용자 정의 액션</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-exec command <span style="color:#f92672">{}</span> <span style="color:#e6db74">&#39;;&#39;</span>
+</code></pre></div><p>-ok를 사용할 경우 command를 사용하기 전에 사용자에게 확인 메시지를 띄운다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-ok command <span style="color:#f92672">{}</span> <span style="color:#e6db74">&#39;;&#39;</span>
+</code></pre></div><p>&lsquo;;&lsquo;를 대신해서 +를 사용할 경우 command에 find를 찾은 결과를 한번에 명령 인자를
+전달 할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-exec command <span style="color:#f92672">{}</span> +
+</code></pre></div><h2 id="활용법">활용법</h2>
+<h3 id="현재-디렉토리에서-크기가-0인-모든-파일을-삭제하는-방법">현재 디렉토리에서 크기가 0인 모든 파일을 삭제하는 방법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find ./ -type f -size <span style="color:#ae81ff">0</span> -delete
+</code></pre></div><p>recursive의 깊이 지정</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find ./ -maxdepth <span style="color:#ae81ff">1</span> -type f -size <span style="color:#ae81ff">0</span> -delete
+</code></pre></div><p>이름을 지정</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find ./ -type f -size <span style="color:#ae81ff">0</span> -name <span style="color:#e6db74">&#34;*.bak&#34;</span> -delete
+</code></pre></div><p>위의 커맨드를 실행하기 전, 반드시 -delete가 없는 상태에서 어떤 파일이 대상이
+되는지 확인 후 -delete를 사용하도록 하자.</p>
+<h2 id="주의사항">주의사항</h2>
+<h3 id="-delete-액션">-delete 액션</h3>
+<p>-delete 액션의 경우 아무런 메시지 없이 액션이 실행된다!
+실행하기 전에 반드시 -print 옵션(디폴트)을 이용해서 삭제되는 대상을 확인한 후에 삭제를 할 것</p>
+<h3 id="옵션의-순서">옵션의 순서</h3>
+<p>논리 연산자는 기본적으로 and가 디폴트로 왼쪽부터 실행된다.
+즉 delete 액션을 먼저 실행해버리면 필터링이 작동하지 않고 전부 삭제된 후에
+필터링을 시작해 버릴 가능성이 존재하기 때문에, 옵션의 순서를 신경 쓰도록 하자.</p>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://taeksooshin.github.io//tags/shell/">shell</a
+            >&nbsp;
+          
+            <a href="https://taeksooshin.github.io//tags/command/">command</a
+            >&nbsp;
+          
+        </div>
+      
+      
+        <script src="https://utteranc.es/client.js"
+        repo="TaeksooShin/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      
+    </article>
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/TaeksooShin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://taeksooshin.github.io/about">Taeksoo Shin</a>
+      &nbsp;&copy;
+      2022
+      
+        &nbsp;/&nbsp;
+        <a href="https://taeksooshin.github.io/">Teaksoo Shin&#39;s Webpage</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
