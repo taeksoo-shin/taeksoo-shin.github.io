@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>go on Teaksoo Shin&#39;s Webpage</title>
-		<link>https://taeksooshin.github.io/categories/go/</link>
+		<title>go on Shin&#39;s Webpage</title>
+		<link>https://coder-shin.github.io/categories/go/</link>
 		<description>Recent content in go </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
@@ -15,9 +15,9 @@
 		
 		<item>
 			<title>stat</title>
-			<link>https://taeksooshin.github.io/post/stat/</link>
+			<link>https://coder-shin.github.io/post/stat/</link>
 			<pubDate>Wed, 26 Jan 2022 12:18:00 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/stat/</guid>
+			<guid>https://coder-shin.github.io/post/stat/</guid>
 			<description>개요 ls 확장 버전의 일종으로 시스템 기준의 파일과 속성에 대한 내용을 자세하게 볼 수 있다.
 형태 stat [옵션&amp;hellip;] 대상_파일&amp;hellip;
 옵션    옵션 의미 활용     c(&amp;ndash;format) 출력 포맷을 설정     활용법 파일의 크기, 아이노트, 접근 권한, 소유권, 수정시간, 사용시간을 알고싶은 경우
@@ -26,9 +26,9 @@
       	
 		<item>
 			<title>find</title>
-			<link>https://taeksooshin.github.io/post/find/</link>
+			<link>https://coder-shin.github.io/post/find/</link>
 			<pubDate>Wed, 26 Jan 2022 11:05:45 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/find/</guid>
+			<guid>https://coder-shin.github.io/post/find/</guid>
 			<description>개요 find는 다양한 속성에 근거하여 주어진 디렉토리(하위 디렉토리를 포함하여)를 검색하여 파일을 찾는다.
 형태 find 찾을_위치 [옵션&amp;hellip;]
 옵션    옵션 의미 활용     type 특정 파일 형식만을 출력한다. 디렉토리, 파일, 심볼릭 링크 등을 지정해서 검색하고 싶은 경우 사용하면 된다.   name 파일의 이름을 특정한다. 와일드카드 패턴을 사용 할 수 있으므로 활용도가 높다.   size 파일의 사이즈의 범위를 지정 가능 파일의 크기가 일정 범위에 있다고 생각 될 경우 사용 하면 편하다.</description>
@@ -36,9 +36,9 @@
       	
 		<item>
 			<title>블루 그린 배포 방식</title>
-			<link>https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</link>
+			<link>https://coder-shin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</link>
 			<pubDate>Wed, 26 Jan 2022 00:26:12 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</guid>
+			<guid>https://coder-shin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/</guid>
 			<description>개요 블루 그린 배포는 애플리케이션 또는 마이크로서비스의 이전 버전에 있던 사용자 트래픽을 이전 버전과 거의 동일한 새 버전으로 점진적으로 이전하는 애플리케이션 릴리스 모델
 본론 블루 그린 배포를 활용하기 위해서는 똑같은 환경을 지닌 인프라 2세트(블루와 그린으로 지칭)가 필요하다.
 이제 현재 사용하는 인프라를 그린이라고 가정하자. 새로운 기능 &amp;ldquo;폭죽 팡팡&amp;quot;의 개발이 완료가 되었다. 이 때 &amp;ldquo;폭죽 팡팡&amp;quot;은 현재 사용하고 있지 않는 인프라인 블루에 배포를 한다.
@@ -47,57 +47,57 @@
       	
 		<item>
 			<title>devops</title>
-			<link>https://taeksooshin.github.io/post/devops/</link>
+			<link>https://coder-shin.github.io/post/devops/</link>
 			<pubDate>Wed, 26 Jan 2022 00:24:52 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/devops/</guid>
+			<guid>https://coder-shin.github.io/post/devops/</guid>
 			<description>deploy  [[블루 그린 배포 방식]]  </description>
 		</item>
       	
 		<item>
 			<title>input</title>
-			<link>https://taeksooshin.github.io/post/input/</link>
+			<link>https://coder-shin.github.io/post/input/</link>
 			<pubDate>Tue, 25 Jan 2022 23:04:33 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/input/</guid>
+			<guid>https://coder-shin.github.io/post/input/</guid>
 			<description>auto complete를 방지하는 방법 &amp;lt;input autocomplete=&amp;#34;off&amp;#34;&amp;gt; </description>
 		</item>
       	
 		<item>
 			<title>vue</title>
-			<link>https://taeksooshin.github.io/post/vue/</link>
+			<link>https://coder-shin.github.io/post/vue/</link>
 			<pubDate>Mon, 24 Jan 2022 22:55:21 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/vue/</guid>
+			<guid>https://coder-shin.github.io/post/vue/</guid>
 			<description>Tips  [[v-toolbar__content의 padding 제거하는 법]]  </description>
 		</item>
       	
 		<item>
 			<title>shell</title>
-			<link>https://taeksooshin.github.io/post/shell/</link>
+			<link>https://coder-shin.github.io/post/shell/</link>
 			<pubDate>Mon, 24 Jan 2022 22:55:05 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/shell/</guid>
+			<guid>https://coder-shin.github.io/post/shell/</guid>
 			<description>Command  [[find]] [[stat]] [[gzip]]  Tips  [[쉘 스크립트에서 ;, &amp;amp;, &amp;amp;&amp;amp;의 차이]]  </description>
 		</item>
       	
 		<item>
 			<title>git</title>
-			<link>https://taeksooshin.github.io/post/git/</link>
+			<link>https://coder-shin.github.io/post/git/</link>
 			<pubDate>Mon, 24 Jan 2022 22:38:31 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/git/</guid>
+			<guid>https://coder-shin.github.io/post/git/</guid>
 			<description>How to  [[기존에 관리하고 있던 파일 .gitignore 적용하기]]  </description>
 		</item>
       	
 		<item>
 			<title>ruby</title>
-			<link>https://taeksooshin.github.io/post/ruby/</link>
+			<link>https://coder-shin.github.io/post/ruby/</link>
 			<pubDate>Mon, 24 Jan 2022 08:32:29 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/ruby/</guid>
+			<guid>https://coder-shin.github.io/post/ruby/</guid>
 			<description>테스트  [[ruby 현재 프로젝트에서 모든 테스트 실행하기]]  패키지 관리  [[bundler]]  </description>
 		</item>
       	
 		<item>
 			<title>go</title>
-			<link>https://taeksooshin.github.io/post/go/</link>
+			<link>https://coder-shin.github.io/post/go/</link>
 			<pubDate>Sun, 23 Jan 2022 23:34:42 +0900</pubDate>
-			<guid>https://taeksooshin.github.io/post/go/</guid>
+			<guid>https://coder-shin.github.io/post/go/</guid>
 			<description>테스트  [[go 현재 프로젝트의 모든 테스트 실행하기]]  </description>
 		</item>
       	

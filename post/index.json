@@ -2,7 +2,7 @@
     
         
             {
-                "ref": "https://taeksooshin.github.io/post/stat/",
+                "ref": "https://coder-shin.github.io/post/stat/",
                 "title": "stat",
                 "section": "post",
                 "date" : "2022.01.26",
@@ -12,7 +12,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/find/",
+                "ref": "https://coder-shin.github.io/post/find/",
                 "title": "find",
                 "section": "post",
                 "date" : "2022.01.26",
@@ -22,7 +22,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/",
+                "ref": "https://coder-shin.github.io/post/%EB%B8%94%EB%A3%A8-%EA%B7%B8%EB%A6%B0-%EB%B0%B0%ED%8F%AC-%EB%B0%A9%EC%8B%9D/",
                 "title": "블루 그린 배포 방식",
                 "section": "post",
                 "date" : "2022.01.26",
@@ -32,7 +32,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/devops/",
+                "ref": "https://coder-shin.github.io/post/devops/",
                 "title": "devops",
                 "section": "post",
                 "date" : "2022.01.26",
@@ -42,7 +42,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/input/",
+                "ref": "https://coder-shin.github.io/post/input/",
                 "title": "input",
                 "section": "post",
                 "date" : "2022.01.25",
@@ -52,7 +52,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/vue/",
+                "ref": "https://coder-shin.github.io/post/vue/",
                 "title": "vue",
                 "section": "post",
                 "date" : "2022.01.24",
@@ -62,7 +62,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/shell/",
+                "ref": "https://coder-shin.github.io/post/shell/",
                 "title": "shell",
                 "section": "post",
                 "date" : "2022.01.24",
@@ -72,7 +72,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/git/",
+                "ref": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
                 "date" : "2022.01.24",
@@ -82,7 +82,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/ruby/",
+                "ref": "https://coder-shin.github.io/post/ruby/",
                 "title": "ruby",
                 "section": "post",
                 "date" : "2022.01.24",
@@ -92,7 +92,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/go/",
+                "ref": "https://coder-shin.github.io/post/go/",
                 "title": "go",
                 "section": "post",
                 "date" : "2022.01.23",
@@ -102,7 +102,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/home/",
+                "ref": "https://coder-shin.github.io/post/home/",
                 "title": "home",
                 "section": "post",
                 "date" : "2022.01.23",
@@ -112,7 +112,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/html/",
+                "ref": "https://coder-shin.github.io/post/html/",
                 "title": "html",
                 "section": "post",
                 "date" : "2022.01.23",
@@ -122,7 +122,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/header/",
+                "ref": "https://coder-shin.github.io/post/header/",
                 "title": "header",
                 "section": "post",
                 "date" : "2021.06.08",
@@ -132,7 +132,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/br/",
+                "ref": "https://coder-shin.github.io/post/br/",
                 "title": "br",
                 "section": "post",
                 "date" : "2021.06.07",
@@ -142,7 +142,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
+                "ref": "https://coder-shin.github.io/post/ruby-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
                 "title": "ruby 현재 프로젝트에서 모든 테스트 실행하기",
                 "section": "post",
                 "date" : "2021.02.03",
@@ -152,7 +152,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%98-%EC%B0%A8%EC%9D%B4/",
+                "ref": "https://coder-shin.github.io/post/%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%98-%EC%B0%A8%EC%9D%B4/",
                 "title": "쉘 스크립트에서 ;, \u0026, \u0026\u0026의 차이",
                 "section": "post",
                 "date" : "2021.02.02",
@@ -162,7 +162,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/v-toolbar__content%EC%9D%98-padding-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B2%95/",
+                "ref": "https://coder-shin.github.io/post/v-toolbar__content%EC%9D%98-padding-%EC%A0%9C%EA%B1%B0%ED%95%98%EB%8A%94-%EB%B2%95/",
                 "title": ".v-toolbar__content의 padding 제거하는 법",
                 "section": "post",
                 "date" : "2021.01.30",
@@ -172,7 +172,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/go-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
+                "ref": "https://coder-shin.github.io/post/go-%ED%98%84%EC%9E%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EB%AA%A8%EB%93%A0-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0/",
                 "title": "go 현재 프로젝트의 모든 테스트 실행하기",
                 "section": "post",
                 "date" : "2021.01.29",
@@ -182,7 +182,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/bundler/",
+                "ref": "https://coder-shin.github.io/post/bundler/",
                 "title": "bundler",
                 "section": "post",
                 "date" : "2021.01.27",
@@ -192,7 +192,7 @@
     ,
         
             {
-                "ref": "https://taeksooshin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/",
+                "ref": "https://coder-shin.github.io/post/%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8D%98-%ED%8C%8C%EC%9D%BC-.gitignore-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/",
                 "title": "기존에 관리하고 있던 파일 .gitignore 적용하기",
                 "section": "post",
                 "date" : "2021.01.25",
