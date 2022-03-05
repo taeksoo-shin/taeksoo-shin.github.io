@@ -1,0 +1,25 @@
+[
+    
+    
+    
+        
+            {
+                "id": 0,
+                "href": "https://coder-shin.github.io/post/home/",
+                "title": "index",
+                "section": "post",
+                "date" : "2022.01.23",
+                "body": "블로그 전체의 인덱스\n개인 위키에 있는 인덱스를 옮겨온 것으로 아직 내용이 작성이 되어 있지 않는 곳도 다수 존재함\n마크업(Markup) 나열 순서: 특별한 의미 없음\n [[markdown]] [[html]] [[css]]  언어(Language) 나열 순서: 개인적으로 자주 사용하는 순서로 나열\n [[javascript]] [[shell]] [[java]] [[go]] [[ruby]]  프레임워크(Framework) 나열 순서: 개인적으로 자주 사용하는 순서로 나열\n [[vue]] [[spring]] [[ruby on rails]]  데이터베이스(Database) 나열 순서: 큰 개념부터 작은 개념순으로 나열\n [[database]] [[sql]] [[postgresql]]  사고(Thinking) 나열 순서: 내가 공부한 순으로 나열\n 테스트 구동 개발 객체 지향 프로그래밍 도메인 주도 설계 함수형 프로그래밍 애자일  데브옵스(Devops)  [[devops]]  네트워크(Networks) 나열 순서: 내가 공부한 순으로 나열\n [[http]] tcp/ip  운영체제(os) 나열 순서: 특별한 의미 없음\n [[arch]] [[mac]]  도구(Tool) 나열 순서: 비슷한 종류별로 나열\n [[regex]] [[git]] [[vim]] [[emacs]] [[intellij]]  "
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/about/",
+                "title": "나는 누구이며 여기는 어디인가",
+                "section": "",
+                "date" : "0001.01.01",
+                "body": "Me  외노자 키보드 좋아함(일본어 배열 키보드 + 트랙포인트가 있는 키보드 선호) 사용하는 도구 vim, emacs, intellij 셋 다 좋아함 사용하는 운영체제 mac, arch 둘 다 좋아함 키보드에서 손이 멀어지는게 귀찮아서 주로 터미널에서 작업 여가 시간에는 운동을 하던가 외국어 공부를 하던가 블로그 글 작성을 함  Blog  개인 위키에 적어둔 내용을 공유할 목적으로 만든 블로그 풍문에 hugo가 가볍고 좋다고 해서 hugo로 선택 index에서 전체의 분류 참고 search에서 검색 기본적인 내용은 공부한 내용 정리 + 일을 하다가 몰랐던 내용 정리 되도록이면 모든 출처는 기재하는 것을 원칙(일본어라 영어문서도 기재)  "
+            }
+    
+]
