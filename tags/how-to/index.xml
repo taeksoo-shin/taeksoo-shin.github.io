@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>코더 신씨 on 코더 신씨</title>
-		<link>https://coder-shin.github.io/</link>
-		<description>Recent content in 코더 신씨 </description>
+		<title>how to on 코더 신씨</title>
+		<link>https://coder-shin.github.io/tags/how-to/</link>
+		<description>Recent content in how to </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>ko</language>
 		
-		<managingEditor>Page(&#34;코더 신씨&#34;) (Shin)</managingEditor>
+		<managingEditor>Page(/tags/how-to) (Shin)</managingEditor>
     	
   		<lastBuildDate>Sat, 05 Mar 2022 17:01:02 +0900</lastBuildDate>
 		
-		<atom:link href="/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/how-to/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>javascript - 클립보드에 복사하기</title>

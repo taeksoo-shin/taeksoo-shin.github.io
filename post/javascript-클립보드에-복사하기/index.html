@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>javascript - 클립보드에 복사하기</title>
+<meta name="description" 
+      content=""
+>
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://coder-shin.github.io/index.xml"
+  title="코더 신씨"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="javascript - 클립보드에 복사하기"/>
+<meta name="twitter:description" content="사장님이 버튼을 클릭했을 때 복사하는 기능을 추가하라고 했을 때 사용하자"/>
+
+
+
+<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
+
+
+
+
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.88.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://coder-shin.github.io/" class="nav-logo">
+        <img
+          src="https://coder-shin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              javascript - 클립보드에 복사하기
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    2022-03-21
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://coder-shin.github.io//categories/javascript/">javascript</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>우리의 성격이 굉장히 급한 사장님이 20분 안에 특정 내용을 복사 할 수 있는 버튼을
+만들어 오라는 지시를 내렸다.</p>
+<p>20분 안에 어떻게 만드냐고 20분 동안 싸우는 게 타당하다고 보지만
+여기 이 문서 확인하면 10분 만에 완벽하게 만들고 5분 동안 사장님의 욕을 하고
+5분 동안 사직서를 낼 타이밍에 대해서 고민 할 수 있게 정리해 두었으니
+참고하도록 하자!</p>
+<h2 id="dom에서-clipboard에-복사하기">dom에서 clipboard에 복사하기</h2>
+<p>dom에서 javascript를 이용해 클립보드에 복사하기 위해서는 두 가지 방법이 있다.
+첫 번째로는 execCommand를 사용하는 방법과 그리고 Clipboard API를 사용하는 방법이 있다.
+Clipboard API가 execCommand API에 비해 최신 API로 지원되지 않는 브라우저가
+다수 존재한다. (<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard#browser_compatibility">지원 현황 확인하기</a>)</p>
+<h3 id="execcommand와-clipboard-api의-차이점">execCommand와 Clipboard API의 차이점</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard">mdn 문서</a>에 아래의 문단이 존재한</p>
+<blockquote>
+<p>The difference between the two APIs is that document.execCommand this is
+analogous to the keyboard copy, cut, and paste actions – exchanging data
+between a webpage and clipboard – whereas navigator.clipboard writes and reads
+arbitrary data to and from the clipboard.</p>
+</blockquote>
+<p>즉 execCommand를 이용한 방법은 키보드의 복사, 붙여넣기, 잘라내기를 실행시키는
+것이고 Clipboard API는 키보드 이벤트를 이용하지 않고 직접 clipboard에 있는
+내용을 수정하고 사용하는 점이 다르다.</p>
+<h3 id="execcommand">execCommand</h3>
+<p>Clipboard API가 지원되지 않는 브라우저에서도 무사히 작동할 수 있는
+execCommand에 대해서 알아보자.</p>
+<p>※ deplicated 되었다고 나와 있지, Clipboard API를 지원하지 않는 브라우저에 대응이
+필요한 경우 사용을 하도록 하자.</p>
+<h4 id="execcommand를-이용한-clipboard에-복사하는-함수-예시">execCommand를 이용한 clipboard에 복사하는 함수 예시</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">copyToClipboard</span>(<span style="color:#a6e22e">newClip</span>) {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">$tempElement</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;textarea&#39;</span>);
+    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">$tempElement</span>);
+    <span style="color:#a6e22e">$tempElement</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">newClip</span>;
+
+    <span style="color:#a6e22e">$tempElement</span>.<span style="color:#a6e22e">select</span>();
+    <span style="color:#75715e">// 모바일 브라우저 대응을 위해서 아래의 코드추가 필요
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">$tempElement</span>.<span style="color:#a6e22e">setSelectionRange</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9999</span>);
+
+    document.<span style="color:#a6e22e">execCommand</span>(<span style="color:#e6db74">&#39;copy&#39;</span>);
+    document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">$tempElement</span>);
+}
+</code></pre></div><h3 id="clipboard-api">Clipboard API</h3>
+<p>Clipboard API는 execCommand와 다르게 지원되지 않는 브라우저가 있으므로 사용하기
+전에 반드시 확인하고 사용하자.(<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard#browser_compatibility">지원 현황 확인하기</a>)</p>
+<h4 id="clipboardread와-clipboardwirte-권한-확인하기">clipboardRead와 clipboardWirte 권한 확인하기</h4>
+<p>clipboard API를 사용하기 위해서는 mainfest.json내의 clipboardRead와 clipboardWirte의
+권한이 설정되어 있어야만 사용할 수 있다. 권한의 확인은 아래의 코드를 사용한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">permissions</span>.<span style="color:#a6e22e">query</span>({<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;clipboard-write&#34;</span>}).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">result</span> =&gt; {
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;granted&#34;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;prompt&#34;</span>) {
+    <span style="color:#75715e">// 권한이 설정되어 있으므로 사용 가능하다!
+</span><span style="color:#75715e"></span>  }
+});
+</code></pre></div><h4 id="clipboard-api를-이용한-clipboard에-복사하는-함수-예시">Clipboard API를 이용한 clipboard에 복사하는 함수 예시</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copyToClipboard</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">newClip</span>) =&gt; {
+  <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">writeText</span>(<span style="color:#a6e22e">newClip</span>)
+    .<span style="color:#a6e22e">then</span>(() =&gt; {
+      <span style="color:#75715e">// 성공한 경우의 처리
+</span><span style="color:#75715e"></span>    })
+    .<span style="color:#66d9ef">catch</span>(() =&gt; {
+      <span style="color:#75715e">// 실패한 경우의 처리
+</span><span style="color:#75715e"></span>    });
+}
+</code></pre></div><p>※ 위의 함수를 사용하기 전, 반드시 <a href="#clipboardread%EC%99%80-clipboardwirte-%EA%B6%8C%ED%95%9C-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0">권한</a>을 확인하고 사용할 것</p>
+<h3 id="clipboardjshttpsgithubcomzenorochaclipboardjs-라이브러리를-이용하는-방법"><a href="https://github.com/zenorocha/clipboard.js/">clipboard.js</a> 라이브러리를 이용하는 방법</h3>
+<p><a href="https://github.com/zenorocha/clipboard.js/">clipboard.js</a> 라이브러리를
+이용하면 Clipboard API와 execCommand를 직접 사용할 필요 없이 간단하게 구현
+가능하다. 또한 호환성 문제에 대한 고민도 사라지기에 가장 간편하게 구현하는
+방법이라고 생각된다.</p>
+<h4 id="clipboardjshttpsgithubcomzenorochaclipboardjs-라이브러리-사용법"><a href="https://github.com/zenorocha/clipboard.js/">clipboard.js</a> 라이브러리 사용법</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># clipboard를 설치</span>
+npm i clipboard
+</code></pre></div><p>설치를 마친 후 data-clipboard-target를 사용해서 복사하고 싶은 대상을
+간단하게 지정할 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- 대상 --&gt;</span>
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;coder-shin-url&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://coder-shin.github.io/&#34;</span>&gt;
+
+<span style="color:#75715e">&lt;!-- 발동 버튼 --&gt;</span>
+&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">data-clipboard-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#coder-shin-url&#34;</span>&gt;
+    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;assets/clippy.svg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Copy to clipboard&#34;</span>&gt;
+&lt;/<span style="color:#f92672">button</span>&gt;
+</code></pre></div><p>더욱 자세한 사용 방법에 대해서는 <a href="https://github.com/zenorocha/clipboard.js/">clipboard.js</a>를 참조하자.</p>
+<h2 id="node에서-clipboard에-복사하기">node에서 clipboard에 복사하기</h2>
+<p>node를 이용해서 clipboard에 복사하는 방법은 <a href="https://github.com/sindresorhus/clipboardy">clipboardy</a> 라이브러리를 이용하는 방법이
+가장 간단해 보였다.</p>
+<h3 id="clipboardy-라이브러리">clipboardy 라이브러리</h3>
+<p><a href="https://github.com/sindresorhus/clipboardy">clipboardy</a> 라이브러리를 사용하면
+node에서 간편하게 clipboard로 복사할 수 있다.</p>
+<h4 id="clipboardy-라이브러리-사용법">clipboardy 라이브러리 사용법</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># clipboardy를 설치</span>
+npm i clipboardy
+</code></pre></div><p>설치를 마친 후 writeSync와 readSync를 이용하면 node에서 간편하게 clipboard에
+복사하기와 붙여넣기를 구현 가능해진다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// clipboardy를 import
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">clipboard</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;clipboardy&#39;</span>;
+
+<span style="color:#75715e">// 🦄을 clipboard에 복사
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">writeSync</span>(<span style="color:#e6db74">&#39;🦄&#39;</span>);
+
+<span style="color:#75715e">// clipboard에 있는 내용을 변수 unicorn에 담기
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">unicorn</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">readSync</span>();
+</code></pre></div><h2 id="결론">결론</h2>
+<p>오늘도 코더 신씨는 복사 기능을 만들어 오라는 사장님의 기대에 부응했고 언제
+사퇴를 해야 하는지에 대해 구체적인 계획도 세운 보람찬 하루였다.</p>
+<h2 id="출처">출처</h2>
+<ul>
+<li>Docs: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard">Interact with the clipboard -  mdn web docs</a></li>
+<li>Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API">Clipboard API - mdn web docs</a></li>
+<li>Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">Document.execCommand() - mdn web docs</a></li>
+<li>Docs: <a href="https://github.com/sindresorhus/clipboardy">sindresorhus/clipboardy - git repository</a></li>
+<li>Docs: <a href="https://clipboardjs.com/">clipboard.js</a></li>
+</ul>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://coder-shin.github.io//tags/javascript/">javascript</a
+            >&nbsp;
+          
+            <a href="https://coder-shin.github.io//tags/how-to/">how to</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+      <script src="https://utteranc.es/client.js"
+        repo="coder-shin/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/coder-shin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://coder-shin.github.io/about">Shin</a>
+      &nbsp;&copy;
+      2022
+      
+        &nbsp;/&nbsp;
+        <a href="https://coder-shin.github.io/">코더 신씨</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

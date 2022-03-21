@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>git - gitignore</title>
+<meta name="description" 
+      content=""
+>
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://coder-shin.github.io/index.xml"
+  title="코더 신씨"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="git - gitignore"/>
+<meta name="twitter:description" content="각종 상황에서 gitignore 사용법"/>
+
+
+
+<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
+
+
+
+
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.88.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://coder-shin.github.io/" class="nav-logo">
+        <img
+          src="https://coder-shin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              git - gitignore
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    2022-03-05
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://coder-shin.github.io//categories/git/">git</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>git을 사용해서 프로젝트를 진행하다 보면 아래와 같은 파일들이 생기기 마련이다.</p>
+<ul>
+<li>보안상 git을 이용해서 관리하면 안 되는 파일들</li>
+<li>프로젝트랑 무관한 자신의 에디터 파일 설정</li>
+</ul>
+<p>이와 같은 상황에서 실수로 git add를 통해 git에 올려 버린 경우 에디터 파일의 설정은
+큰 문제가 되지 않지만(같은 에디터를 쓰는 사람들은 자신의 설정이랑 충돌이 일어나 조금 화가 나는 정도)
+보안상 문제가 되는 파일을 올린 경우에는 실질적으로 큰 피해를 볼 가능성이 생기게 된다.</p>
+<p>.gitignore은 위와 같은 상황을 방지하기 위해서 사용 할 수 있는 방법으로,
+.gitignore을 이용하면 git을 이용해서 관리하고 싶지 않은 파일을 지정해서 원치 않는
+파일이 commit이 되는 상황을 방지 할 수 있다.</p>
+<h2 id="기본적인-사용법">기본적인 사용법</h2>
+<p>git을 사용하고 있는 프로젝트의 루트 디렉토리에 .gitignore 파일을 생성한 뒤
+그 파일에 제외 대상이 될 파일을 한 줄씩 작성하면 된다.
+와일드카드 지정도 가능하므로 특정 폴더의 특정 파일을 제외하는 것도 가능하다.</p>
+<h3 id="특정-파일을-제외하기">특정 파일을 제외하기</h3>
+<p>.gitignore를 좋아하는 편집기 열고 대상을 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># file_name1.js인 모든 파일이 대상이 된다.</span>
+file_name1.js
+
+<span style="color:#75715e"># file_name2.js인 모든 파일이 대상이 된다.</span>
+file_name2.js
+</code></pre></div><h3 id="특정-경로에-있는-파일">특정 경로에 있는 파일</h3>
+<p>.gitignore를 좋아하는 편집기 열고 특정 경로에 있는 대상을 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># root에 존재하는 file_name1.js</span>
+/file_name1.js
+
+<span style="color:#75715e"># some_directory에 존재하는 file_name1</span>
+/some_directory/file_name1.js
+</code></pre></div><h3 id="특정-디렉터리에-있는-파일들-모두">특정 디렉터리에 있는 파일들 모두</h3>
+<p>.gitignore를 좋아하는 편집기 열고 특정 경로를 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 대표적인 gitignore 대상으로 이처럼 지정하면 node_modules 디렉터리에 있는</span>
+<span style="color:#75715e"># 모든 파일이 제외된다.</span>
+node_modules/
+</code></pre></div><h3 id="특정-확장자를-지정">특정 확장자를 지정</h3>
+<p>.gitignore를 좋아하는 편집기 열고 *.{파일명}을 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># .cache로 끝나는 모든 파일이 대상이 된다.</span>
+*.cache
+
+<span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
+*.temp
+</code></pre></div><h3 id="예외-지정">예외 지정</h3>
+<p>.gitignore를 좋아하는 편집기 열고 !{파일명} 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
+*.temp
+
+<span style="color:#75715e"># 단 hello.temp는 예외로 git위에서 관리한다.</span>
+!hello.temp
+</code></pre></div><h3 id="주석-사용해서-설명-추가하기">주석 사용해서 설명 추가하기</h3>
+<p>.gitignore를 좋아하는 편집기 열고 &lsquo;#{주석내용}&rsquo; 작성</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 나의 소중한 vim 설정입니다.</span>
+<span style="color:#75715e"># 누구에게도 공개하고 싶지 않습니다.</span>
+.lvimrc
+</code></pre></div><h2 id="트러블-슈팅">트러블 슈팅</h2>
+<h3 id="기존에-관리하고-있던-대상이-gitignore-적용을-받지-않는-경우">기존에 관리하고 있던 대상이 .gitignore 적용을 받지 않는 경우</h3>
+<p>아래와 같은 상황이 있을 수 있다.</p>
+<ul>
+<li>처음에는 관리가 필요한줄 알았는데 특별히 관리를 해줄 필요가 없는 경우</li>
+<li>그냥 잘못 올렸을 경우</li>
+</ul>
+<p>위와 같은 상황을 인식한 뒤 gitignore에 추가를 한 뒤에 확인을 해보면
+여전히 git에서 관리를 하고 있다. 원인은 git의 캐시가 문제다.
+해결 하기 위해서는아래와 같은 대응이 필요로 한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># cache를 삭제</span>
+git rm -r --cached .
+
+<span style="color:#75715e"># gitignore의 대상 이외의 파일을 stage에 올려준다.</span>
+git add .
+
+<span style="color:#75715e"># message로 gitignore 적용 등을 넣어주자</span>
+git commit
+</code></pre></div><h2 id="출처">출처</h2>
+<ul>
+<li>bok: pro git</li>
+</ul>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://coder-shin.github.io//tags/git/">git</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+      <script src="https://utteranc.es/client.js"
+        repo="coder-shin/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/coder-shin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://coder-shin.github.io/about">Shin</a>
+      &nbsp;&copy;
+      2022
+      
+        &nbsp;/&nbsp;
+        <a href="https://coder-shin.github.io/">코더 신씨</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
