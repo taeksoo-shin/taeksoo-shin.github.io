@@ -5,6 +5,26 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
+                "title": "mac - 원화 표시(₩)를 백쿼트(`)로 변경하기",
+                "section": "post",
+                "date" : "2022.03.21",
+                "body": "개발자라면 한글로 타자를 치다가 백쿼트(`)를 입력했을 때 원화 표시(₩)가 튀어나와서 원화 표시를 지우고 영문으로 변경 후에 다시 백쿼트를 입력한 경험이 매우 많을 것이다. 한두 번은 괜찮지만 이러한 상황이 몇 번이고 반복된다면 맥 OS를 지급한 회사를 폭파하던가 리눅스로 작업 가능한 다른 회사로 전근 갈지 고민을 하기 시작한다. 언제나 성급한 결정은 금물이다.\n아래의 방법을 사용해보고 회사를 폭파할지 말지, 다른 회사로 전근 갈지를 결정하도록 하자.\n한글 키보드에서 원화 표시를 백쿼트로 변경하기 DefaultkeyBinding.dict에 원화의 입력을 받았을 때 백쿼트를 입력하도록 변경하면 된다.\n수동으로 변경하기  ~/Library 디렉토리로 이동한다. Library 디렉토리 아래 KeyBindins 디렉토리를 생성한다. DefaultkeyBinding.dict 파일을 생성한다. DefaultkeyBinding.dict 파일에 아래의 코드를 추가한다.  { \u0026#34;₩\u0026#34; = (\u0026#34;insertText:\u0026#34;, \u0026#34;`\u0026#34;); } 다시 시작한 뒤에 한글 키보드를 변경 후 백쿼트 입력으로 변경되어 있는지 확인해본다.  shell script를 이용해서 변경하기 아래의 스크립트 사용하자.\n#!/bin/sh  if [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then echo \u0026#34;~/Library/KeyBindings/DefaultkeyBinding.dict가 이미 존재합니다.\u0026#34; exit -1 fi mkdir -p ~/Library/KeyBindings touch ~/Library/KeyBindings/DefaultkeyBinding.dict cat \u0026lt;\u0026lt; EOF \u0026gt; ~/Library/KeyBindings/DefaultkeyBinding.dict { \u0026#34;₩\u0026#34; = (\u0026#34;insertText:\u0026#34;, \u0026#34;\\`\u0026#34;); } EOF echo \u0026#34;완료했습니다.\u0026#34; 결론 오늘도 회사를 무사하게 지켜낸 코더 신씨는 누가 원화 표시를 키보드에 넣었는지, 대체 무슨 생각으로 넣었는지에 대해서 의문을 품으며 자신의 잘못된 선택과 디자인이 사용자들에게 얼마나 큰 피해를 줄 수 있는가에 대해, 뼛속 깊이 느끼며 하루를 마무리했다.\n"
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/mac/",
+                "title": "mac",
+                "section": "post",
+                "date" : "2022.03.21",
+                "body": "회사에서 사주는 컴퓨터에 설치되어 있는 mac os에 대한 인덱스\n [[mac-원화 표시를 백쿼트로 변경하기]]  "
+            }
+    
+        ,
+            {
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 클립보드에 복사하기",
                 "section": "post",
@@ -14,17 +34,17 @@
     
         ,
             {
-                "id": 1,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "아무거나 다 할 수 있는 마법의 언어 javascript에 대한 인덱스\n하는 법(How to)  [[javascript - 클립보드에 복사하기]]  "
+                "body": "아무거나 다 할 수 있는 마법의 언어 javascript에 대한 인덱스\n하는 법(How to)  [[javascript-클립보드에 복사하기]]  "
             }
     
         ,
             {
-                "id": 2,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/git-gitignore/",
                 "title": "git - gitignore",
                 "section": "post",
@@ -34,27 +54,27 @@
     
         ,
             {
-                "id": 3,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "문서를 관리하는 최고 존엄 도구 git에 대한 인덱스\n하는법(How to)  [[git - gitignore]]  "
+                "body": "문서를 관리하는 최고 존엄 도구 git에 대한 인덱스\n하는법(How to)  [[git-gitignore]]  "
             }
     
         ,
             {
-                "id": 4,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "블로그 전체의 인덱스\n언어(Language)  [[javascript]]  도구(Tool)  [[git]]  "
+                "body": "블로그 전체의 인덱스\n언어(Language)  [[javascript]]  운영체제(OS)  [[mac]]  도구(Tool)  [[git]]  "
             }
     
         ,
             {
-                "id": 5,
+                "id": 7,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "나는 누구이며 여기는 어디인가",
                 "section": "",

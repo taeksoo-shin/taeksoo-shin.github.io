@@ -9,10 +9,26 @@
 		
 		<managingEditor>Page(/categories/index) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Sat, 05 Mar 2022 16:52:49 +0900</lastBuildDate>
+  		<lastBuildDate>Mon, 21 Mar 2022 13:02:39 +0900</lastBuildDate>
 		
 		<atom:link href="/categories/index/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>mac - 원화 표시(₩)를 백쿼트(`)로 변경하기</title>
+			<link>https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link>
+			<pubDate>Mon, 21 Mar 2022 13:06:16 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid>
+			<description>전 한번도 원화 표시(₩)를 사용해 본적이 없다고요</description>
+		</item>
+      	
+		<item>
+			<title>mac</title>
+			<link>https://coder-shin.github.io/post/mac/</link>
+			<pubDate>Mon, 21 Mar 2022 13:02:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/mac/</guid>
+			<description>mac</description>
+		</item>
+      	
 		<item>
 			<title>javascript - 클립보드에 복사하기</title>
 			<link>https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/</link>
