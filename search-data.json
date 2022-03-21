@@ -5,6 +5,16 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/html/",
+                "title": "html",
+                "section": "post",
+                "date" : "2022.03.22",
+                "body": "무기 하이퍼 링크를 가진 마크업 중의 최강 HTML에 대한 인덱스\n태그(Tag)  [[html tag-body]]  "
+            }
+    
+        ,
+            {
+                "id": 1,
                 "href": "https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
                 "title": "mac - 원화 표시(₩)를 백쿼트(`)로 변경하기",
                 "section": "post",
@@ -14,7 +24,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/mac/",
                 "title": "mac",
                 "section": "post",
@@ -24,7 +34,17 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
+                "href": "https://coder-shin.github.io/post/html-tag-body/",
+                "title": "html - body 태그",
+                "section": "post",
+                "date" : "2022.03.11",
+                "body": "body 태그는 문서의 내용을 나타내기 위해 사용하는 태그.\n사용할 수 있는 속성    속성 설명     onafterprint 사용자가 문서를 출력한 뒤 호출할 함수   onbeforeprint 사용자가 문서 출력을 요청했을 때 호출할 함수   onbeforeunload 문서를 처분unload하기 직전에 호출할 함수   onblur 문서가 포커스를 상실했을 때 호출할 함수.   onerror 문서를 제대로 불러오지 못했을 때 호출할 함수.   onfocus 문서가 포커스를 받을 때 호출할 함수.   onhashchange 문서의 현재 주소 중 Fragment identifier part(해시('#') 문자로 시작)가 변경됐을 때 호출할 함수.   onlanguagechange 선호 언어 변경 시 호출할 함수.   onload 문서를 다 불러왔을 때 호출할 함수.   onmessage 문서가 메시지를 받았을 때 호출할 함수.   onoffline 네트워크 연결이 실패했을 때 호출할 함수.   ononline 네트워크 연결을 복구했을 때 호출할 함수.   onpopstate 사용자가 세션 기록을 따라 이동했을 때 호출할 함수.   onredo 사용자가 되돌리기 변경 기록(undo transaction history)에서 다시 이후로 이동했을 때 호출할 함수.   onresize 문서의 크기가 바뀔 때 호출할 함수.   onstorage 저장 영역이 변경되었을 때 호출할 함수.   onundo 사용자가 되돌리기 변경 기록(undo transaction history)에서 이전으로 이동했을 때 호출할 함수.   onunload 문서를 처분(unload) 중일 때 호출할 함수.    주의사항  한 문서에 하나의 body 태그만 존재 가능  출처  body: 문서 본문 요소 - HTML: Hypertext Markup Language | MDN  "
+            }
+    
+        ,
+            {
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 클립보드에 복사하기",
                 "section": "post",
@@ -34,7 +54,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
@@ -44,7 +64,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/git-gitignore/",
                 "title": "git - gitignore",
                 "section": "post",
@@ -54,7 +74,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
@@ -64,17 +84,17 @@
     
         ,
             {
-                "id": 6,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "블로그 전체의 인덱스\n언어(Language)  [[javascript]]  운영체제(OS)  [[mac]]  도구(Tool)  [[git]]  "
+                "body": "블로그 전체의 인덱스\n마크업(Markup)  [[html]]  언어(Language)  [[javascript]]  운영체제(OS)  [[mac]]  도구(Tool)  [[git]]  "
             }
     
         ,
             {
-                "id": 7,
+                "id": 9,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "나는 누구이며 여기는 어디인가",
                 "section": "",

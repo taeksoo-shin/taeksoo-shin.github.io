@@ -14,6 +14,14 @@
 		<atom:link href="/tags/javascript/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>html</title>
+			<link>https://coder-shin.github.io/post/html/</link>
+			<pubDate>Tue, 22 Mar 2022 07:25:20 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/html/</guid>
+			<description>html</description>
+		</item>
+      	
+		<item>
 			<title>mac - 원화 표시(₩)를 백쿼트(`)로 변경하기</title>
 			<link>https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link>
 			<pubDate>Mon, 21 Mar 2022 13:06:16 +0900</pubDate>
@@ -27,6 +35,14 @@
 			<pubDate>Mon, 21 Mar 2022 13:02:39 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/mac/</guid>
 			<description>mac</description>
+		</item>
+      	
+		<item>
+			<title>html - body 태그</title>
+			<link>https://coder-shin.github.io/post/html-tag-body/</link>
+			<pubDate>Fri, 11 Mar 2022 01:57:33 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/html-tag-body/</guid>
+			<description>body 태그에 관하여</description>
 		</item>
       	
 		<item>
