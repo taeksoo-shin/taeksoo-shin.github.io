@@ -5,6 +5,16 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/javascript-if/",
+                "title": "javascript - if",
+                "section": "post",
+                "date" : "2022.04.02",
+                "body": "자바스크립트의 if 사용법\n기본 사용법 if만 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition) {  statement } if 구문의 condition이 참일 경우 statement문을 실행한다.\n아래의 예시를 통해 확인해보자.\n입력 받은 값이 숫자인지 판별하는 로직을 if만으로 작성한 예시\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); }  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (!isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } 하지만 굳이 isNaN과 !isNaN을 따로 검사하기 보다는\nif와 else와 같이 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition) {  statement1 } [else {  statement2 }] if 구문의 condition이 참일 경우 statement1을 실행한다. 만약 else문이 존재하고 if 구문의 condition이 거짓일 경우 statement2를 실행한다.\n아래의 예시를 통해 확인해보자.\n입력 받은 값이 숫자인지 판별하는 로직을 if와 else를 사용해서 작성한 예시\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); } else {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } if와 else if와 else와 같이 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition1)  statement1 else if (condition2)  statement2 else if (condition3)  statement3 ... else  statementN if 구문의 condition1이 참일 경우 statement1을 실행한다. condition1가 참이 아닌 경우 condition2를 확인, condition2가 참인 경우 statement2를 실행, condition2가 참이 아닌 경우 condition3를 확인, condition3가 참인 경우 statement3를 실행, \u0026hellip;, 마지막 else if문 까지 확인을 한 뒤 모두 참이 아닌 경우는 else 문의 statementN을 실행한다.\n아래의 예시를 통해 확인해보자.\n생성한 난수의 속한 범위를 출력하는 로직을 if, else if와 else를 사용해서 작성한 예시\n// Math.random은 난수를 생성하는 함수 const randomNumber = Math.floor(Math.random() * 100);  if (randomNumber \u0026lt; 5) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 10) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 이상 이거나 10 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 15) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 10 이상 이거나 15 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 20) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 15 이상 이거나 20 미만입니다.\u0026#34;); }  ... } else {  console.log(\u0026#34;랜덤으로 생성된 숫자는 95 이상 이거나 100 미만입니다.\u0026#34;); } 출처  자바스크립트 개론 if\u0026hellip;else - JavaScript | MDN  "
+            }
+    
+        ,
+            {
+                "id": 1,
                 "href": "https://coder-shin.github.io/post/html/",
                 "title": "html",
                 "section": "post",
@@ -14,7 +24,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
                 "title": "mac - 원화 표시(₩)를 백쿼트(`)로 변경하기",
                 "section": "post",
@@ -24,7 +34,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/mac/",
                 "title": "mac",
                 "section": "post",
@@ -34,7 +44,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/html-tag-body/",
                 "title": "html - body 태그",
                 "section": "post",
@@ -44,7 +54,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 클립보드에 복사하기",
                 "section": "post",
@@ -54,7 +64,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
@@ -64,7 +74,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/git-gitignore/",
                 "title": "git - gitignore",
                 "section": "post",
@@ -74,7 +84,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
@@ -84,7 +94,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -94,7 +104,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 10,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "나는 누구이며 여기는 어디인가",
                 "section": "",

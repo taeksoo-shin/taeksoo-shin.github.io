@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(/categories) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Tue, 22 Mar 2022 07:25:20 +0900</lastBuildDate>
+  		<lastBuildDate>Sat, 02 Apr 2022 11:38:47 +0900</lastBuildDate>
 		
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>javascript - if</title>
+			<link>https://coder-shin.github.io/post/javascript-if/</link>
+			<pubDate>Sat, 02 Apr 2022 11:38:47 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/javascript-if/</guid>
+			<description>실행할까? 말까?</description>
+		</item>
+      	
 		<item>
 			<title>html</title>
 			<link>https://coder-shin.github.io/post/html/</link>
