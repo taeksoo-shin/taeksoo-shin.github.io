@@ -45,7 +45,7 @@
 
 
 
-<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.88.1" />
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.96.0" />
   </head>
   <body>
     
@@ -160,43 +160,43 @@
 와일드카드 지정도 가능하므로 특정 폴더의 특정 파일을 제외하는 것도 가능하다.</p>
 <h3 id="특정-파일을-제외하기">특정 파일을 제외하기</h3>
 <p>.gitignore를 좋아하는 편집기 열고 대상을 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># file_name1.js인 모든 파일이 대상이 된다.</span>
-file_name1.js
-
-<span style="color:#75715e"># file_name2.js인 모든 파일이 대상이 된다.</span>
-file_name2.js
-</code></pre></div><h3 id="특정-경로에-있는-파일">특정 경로에 있는 파일</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># file_name1.js인 모든 파일이 대상이 된다.</span>
+</span></span><span style="display:flex;"><span>file_name1.js
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># file_name2.js인 모든 파일이 대상이 된다.</span>
+</span></span><span style="display:flex;"><span>file_name2.js
+</span></span></code></pre></div><h3 id="특정-경로에-있는-파일">특정 경로에 있는 파일</h3>
 <p>.gitignore를 좋아하는 편집기 열고 특정 경로에 있는 대상을 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># root에 존재하는 file_name1.js</span>
-/file_name1.js
-
-<span style="color:#75715e"># some_directory에 존재하는 file_name1</span>
-/some_directory/file_name1.js
-</code></pre></div><h3 id="특정-디렉터리에-있는-파일들-모두">특정 디렉터리에 있는 파일들 모두</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># root에 존재하는 file_name1.js</span>
+</span></span><span style="display:flex;"><span>/file_name1.js
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># some_directory에 존재하는 file_name1</span>
+</span></span><span style="display:flex;"><span>/some_directory/file_name1.js
+</span></span></code></pre></div><h3 id="특정-디렉터리에-있는-파일들-모두">특정 디렉터리에 있는 파일들 모두</h3>
 <p>.gitignore를 좋아하는 편집기 열고 특정 경로를 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 대표적인 gitignore 대상으로 이처럼 지정하면 node_modules 디렉터리에 있는</span>
-<span style="color:#75715e"># 모든 파일이 제외된다.</span>
-node_modules/
-</code></pre></div><h3 id="특정-확장자를-지정">특정 확장자를 지정</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 대표적인 gitignore 대상으로 이처럼 지정하면 node_modules 디렉터리에 있는</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 모든 파일이 제외된다.</span>
+</span></span><span style="display:flex;"><span>node_modules/
+</span></span></code></pre></div><h3 id="특정-확장자를-지정">특정 확장자를 지정</h3>
 <p>.gitignore를 좋아하는 편집기 열고 *.{파일명}을 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># .cache로 끝나는 모든 파일이 대상이 된다.</span>
-*.cache
-
-<span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
-*.temp
-</code></pre></div><h3 id="예외-지정">예외 지정</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># .cache로 끝나는 모든 파일이 대상이 된다.</span>
+</span></span><span style="display:flex;"><span>*.cache
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
+</span></span><span style="display:flex;"><span>*.temp
+</span></span></code></pre></div><h3 id="예외-지정">예외 지정</h3>
 <p>.gitignore를 좋아하는 편집기 열고 !{파일명} 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
-*.temp
-
-<span style="color:#75715e"># 단 hello.temp는 예외로 git위에서 관리한다.</span>
-!hello.temp
-</code></pre></div><h3 id="주석-사용해서-설명-추가하기">주석 사용해서 설명 추가하기</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># .temp로 끝나는 모든 파일이 대상이 된다.</span>
+</span></span><span style="display:flex;"><span>*.temp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 단 hello.temp는 예외로 git위에서 관리한다.</span>
+</span></span><span style="display:flex;"><span>!hello.temp
+</span></span></code></pre></div><h3 id="주석-사용해서-설명-추가하기">주석 사용해서 설명 추가하기</h3>
 <p>.gitignore를 좋아하는 편집기 열고 &lsquo;#{주석내용}&rsquo; 작성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 나의 소중한 vim 설정입니다.</span>
-<span style="color:#75715e"># 누구에게도 공개하고 싶지 않습니다.</span>
-.lvimrc
-</code></pre></div><h2 id="트러블-슈팅">트러블 슈팅</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 나의 소중한 vim 설정입니다.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 누구에게도 공개하고 싶지 않습니다.</span>
+</span></span><span style="display:flex;"><span>.lvimrc
+</span></span></code></pre></div><h2 id="트러블-슈팅">트러블 슈팅</h2>
 <h3 id="기존에-관리하고-있던-대상이-gitignore-적용을-받지-않는-경우">기존에 관리하고 있던 대상이 .gitignore 적용을 받지 않는 경우</h3>
 <p>아래와 같은 상황이 있을 수 있다.</p>
 <ul>
@@ -206,15 +206,15 @@ node_modules/
 <p>위와 같은 상황을 인식한 뒤 gitignore에 추가를 한 뒤에 확인을 해보면
 여전히 git에서 관리를 하고 있다. 원인은 git의 캐시가 문제다.
 해결 하기 위해서는아래와 같은 대응이 필요로 한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># cache를 삭제</span>
-git rm -r --cached .
-
-<span style="color:#75715e"># gitignore의 대상 이외의 파일을 stage에 올려준다.</span>
-git add .
-
-<span style="color:#75715e"># message로 gitignore 적용 등을 넣어주자</span>
-git commit
-</code></pre></div><h2 id="출처">출처</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># cache를 삭제</span>
+</span></span><span style="display:flex;"><span>git rm -r --cached .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># gitignore의 대상 이외의 파일을 stage에 올려준다.</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># message로 gitignore 적용 등을 넣어주자</span>
+</span></span><span style="display:flex;"><span>git commit
+</span></span></code></pre></div><h2 id="출처">출처</h2>
 <ul>
 <li>bok: pro git</li>
 </ul>
