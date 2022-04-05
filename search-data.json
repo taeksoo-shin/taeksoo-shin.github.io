@@ -5,16 +5,26 @@
         
             {
                 "id": 0,
-                "href": "https://coder-shin.github.io/post/javascript-if/",
-                "title": "javascript - if",
+                "href": "https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/",
+                "title": "javascript - 함수 실행 시간 측정하기",
                 "section": "post",
-                "date" : "2022.04.02",
-                "body": "자바스크립트의 if 사용법\n기본 사용법 if만 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition) {  statement } if 구문의 condition이 참일 경우 statement문을 실행한다.\n아래의 예시를 통해 확인해보자.\n입력 받은 값이 숫자인지 판별하는 로직을 if만으로 작성한 예시\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); }  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (!isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } 하지만 굳이 isNaN과 !isNaN을 따로 검사하기 보다는\nif와 else와 같이 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition) {  statement1 } [else {  statement2 }] if 구문의 condition이 참일 경우 statement1을 실행한다. 만약 else문이 존재하고 if 구문의 condition이 거짓일 경우 statement2를 실행한다.\n아래의 예시를 통해 확인해보자.\n입력 받은 값이 숫자인지 판별하는 로직을 if와 else를 사용해서 작성한 예시\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); } else {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } if와 else if와 else와 같이 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition1)  statement1 else if (condition2)  statement2 else if (condition3)  statement3 ... else  statementN if 구문의 condition1이 참일 경우 statement1을 실행한다. condition1가 참이 아닌 경우 condition2를 확인, condition2가 참인 경우 statement2를 실행, condition2가 참이 아닌 경우 condition3를 확인, condition3가 참인 경우 statement3를 실행, \u0026hellip;, 마지막 else if문 까지 확인을 한 뒤 모두 참이 아닌 경우는 else 문의 statementN을 실행한다.\n아래의 예시를 통해 확인해보자.\n생성한 난수의 속한 범위를 출력하는 로직을 if, else if와 else를 사용해서 작성한 예시\n// Math.random은 난수를 생성하는 함수 const randomNumber = Math.floor(Math.random() * 100);  if (randomNumber \u0026lt; 5) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 10) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 이상 이거나 10 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 15) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 10 이상 이거나 15 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 20) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 15 이상 이거나 20 미만입니다.\u0026#34;); }  ... } else {  console.log(\u0026#34;랜덤으로 생성된 숫자는 95 이상 이거나 100 미만입니다.\u0026#34;); } 출처  자바스크립트 개론 if\u0026hellip;else - JavaScript | MDN  "
+                "date" : "2022.04.05",
+                "body": "프론트의 로직이 점점 비대해져 점점 느려지는 차디찬 현실을 알고 있었지만 그 현실에서 눈을 돌리고 로컬에서 실행하는 로직은 빠르다고 자기암시를 하며 나날을 보내던 코더 신씨.\n어느 날 고객이 \u0026ldquo;마치 당신처럼 점점 느려지는 것 같군요. 빨리 해결하세요. 이 코딩밖에 모르는 놈아\u0026quot;라는 비난을 들었지만 실제로 느리고, 코딩 밖에 재주가 없는 코더 신씨는 너무나도 맞는 말이라 아무런 생각도 들지 않았지만, 빠르게 일을 처리해야 한다는 압박감에 숨이 턱턱 막혔다.\n빠르게 처리하지 않으면 오늘은 집에 못 돌아 간다는 생각 방대한 코드 덩어리에서 어느 부분이 얼마나 느린지 알아볼 필요가 있었다. 이와 같은 상황에서 열어 볼 문서는 바로 이 문서. 잘 찾아오셨다. 바로 알아보도록 하자.\nDate 객체의 getTime method를 이용하여 측정 Date 객체의 getTime()는 표준시에 따라 지정된 날짜의 시간에 해당하는 숫자 값을 반환하는 method이다. 이를 이용해서 시작 시각과 끝난 시간의 차를 구하면 함수의 실행 시간을 측정할 수 있다. 아래의 예시를 보자.\n예시) Date 객체의 getTime() method를 이용하여 함수의 실행 시간을 측정\nconst startTime = new Date().getTime();  const sumArray = (numArr) =\u0026gt; {  return numArr.reduce((acc, cur) =\u0026gt; acc + cur, 0); }  const numArr = [...Array(10000).keys()];  sumArray(numArr);  const endTime = new Date().getTime();  const executeTime = endTime - startTime; console.log(`sumArray : ${executeTime}`); // sumArray : 2 자바를 사용할 때도 사용할 수 있는 방법으로, 어느 언어를 사용하든 사용할 수 있는 방법이다. 단 자바스크립트에서는 더욱 편리하게 하는 방법이 있으므로 알아보도록 하자.\nconsole.time(), console.timeEnd()를 이용하여 측정 console.time(), console.timeEnd()는 두 개의 함수가 한 쌍으로 동작하는 함수로 console.time(), console.timeEnd()의 각 괄호 안에 같은 string을 넣어줘야만 한다. 설명이 빈약하지만, 아래의 예시를 보면 바로 이해할 수 있다.\n예시) console.time(), console.timeEnd()를 사용해 함수의 실행 시간을 측정\nconsole.time(\u0026#39;sumArray\u0026#39;);  const sumArray = (numArr) =\u0026gt; {  return numArr.reduce((acc, cur) =\u0026gt; acc + cur, 0); }  const numArr = [...Array(10000).keys()];  console.timeEnd(\u0026#39;sumArray\u0026#39;); // sumArray: 1.305ms 위의 Date의 getTime() 함수를 사용하는 방법보다 훨씬 깔끔하고 편리하게 사용할 수 있으므로 애용하도록 하자.\n결론 어디서 느려지는지 알았으니 지금의 3배속이 되도록 리팩토링을 해서 고객의 사랑을 듬뿍 받도록 하자.\n출처  과거 읽었던 자바 책 (어디서 나왔는지 잘 모르겠다.) 회사 선배의 지혜  "
             }
     
         ,
             {
                 "id": 1,
+                "href": "https://coder-shin.github.io/post/javascript-if/",
+                "title": "javascript - if",
+                "section": "post",
+                "date" : "2022.04.02",
+                "body": "개발자의 if문은 격투가의 정권 찌르기와 같다. 가장 기초적인 움직임으로써 초보 개발자와 고수 개발자의 차이는 if문을 얼마나 잘 사용하는가에 따라 갈린다고 볼 수 있다.\n이 문서에서는 if문의 기본 사용법부터 시작해서 응용 사용법까지 정리해두었다. 세상의 모든 사장님들에게 정권 찌르기를 멋지게 찌를 수 있는 그 날 까지 if문을 갈고 닦아 보도록하자.\n기본 사용법  대검의 고수는 발도와 납도보면 알 수 있다.\n\u0026ndash; 몬스터 헌터 중독자 코더 신씨 if를 사용하는 방법 기본적인 구문은 아래와 같다.\nif (condition) {  statement } if 구문의 condition이 참일 경우 statement문을 실행한다.\n아래의 예시를 통해 확인해보자.\n예시) 입력 받은 값이 숫자인지 판별하는 로직\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); }  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (!isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } 하지만 위의 로직은 isNaN과 !isNaN을 따로 두 번 검사하기 때문에 비효율적이다.\n보다는 isNaN을 한번만 검사 후 isNaN이 참인 경우 statement을 그렇지 않은 경우 다른 statement를 실행하는 것이 효율적이다. 아래의 예시를 확인해보자.\nif와 else와 같이 사용하는 방법  검과 총, 어느 것을 선택할지 망설이기 보다는 건랜스를 들어라.\n\u0026ndash; 몬스터 헌터 중독자 코더 신씨 기본적인 구문은 아래와 같다.\nif (condition) {  statement1 } else {  statement2 } if 구문의 condition이 참일 경우 statement1을 실행한다. 그렇지 않은 경우 statement2를 실행한다.\n아래의 예시를 통해 확인해보자.\n예시) 입력 받은 값이 숫자인지 판별하는 로직\nconst inputNumber = Number(prompt(\u0026#34;숫자를 입력하세요.\u0026#34;));  // isNaN는 입력 받은 값이 NaN인지 검사하는 함수 if (isNaN(inputNumber)) {  console.log(\u0026#34;숫자를 입력하세요.\u0026#34;); } else {  console.log(\u0026#34;숫자를 입력하셨습니다.\u0026#34;); } 만약 입력 받은 숫자의 범위를 판별하고 싶은 경우는 위의 방법만으로는 충분하지 않다. 이 경우는 아래의 예시를 확인해보자.\nif와 else if와 else와 같이 사용하는 방법  이거 누가 else if를 이렇게나 많이 만들었어? 어라 왜 git log에 내 이름이?\n\u0026ndash; 현실을 부정하고 싶은 코더 신씨 기본적인 구문은 아래와 같다.\nif (condition1)  statement1 else if (condition2)  statement2 else if (condition3)  statement3 ... else  statementN if 구문의 condition1이 참일 경우 statement1을 실행한다. condition1가 참이 아닌 경우 condition2를 확인, condition2가 참인 경우 statement2를 실행, condition2가 참이 아닌 경우 condition3를 확인, condition3가 참인 경우 statement3를 실행, \u0026hellip;, 마지막 else if문 까지 확인을 한 뒤 모두 참이 아닌 경우는 else 문의 statementN을 실행한다.\n아래의 예시를 통해 확인해보자.\n생성한 난수의 속한 범위를 출력하는 로직을 if, else if와 else를 사용해서 작성한 예시\n// Math.random은 난수를 생성하는 함수 const randomNumber = Math.floor(Math.random() * 100);  if (randomNumber \u0026lt; 5) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 10) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 5 이상 이거나 10 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 15) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 10 이상 이거나 15 미만입니다.\u0026#34;); } else if (randomNumber \u0026lt; 20) {  console.log(\u0026#34;랜덤으로 생성된 숫자는 15 이상 이거나 20 미만입니다.\u0026#34;); }  ... } else {  console.log(\u0026#34;랜덤으로 생성된 숫자는 95 이상 이거나 100 미만입니다.\u0026#34;); } 응용 사용법 출처  자바스크립트 개론 if\u0026hellip;else - JavaScript | MDN  "
+            }
+    
+        ,
+            {
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/html/",
                 "title": "html",
                 "section": "post",
@@ -24,7 +34,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
                 "title": "mac - 원화 표시(₩)를 백쿼트(`)로 변경하기",
                 "section": "post",
@@ -34,7 +44,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/mac/",
                 "title": "mac",
                 "section": "post",
@@ -44,7 +54,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/html-tag-body/",
                 "title": "html - body 태그",
                 "section": "post",
@@ -54,7 +64,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 클립보드에 복사하기",
                 "section": "post",
@@ -64,17 +74,17 @@
     
         ,
             {
-                "id": 6,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "아무거나 다 할 수 있는 마법의 언어 javascript에 대한 인덱스\n기본 사용법(Basic usage)  [[javascript-if]]  하는 법(How to)  [[javascript-클립보드에 복사하기]]  "
+                "body": "아무거나 다 할 수 있는 마법의 언어 javascript에 대한 인덱스\n기본 사용법(Basic usage)  [[javascript-함수 실행 시간 측정하기]] [[javascript-if]]  하는 법(How to)  [[javascript-클립보드에 복사하기]]  "
             }
     
         ,
             {
-                "id": 7,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/git-gitignore/",
                 "title": "git - gitignore",
                 "section": "post",
@@ -84,7 +94,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
@@ -94,7 +104,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -104,7 +114,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 11,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "나는 누구이며 여기는 어디인가",
                 "section": "",

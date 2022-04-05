@@ -14,6 +14,14 @@
 		<atom:link href="/categories/git/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>javascript - 함수 실행 시간 측정하기</title>
+			<link>https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+			<pubDate>Tue, 05 Apr 2022 18:01:38 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+			<description>느려! 너가 때리고 있는건 잔상이다.</description>
+		</item>
+      	
+		<item>
 			<title>javascript - if</title>
 			<link>https://coder-shin.github.io/post/javascript-if/</link>
 			<pubDate>Sat, 02 Apr 2022 11:38:47 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 05 Mar 2022 13:28:42 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/git/</guid>
 			<description>인덱스 - git</description>
-		</item>
-      	
-		<item>
-			<title>index</title>
-			<link>https://coder-shin.github.io/post/home/</link>
-			<pubDate>Sat, 05 Mar 2022 13:26:58 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/home/</guid>
-			<description>인덱스 - 블로그 전체</description>
 		</item>
       	
 	</channel>
