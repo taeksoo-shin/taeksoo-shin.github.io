@@ -5,6 +5,26 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/bootstrap-pointer-cursor%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/",
+                "title": "bootstrap - pointer cursor를 설정하는 방법",
+                "section": "post",
+                "date" : "2022.04.06",
+                "body": "bootstrap을 사용하고 있음에도 불구하고 잔뜩 CSS를 직접 수정하는 무지성 코딩을 하던 코더 신씨, 그의 무서운 선배는 오늘도 코더 신씨의 코드를 보며 한숨을 내쉬었다.\n\u0026ldquo;CSS로 직접 cursor: pointer를 지정하는 짓 좀 그만해라. bootstrapper는 bootstrapper 답게 bootstrap 안에서 해결하도록 해!\u0026rdquo;\n난 분명 프론트로 취직했는데 bootstrapper 취급받는 차디찬 현실에 눈물을 흘리며, CSS를 만지지 않고 cursor를 pointer로 변경하는 방법을 찾고 있는 코더 신씨, 잘 찾아왔다. 그런 당신을 위해 준비한 문서다.\nrole=\u0026ldquo;button\u0026quot;을 지정해서 hover시 cursor의 모양을 pointer로 변경하기 bootstrap 버전 4에서 추가되었다고 하는데 (확인 필요) role=\u0026ldquo;button\u0026rdquo; 속성을 지정하면 hover시에 cursor 모양이 pointer로 변경된다고 한다. 예시를 확인해보자.\n예시) role=\u0026ldquo;button\u0026quot;을 지정해서 hover시 cursor의 모양을 pointer로 변경\n\u0026lt;span role=\u0026#34;button\u0026#34;\u0026gt;  hover시에 cursor가 pointer가 되는 span입니다. \u0026lt;/span\u0026gt; CSS 상에서 cursor: pointer를 직접 지정해서 hover시 cursor의 모양을 pointer로 변경하기 혹시 bootstrap 버전이 낮아서 위의 대응이 되지 않는 사람들을 위해 준비한 코너. 바로 예시를 확인해보자.\n예시) CSS 상에서 cursor: pointer를 직접 지정해서 hover시 cursor의 모양을 pointer로 변경\n\u0026lt;span class=\u0026#34;cursor-pointer-on-hover\u0026#34;\u0026gt;  hover시에 cursor가 pointer가 되는 span입니다. \u0026lt;/span\u0026gt; .cursor-pointer-on-hover:hover {  cursor: pointer; } 결론 만약 bootstrap 버전이 2일 경우는 눈물을 흘리며 cursor: pointer를 직접 CSS로 지정하도록 하자. 아니면 버전을 올리도록 하자. 만약 버전을 올리는 것을 허락하지 않는다면 회사에 사표를 내고 bootstrapper에서 탈출할 계획을 세우도록 하자.\nPS. bootstrapper라는 말은 아마 없는 말일 겁니다. 존재한다면 그 말을 없애주세요.\n출처  twitter bootstrap - CSS class for pointer cursor - Stack Overflow  "
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/bootstrap/",
+                "title": "bootstrap",
+                "section": "post",
+                "date" : "2022.04.06",
+                "body": "회사에는 디자이너가 없고 디자인이라고는 터미널 색, vim의 색, emcas의 색 변경 밖에 해보지 못한 나를 위해 준비된 프레임워크\n하는 법(How to)  [[bootstrap-pointer cursor를 설정하는 방법]]{pointer cursor를 설정하는 방법}  "
+            }
+    
+        ,
+            {
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/html-tag-head/",
                 "title": "html - head 태그",
                 "section": "post",
@@ -14,7 +34,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 함수 실행 시간 측정하기",
                 "section": "post",
@@ -24,7 +44,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/javascript-if/",
                 "title": "javascript - if",
                 "section": "post",
@@ -34,7 +54,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/html/",
                 "title": "html",
                 "section": "post",
@@ -44,7 +64,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
                 "title": "mac - 원화 표시(₩)를 백쿼트(`)로 변경하기",
                 "section": "post",
@@ -54,7 +74,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/mac/",
                 "title": "mac",
                 "section": "post",
@@ -64,7 +84,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/html-tag-body/",
                 "title": "html - body 태그",
                 "section": "post",
@@ -74,17 +94,17 @@
     
         ,
             {
-                "id": 7,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/html-tag-html/",
                 "title": "html - html 태그",
                 "section": "post",
                 "date" : "2022.03.11",
-                "body": "html 태그는 문서의 루트(최상단 요소)를 나타낸다.\n사용할 수 있는 속성    속성 속성 값 예시 설명     lang ko, ja, en 현재 문서가 무슨 언어로 구성되어 있는지 설명   xmlns http://www.w3.org/1999/xhtml xml 구문 분석기를 이용할 경우는 필수    내부에 넣을 수 있는 태그    태그 간단 설명     [[html tag-head]]{head} 문서 정보(메타데이터)를 담는다   [[html tag-body]]{body} 문서의 내용을 나타냄    주의사항  모든 다른 요소는 의 요소의 후손이어야 한다. lang은 스크린 리더가 음성 표현에 사용할 언어를 선택할 때 도움이 되기 때문에 반드시 사용하도록 하자  출처  : HTML 문서 / 루트 요소 - HTML: Hypertext Markup Language | MDN  "
+                "body": "html 태그는 문서의 루트(최상단 요소)를 나타내기 위해 사용하는 태그.\n사용할 수 있는 속성    속성 속성 값 예시 설명     lang ko, ja, en 현재 문서가 무슨 언어로 구성되어 있는지 설명   xmlns http://www.w3.org/1999/xhtml xml 구문 분석기를 이용할 경우는 필수    내부에 넣을 수 있는 태그    태그 간단 설명     [[html tag-head]]{head} 문서 정보(메타데이터)를 담는다   [[html tag-body]]{body} 문서의 내용을 나타냄    주의사항  모든 다른 요소는 의 요소의 후손이어야 한다. lang은 스크린 리더가 음성 표현에 사용할 언어를 선택할 때 도움이 되기 때문에 반드시 사용하도록 하자  출처  : HTML 문서 / 루트 요소 - HTML: Hypertext Markup Language | MDN  "
             }
     
         ,
             {
-                "id": 8,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/javascript-%ED%81%B4%EB%A6%BD%EB%B3%B4%EB%93%9C%EC%97%90-%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0/",
                 "title": "javascript - 클립보드에 복사하기",
                 "section": "post",
@@ -94,7 +114,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
@@ -104,7 +124,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/git-gitignore/",
                 "title": "git - gitignore",
                 "section": "post",
@@ -114,7 +134,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/git/",
                 "title": "git",
                 "section": "post",
@@ -124,17 +144,17 @@
     
         ,
             {
-                "id": 12,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
                 "date" : "2022.03.05",
-                "body": "블로그 전체의 인덱스\n마크업(Markup)  [[html]]  언어(Language)  [[javascript]]  운영체제(OS)  [[mac]]  도구(Tool)  [[git]]  "
+                "body": "블로그 전체의 인덱스\n마크업(Markup)  [[html]]  언어(Language)  [[javascript]]  프레임워크(Framework)  [[bootstrap]]  운영체제(OS)  [[mac]]  도구(Tool)  [[git]]  "
             }
     
         ,
             {
-                "id": 13,
+                "id": 15,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "나는 누구이며 여기는 어디인가",
                 "section": "",

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>bootstrap - pointer cursor를 설정하는 방법</title>
+<meta name="description" 
+      content=""
+>
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://coder-shin.github.io/index.xml"
+  title="코더 신씨"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="bootstrap - pointer cursor를 설정하는 방법"/>
+<meta name="twitter:description" content="어이 신입! bootstrapper라면 최대한 css를 건들지 말라고!"/>
+
+
+
+<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
+
+
+
+
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.96.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://coder-shin.github.io/" class="nav-logo">
+        <img
+          src="https://coder-shin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              bootstrap - pointer cursor를 설정하는 방법
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    2022-04-07
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://coder-shin.github.io//categories/bootstrap/">bootstrap</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>bootstrap을 사용하고 있음에도 불구하고 잔뜩 CSS를 직접 수정하는 무지성 코딩을
+하던 코더 신씨, 그의 무서운 선배는 오늘도 코더 신씨의 코드를 보며 한숨을 내쉬었다.</p>
+<p>&ldquo;CSS로 직접 cursor: pointer를 지정하는 짓 좀 그만해라. bootstrapper는 bootstrapper
+답게 bootstrap 안에서 해결하도록 해!&rdquo;</p>
+<p>난 분명 프론트로 취직했는데 bootstrapper 취급받는 차디찬 현실에 눈물을 흘리며,
+CSS를 만지지 않고 cursor를 pointer로 변경하는 방법을 찾고 있는 코더 신씨,
+잘 찾아왔다. 그런 당신을 위해 준비한 문서다.</p>
+<h2 id="rolebutton을-지정해서-hover시-cursor의-모양을-pointer로-변경하기">role=&ldquo;button&quot;을 지정해서 hover시 cursor의 모양을 pointer로 변경하기</h2>
+<p>bootstrap 버전 4에서 추가되었다고 하는데 (확인 필요) role=&ldquo;button&rdquo; 속성을 지정하면
+hover시에 cursor 모양이 pointer로 변경된다고 한다. 예시를 확인해보자.</p>
+<p>예시) role=&ldquo;button&quot;을 지정해서 hover시 cursor의 모양을 pointer로 변경</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  hover시에 cursor가 pointer가 되는 span입니다.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span></code></pre></div><h2 id="css-상에서-cursor-pointer를-직접-지정해서-hover시-cursor의-모양을-pointer로-변경하기">CSS 상에서 cursor: pointer를 직접 지정해서 hover시 cursor의 모양을 pointer로 변경하기</h2>
+<p>혹시 bootstrap 버전이 낮아서 위의 대응이 되지 않는 사람들을 위해 준비한 코너.
+바로 예시를 확인해보자.</p>
+<p>예시) CSS 상에서 cursor: pointer를 직접 지정해서 hover시 cursor의 모양을 pointer로 변경</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cursor-pointer-on-hover&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  hover시에 cursor가 pointer가 되는 span입니다.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">cursor-pointer-on-hover</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="결론">결론</h2>
+<p>만약 bootstrap 버전이 2일 경우는 눈물을 흘리며 cursor: pointer를 직접 CSS로
+지정하도록 하자. 아니면 버전을 올리도록 하자. 만약 버전을 올리는 것을 허락하지
+않는다면 회사에 사표를 내고 bootstrapper에서 탈출할 계획을 세우도록 하자.</p>
+<p>PS. bootstrapper라는 말은 아마 없는 말일 겁니다. 존재한다면 그 말을 없애주세요.</p>
+<h2 id="출처">출처</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/47269189/css-class-for-pointer-cursor">twitter bootstrap - CSS class for pointer cursor - Stack Overflow</a></li>
+</ul>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://coder-shin.github.io//tags/bootstrap/">bootstrap</a
+            >&nbsp;
+          
+            <a href="https://coder-shin.github.io//tags/how-to/">how to</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+      <script src="https://utteranc.es/client.js"
+        repo="coder-shin/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/coder-shin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://coder-shin.github.io/about">Shin</a>
+      &nbsp;&copy;
+      2022
+      
+        &nbsp;/&nbsp;
+        <a href="https://coder-shin.github.io/">코더 신씨</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
