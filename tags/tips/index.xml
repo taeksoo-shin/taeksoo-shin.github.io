@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>tips on 코더 신씨</title>
-		<link>https://coder-shin.github.io/tags/tips/</link>
+		<link>https://newteak.github.io/tags/tips/</link>
 		<description>Recent content in tips </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
@@ -15,81 +15,81 @@
 		
 		<item>
 			<title>bootstrap - pointer cursor를 설정하는 방법</title>
-			<link>https://coder-shin.github.io/post/bootstrap-pointer-cursor%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</link>
+			<link>https://newteak.github.io/post/bootstrap-pointer-cursor%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</link>
 			<pubDate>Wed, 06 Apr 2022 17:49:42 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/bootstrap-pointer-cursor%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid>
+			<guid>https://newteak.github.io/post/bootstrap-pointer-cursor%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid>
 			<description>어이 신입! bootstrapper라면 최대한 css를 건들지 말라고!</description>
 		</item>
       	
 		<item>
 			<title>bootstrap</title>
-			<link>https://coder-shin.github.io/post/bootstrap/</link>
+			<link>https://newteak.github.io/post/bootstrap/</link>
 			<pubDate>Wed, 06 Apr 2022 17:46:14 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/bootstrap/</guid>
+			<guid>https://newteak.github.io/post/bootstrap/</guid>
 			<description>왜 디자이너는 우리 회사에 안 들어 오는 건가?</description>
 		</item>
       	
 		<item>
 			<title>html - head 태그</title>
-			<link>https://coder-shin.github.io/post/html-tag-head/</link>
+			<link>https://newteak.github.io/post/html-tag-head/</link>
 			<pubDate>Wed, 06 Apr 2022 07:01:24 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/html-tag-head/</guid>
+			<guid>https://newteak.github.io/post/html-tag-head/</guid>
 			<description>head 태그에 관하여</description>
 		</item>
       	
 		<item>
 			<title>javascript - 함수 실행 시간 측정하기</title>
-			<link>https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+			<link>https://newteak.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</link>
 			<pubDate>Tue, 05 Apr 2022 18:01:38 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+			<guid>https://newteak.github.io/post/javascript-%ED%95%A8%EC%88%98-%EC%8B%A4%ED%96%89-%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
 			<description>느려! 너가 때리고 있는건 잔상이다.</description>
 		</item>
       	
 		<item>
 			<title>javascript - if</title>
-			<link>https://coder-shin.github.io/post/javascript-if/</link>
+			<link>https://newteak.github.io/post/javascript-if/</link>
 			<pubDate>Sat, 02 Apr 2022 11:38:47 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/javascript-if/</guid>
+			<guid>https://newteak.github.io/post/javascript-if/</guid>
 			<description>실행할까? 말까?</description>
 		</item>
       	
 		<item>
 			<title>html</title>
-			<link>https://coder-shin.github.io/post/html/</link>
+			<link>https://newteak.github.io/post/html/</link>
 			<pubDate>Tue, 22 Mar 2022 07:25:20 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/html/</guid>
+			<guid>https://newteak.github.io/post/html/</guid>
 			<description>html</description>
 		</item>
       	
 		<item>
 			<title>mac - 원화 표시(₩)를 백쿼트(`)로 변경하기</title>
-			<link>https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link>
+			<link>https://newteak.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</link>
 			<pubDate>Mon, 21 Mar 2022 13:06:16 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid>
+			<guid>https://newteak.github.io/post/mac-%EC%9B%90%ED%99%94-%ED%91%9C%EC%8B%9C%EB%A5%BC-%EB%B0%B1%EC%BF%BC%ED%8A%B8%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/</guid>
 			<description>전 한번도 원화 표시(₩)를 사용해 본적이 없다고요</description>
 		</item>
       	
 		<item>
 			<title>mac</title>
-			<link>https://coder-shin.github.io/post/mac/</link>
+			<link>https://newteak.github.io/post/mac/</link>
 			<pubDate>Mon, 21 Mar 2022 13:02:39 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/mac/</guid>
+			<guid>https://newteak.github.io/post/mac/</guid>
 			<description>mac</description>
 		</item>
       	
 		<item>
 			<title>html - body 태그</title>
-			<link>https://coder-shin.github.io/post/html-tag-body/</link>
+			<link>https://newteak.github.io/post/html-tag-body/</link>
 			<pubDate>Fri, 11 Mar 2022 01:57:33 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/html-tag-body/</guid>
+			<guid>https://newteak.github.io/post/html-tag-body/</guid>
 			<description>body 태그에 관하여</description>
 		</item>
       	
 		<item>
 			<title>html - html 태그</title>
-			<link>https://coder-shin.github.io/post/html-tag-html/</link>
+			<link>https://newteak.github.io/post/html-tag-html/</link>
 			<pubDate>Fri, 11 Mar 2022 01:16:17 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/html-tag-html/</guid>
+			<guid>https://newteak.github.io/post/html-tag-html/</guid>
 			<description>html 태그에 관해서</description>
 		</item>
       	
