@@ -1,0 +1,12 @@
+<script>
+    
+    const searchDataURL = '\/search-data.json'
+
+    fetch(searchDataURL)
+        .then(pages => pages.json())
+        .then(pages => {
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage.href;
+        });
+</script>
+
