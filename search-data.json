@@ -5,6 +5,26 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/javascript/",
+                "title": "javascript",
+                "section": "post",
+                "date" : "2023.02.14",
+                "body": "개요 (아마) 아무거나 다 할 수 있을 것 같은 javascript(이하 js)에 대한 문서\n상세 요약 다른 사람이 코딩을 잘하는지 확인하고 싶을 떄는 다른 사람이 작성한 JS 코드를 훔쳐보자. "
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/home/",
+                "title": "index",
+                "section": "post",
+                "date" : "2023.02.14",
+                "body": "개요 블로그 안내소\n상세 프로그래밍 언어 [[javascript]] 요약 특별히 할 말은 없다! "
+            }
+    
+        ,
+            {
+                "id": 2,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
