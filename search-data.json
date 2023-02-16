@@ -5,26 +5,46 @@
         
             {
                 "id": 0,
-                "href": "https://coder-shin.github.io/post/javascript/",
-                "title": "javascript",
+                "href": "https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/",
+                "title": "자료구조(data structure)",
                 "section": "post",
-                "date" : "2023.02.14",
-                "body": "개요 (아마) 아무거나 다 할 수 있을 것 같은 javascript(이하 js)에 대한 문서\n상세 요약 다른 사람이 코딩을 잘하는지 확인하고 싶을 떄는 다른 사람이 작성한 JS 코드를 훔쳐보자. "
+                "date" : "2023.02.15",
+                "body": "세 줄 요약 자료구조를 잘 사용 할 수 있다면 적절한 장소와 적절한 상황에 알맞는 옷을 입은 것과도 같다. 개요 자료구조는 자료를 효율적으로 관리, 접근, 수정을 하기 위하여 자료를 구조적으로 표현하는 방식이다\n상세 팁 "
             }
     
         ,
             {
                 "id": 1,
-                "href": "https://coder-shin.github.io/post/home/",
-                "title": "index",
+                "href": "https://coder-shin.github.io/post/book/",
+                "title": "book",
                 "section": "post",
-                "date" : "2023.02.14",
-                "body": "개요 블로그 안내소\n상세 프로그래밍 언어 [[javascript]] 요약 특별히 할 말은 없다! "
+                "date" : "2023.02.15",
+                "body": "ACTIVE SQL 더 쉽게, 더 깊게[1판]\n분야: 데이터베이스 작가: 미크 저 / 김완섭 역 별점: 회독: 0 읽을 타이밍: 객체지향 사고 프로세스[5판]\n분야: 설계 작가: 맷 와이스펠드 저 / 박진수 역 별점: 회독: 0 읽을 타이밍: C언어로 쉽게 풀어쓴 자료구조[3판]\n분야: 자료구조 + 알고리즘 작가: 천인국, 공용해, 하상호 별점: 회독: 0 읽을 타이밍: 사용자를 생각하게 하지 마![2판]\n분야: UI/UX 작가: 스티브 크룩 저 / 이미령 역 별점: 회독: 0 읽을 타이밍: 이것이 자바다[1판]\n분야: 프로그래밍 언어 작가: 신용권 별점: 회독: 0 읽을 타이밍: TODO 설계 데이터베이스 프로그래밍 언어 UI/UX 마크업 언어 도구 사고(思考) 네트워크 OS 컴퓨터 자료구조 알고리즘 DONE 프로젝트가 서쪽으로 간 까닭은\n분야: 사고 작가: 다수의 작가 별점: 4 회독: 2 읽을 타이밍: 프로젝트가 잘못된 방향으로 가고 있는 것 같은 경우 함께 자라기\n분야: 사고 작가: 김창준 별점: 5 회독: 3 읽을 타이밍: 개인적으로 노력해서 기술적으로 상당한 레벨까지 도달했다고 느꼈을 때 대체 뭐가 문제야\n분야: 사고 작가: 제럴드 M. 와인버그 별점: 5 회독: 3 읽을 타이밍: 새로운 방식으로 생각하고 싶은 경우 그로스 해킹\n분야: 사고 작가: 라이언 홀리데이 별점: 4 회독: 2 읽을 타이밍: 어떠한 서비스를 만들고 싶은 경우 "
             }
     
         ,
             {
                 "id": 2,
+                "href": "https://coder-shin.github.io/post/javascript/",
+                "title": "javascript",
+                "section": "post",
+                "date" : "2023.02.14",
+                "body": "요약 다른 사람이 코딩을 잘하는지 확인하고 싶을 떄는 다른 사람이 작성한 JS 코드를 훔쳐보자. 개요 (아마) 아무거나 다 할 수 있을 것 같은 javascript(이하 js)에 대한 문서\n상세 팁 "
+            }
+    
+        ,
+            {
+                "id": 3,
+                "href": "https://coder-shin.github.io/post/home/",
+                "title": "index",
+                "section": "post",
+                "date" : "2023.02.14",
+                "body": "프로그래밍 언어(programming language) [[javascript]] 컴퓨터 기초(computer basic) [[자료구조(data structure)]] [[각종 용어 모음]] 정보 [[book]] [[각종 사이트 모음]] "
+            }
+    
+        ,
+            {
+                "id": 4,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",

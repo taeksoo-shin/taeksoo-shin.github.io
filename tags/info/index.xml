@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>코더 신씨 on 코더 신씨</title>
-		<link>https://coder-shin.github.io/</link>
-		<description>Recent content in 코더 신씨 </description>
+		<title>info on 코더 신씨</title>
+		<link>https://coder-shin.github.io/tags/info/</link>
+		<description>Recent content in info </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>ko</language>
 		
-		<managingEditor>Page(&#34;코더 신씨&#34;) (Shin)</managingEditor>
+		<managingEditor>Page(/tags/info) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Wed, 15 Feb 2023 23:37:31 +0900</lastBuildDate>
+  		<lastBuildDate>Wed, 15 Feb 2023 23:24:05 +0900</lastBuildDate>
 		
-		<atom:link href="/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/info/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>자료구조(data structure)</title>

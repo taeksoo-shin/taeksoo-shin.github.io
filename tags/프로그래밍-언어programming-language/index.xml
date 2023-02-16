@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>코더 신씨 on 코더 신씨</title>
-		<link>https://coder-shin.github.io/</link>
-		<description>Recent content in 코더 신씨 </description>
+		<title>프로그래밍 언어(programming language) on 코더 신씨</title>
+		<link>https://coder-shin.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4programming-language/</link>
+		<description>Recent content in 프로그래밍 언어(programming language) </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>ko</language>
 		
-		<managingEditor>Page(&#34;코더 신씨&#34;) (Shin)</managingEditor>
+		<managingEditor>Page(/tags/프로그래밍-언어programming-language) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Wed, 15 Feb 2023 23:37:31 +0900</lastBuildDate>
+  		<lastBuildDate>Tue, 14 Feb 2023 21:50:43 +0900</lastBuildDate>
 		
-		<atom:link href="/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4programming-language/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>자료구조(data structure)</title>
