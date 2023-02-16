@@ -5,76 +5,126 @@
         
             {
                 "id": 0,
-                "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
-                "title": "반복문(loop)",
+                "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
+                "title": "수행시간 측정방법",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "세 줄 요약 개요 상세 용어 설명 나의 해석 반복문은 특정 횟수(for), 특정 조건(while)을 달성할 때 까지 \u0026lsquo;반복\u0026rsquo;하는 문(statement)이다.\n각종 설명 [[조건문(conditional statement)]]{조건문}에는 if문, switch문이 있고 반복문에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. [[조건문(conditional statement)]]{조건문}일 경우는 정상 흐름으로 돌아오지만, 반복문일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 "
+                "body": "각 언어별 사용법 [[c]]{C} clock() 함수 이용하기 #include \u0026lt;time.h\u0026gt; start = clock(); // 여기에 수행시간을 측정하고 싶은 코드 삽입 stop = clock(); double duration = (dobule)(stop - start) / CLOCKS_PER_SEC; clock() 함수는 호출 프로세스에 의하여 사용된 CPU 시간을 계산하는 함수 clock() 함수의 반환 단위는 CLOCKS_PER_SEC\ntime() 함수 이용하기 #include \u0026lt;time.h\u0026gt; start = time(NULL); // 여기에 수행시간을 측정하고 싶은 코드 삽입 stop = time(NULL); double duration = (double) difftime(stop, start); time() 함수는 초 단위로 측정된 시간을 반환한다.\n팁 수행시간 측정시 고려해야하는 것들 알고리즘을 비교할 때에는 동일한 하드웨어를 사용해서 측정을 해야한다. 비효율적인 프로그램이라도 슈퍼컴퓨터에서는 빠르게 동작 할 수 있으므로 동일한 하드웨러를 사용해야한다. 사용한 소프트 웨어를 동일하게 해야한다. 동일한 알고리즘이라도 C언어에서 작동하는 알고리즘과 Python에서 작동하는 알고리즘의 속도가 다를 수 있기 때문에 동일한 소프트웨어를 사용해야한다. 실험에 사용한 데이터와 다른 데이터를 사용한 경우 완전히 다른 결과가 나올 수 있다. 입력 자료의 개수가 적을 때에는 효율적이지만 개수가 많아지면 비효율적인 알고리즘이 있기 때문에 자료마다 다른 결과가 나온다. 이와 반대로 입력 자료가 적을 때에는 비효율적이지만 일정 개수를 넘으면 효율적으로 작동하는 알고리즘도 존재하기 때문이다. "
             }
     
         ,
             {
                 "id": 1,
-                "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
-                "title": "조건문(conditional statement)",
+                "href": "https://coder-shin.github.io/post/c/",
+                "title": "c",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "세 줄 요약 개요 상세 용어 설명 나의 해석 조건문은 \u0026lsquo;조건\u0026rsquo;에 따라 코드의 실행을 취사선택 할 수 있게 해주는 문(statement)이다.\n각종 설명 조건문에는 if문, switch문이 있고 [[반복문(loop)]]{반복문}에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. 조건문일 경우는 정상 흐름으로 돌아오지만, [[반복문(loop)]]{반복문}일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 "
+                "body": "팁 [[수행시간 측정방법]] "
             }
     
         ,
             {
                 "id": 2,
-                "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
-                "title": "제어문(control flow statement)",
+                "href": "https://coder-shin.github.io/post/database/",
+                "title": "database",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "세 줄 요약 개요 상세 용어 설명 나의 해석 제어문은 코드의 흐름을 \u0026lsquo;제어\u0026rsquo;하는 문(statement)이다.\n각종 설명 실행 흐름을 개발자가 원하는 방향으로 바꿀 수 있도록 해주는 것이 흐름 제어문이다. 흐름 제어문을 간단히 제어문이라고 한다. \u0026hellip; 제어문의 종류는 [[조건문(conditional statement)]]{조건문}과 [[반복문(loop)]]{반복문}이 있는데, (이것이 자바다[1판] p.108)\n팁 "
+                "body": "팁 "
             }
     
         ,
             {
                 "id": 3,
-                "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
-                "title": "리터럴(literal)",
+                "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
+                "title": "반복문(loop)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "세 줄 요약 개요 상세 용어 설명 나의 해석 각종 설명 소스 코드 내에서 직접 입력된 값을 리터럴이라고 부른다. (이것이 자바다[1판]) p.32\n팁 "
+                "body": "용어 설명 나의 해석 반복문은 특정 횟수(for), 특정 조건(while)을 달성할 때 까지 \u0026lsquo;반복\u0026rsquo;하는 문(statement)이다.\n각종 설명 [[조건문(conditional statement)]]{조건문}에는 if문, switch문이 있고 반복문에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. [[조건문(conditional statement)]]{조건문}일 경우는 정상 흐름으로 돌아오지만, 반복문일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 "
             }
     
         ,
             {
                 "id": 4,
-                "href": "https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/",
-                "title": "변수(variable)",
+                "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
+                "title": "조건문(conditional statement)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "세 줄 요약 변수의 이름은 반드시 명확하게 작성해라. 개요 하루에 반을 변수의 이름으로 고민하는 모든 이들을 위해 준비한 변수에 대한 문서\n상세 [[java]]{Java} 특징 변수는 선언된 블록 내에서만 사용이 가능하다. 변수는 문(statement)을 통해 만들어진 블록 내에서만 사용이 가능하다.\nif(true) { int insideBlockVariable = 10; System.out.println(insideBlockVariable); // 참조 가능 } System.out.println(insideBlockVariable); // 참조 불가! 명명법 필수 규칙 규칙 예 첫 번째 글자는 문자이거나 \u0026lsquo;$\u0026rsquo;, \u0026lsquo;_\u0026rsquo; 이어야 하고 숫자로 시작할 수 없다. 가능: person, $likeJquery, _underscore\n불가능: 123hello, #likeInsta 영어 대소문자가 구분 camelCase와camelcase는 다른 변수로 취급된다. 예약어는 변수명으로 사용 할 수 없다. 불가능: while, if 등 관례 규칙 예 첫 문자는 영어 소문자로 시작하며 camel case를 사용한다. hello, helloMyFriend 상수 변수의 이름은 pascal case를 사용해서 작성한다. final MAX_VALUE 용어 설명 나의 해석 변수란 하나의 값을 저장하기 위한 이름을 가진 공간.\n각종 설명 프로그램은 작업을 처라하는 과정에서 필요에 따라 데이터를 메모리에 저장한다. 이때 변수를 사용하는데, 변수(varialbe)는 값을 저장할 수 있는 메모리의 공간을 의미한다. \u0026hellip; 변수에는 복수 개의 값을 저장할 수 없고, 하나의 값만 저장할 수 있다.\n변수란, 하나의 값을 저장할 수 있는 메모리 공간이다.\n(이것이 자바다[1판]) p.30\n팁 "
+                "body": "용어 설명 나의 해석 조건문은 \u0026lsquo;조건\u0026rsquo;에 따라 코드의 실행을 취사선택 할 수 있게 해주는 문(statement)이다.\n각종 설명 조건문에는 if문, switch문이 있고 [[반복문(loop)]]{반복문}에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. 조건문일 경우는 정상 흐름으로 돌아오지만, [[반복문(loop)]]{반복문}일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 "
             }
     
         ,
             {
                 "id": 5,
-                "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/",
-                "title": "각종 용어 모음",
+                "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
+                "title": "제어문(control flow statement)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "프로그래밍 관련 언어 [[변수(variable)]] [[상수(constant)]] [[리터럴(literal)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[반복문(loop)]]\n"
+                "body": "용어 설명 나의 해석 제어문은 코드의 흐름을 \u0026lsquo;제어\u0026rsquo;하는 문(statement)이다.\n각종 설명 실행 흐름을 개발자가 원하는 방향으로 바꿀 수 있도록 해주는 것이 흐름 제어문이다. 흐름 제어문을 간단히 제어문이라고 한다. \u0026hellip; 제어문의 종류는 [[조건문(conditional statement)]]{조건문}과 [[반복문(loop)]]{반복문}이 있는데, (이것이 자바다[1판] p.108)\n팁 "
             }
     
         ,
             {
                 "id": 6,
-                "href": "https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/",
-                "title": "자료구조(data structure)",
+                "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
+                "title": "상수(constant)",
                 "section": "post",
-                "date" : "2023.02.15",
-                "body": "세 줄 요약 자료구조를 잘 사용 할 수 있다면 적절한 장소와 적절한 상황에 알맞는 옷을 입은 것과도 같다. 개요 자료구조는 자료를 효율적으로 관리, 접근, 수정을 하기 위하여 자료를 구조적으로 표현하는 방식이다\n상세 팁 "
+                "date" : "2023.02.16",
+                "body": "용어 설명 나의 해석 상수는 변하지 않는 변수이다.\n각종 설명 프로그램에서는 상수를 \u0026ldquo;값을 한 번 저장하면 변경할 수 없는 변수\u0026quot;로 정의 (이것이 자바다[1판]) p.32\n팁 변하지 않는 상수라고? 이게 무슨 헛소리인가. 변수 vs 상수 왠만한 상황에서는 상수를 사용하는 것을 추천한다.\n변수는 언제 변해도 상관이 없기 때문에 첫줄에 사용한 변수와 그 다음 줄의 변수가 100% 동일하다고 보증을 할 수 없다. 그렇기 때문에 코드를 읽을 때에는 정신 집중해서 읽어야만 한다. (물론 코드를 읽을 때는 집중을 해야하지만) 하지만 상수의 경우 첫줄의 상수와 10000번째 줄의 상수가 100% 동일하다고 보장을 할 수 있기 때문에 편안하게 코드를 읽을 수 있다. 고로 될 수 있는한 상수를 사용해서 코드를 작성하는 것이 가독성적인 측면에서 유리하다.\n"
             }
     
         ,
             {
                 "id": 7,
+                "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
+                "title": "리터럴(literal)",
+                "section": "post",
+                "date" : "2023.02.16",
+                "body": "용어 설명 나의 해석 각종 설명 소스 코드 내에서 직접 입력된 값을 리터럴이라고 부른다. (이것이 자바다[1판]) p.32\n팁 "
+            }
+    
+        ,
+            {
+                "id": 8,
+                "href": "https://coder-shin.github.io/post/java/",
+                "title": "java",
+                "section": "post",
+                "date" : "2023.02.16",
+                "body": "팁 "
+            }
+    
+        ,
+            {
+                "id": 9,
+                "href": "https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/",
+                "title": "변수(variable)",
+                "section": "post",
+                "date" : "2023.02.16",
+                "body": "언어별 비교 [[java]]{Java} 변수는 선언된 블록 내에서만 사용이 가능하다. 변수는 문(statement)을 통해 만들어진 블록 내에서만 사용이 가능하다.\nif(true) { int insideBlockVariable = 10; System.out.println(insideBlockVariable); // 참조 가능 } System.out.println(insideBlockVariable); // 참조 불가 =\u0026gt; 에러 발생 명명법 필수 규칙 규칙 예 첫 번째 글자는 문자이거나 \u0026lsquo;$\u0026rsquo;, \u0026lsquo;_\u0026rsquo; 이어야 하고 숫자로 시작할 수 없다. 가능: person, $likeJquery, _underscore\n불가능: 123hello, #likeInsta 영어 대소문자가 구분 camelCase와camelcase는 다른 변수로 취급된다. 예약어는 변수명으로 사용 할 수 없다. 불가능: while, if 등 관례 규칙 예 첫 문자는 영어 소문자로 시작하며 camel case를 사용한다. hello, helloMyFriend 상수 변수의 이름은 pascal case를 사용해서 작성한다. final MAX_VALUE 용어 설명 나의 해석 변수란 하나의 값을 저장하기 위한 이름을 가진 공간.\n각종 설명 프로그램은 작업을 처라하는 과정에서 필요에 따라 데이터를 메모리에 저장한다. 이때 변수를 사용하는데, 변수(varialbe)는 값을 저장할 수 있는 메모리의 공간을 의미한다. \u0026hellip; 변수에는 복수 개의 값을 저장할 수 없고, 하나의 값만 저장할 수 있다.\n변수란, 하나의 값을 저장할 수 있는 메모리 공간이다.\n(이것이 자바다[1판]) p.30\n팁 명백한 이름의 변수명을 작성 할 것 오늘 내가 작성한 코드는, 다음 날 보면 새롭고, 그 다음 날 보면 무슨 의도로 이렇게 작성했는지 알 수 가 없다. 그렇기 때문에 적어도 명백한 이름의 변수명을 작성해 두어서 다른 사람들에게 코드의 의도를 전하고 더 나아가 미래의 나에게 무슨 의도로 이런 코드를 작성했는지 의도를 전하도록 하자.\n줄임말은 최대한 피해라 예를들어 iLoveHer 이라는 변수명을 ilh라고 줄였다고 가정하자. 코드를 읽는 다른 사람은 iLoveHer인지 iLeaveHere인지 Interscholastic League of Honolulu인지 분간은 할 수가 없다. 좋은 텍스트 에디터나 IDE 있다면, 코드 자동 완성이 됨으로 타이핑이 귀찮다고 줄임말을 쓰는 행위는 삼가하도록 하자. 만약 좋은 텍스트 에디터를 모르겠다면 VSC, vim, Emacs 중에 골라 쓰자. (난 vim이나 emacs 쓸거다.)\n관례적으로 줄임말을 사용하는 변수들은 줄임말을 사용 할 것 예를 들어 for문 안에 사용하는 i와 같이 관례적으로 줄임말을 사용하는 경우는 줄임말을 사용할 것. for문 안의 i를 index라고 표현해도 가독성이 올라가지 않는다. 오히려 내가 i가 index의 약자 인지도 모르는 바보 취급 당하는 것 같아서 자존심이 상하기도 한다.\n"
+            }
+    
+        ,
+            {
+                "id": 10,
+                "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/",
+                "title": "각종 용어 모음",
+                "section": "post",
+                "date" : "2023.02.16",
+                "body": "프로그래밍 관련 언어 [[변수(variable)]] [[상수(constant)]] [[리터럴(literal)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[반복문(loop)]] "
+            }
+    
+        ,
+            {
+                "id": 11,
+                "href": "https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/",
+                "title": "자료구조(data structure)",
+                "section": "post",
+                "date" : "2023.02.15",
+                "body": "팁 "
+            }
+    
+        ,
+            {
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/book/",
                 "title": "book",
                 "section": "post",
@@ -84,27 +134,27 @@
     
         ,
             {
-                "id": 8,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
                 "date" : "2023.02.14",
-                "body": "요약 다른 사람이 코딩을 잘하는지 확인하고 싶을 떄는 다른 사람이 작성한 JS 코드를 훔쳐보자. 개요 (아마) 아무거나 다 할 수 있을 것 같은 javascript(이하 js)에 대한 문서\n상세 팁 "
+                "body": "팁 "
             }
     
         ,
             {
-                "id": 9,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
                 "date" : "2023.02.14",
-                "body": "프로그래밍 언어(programming language) [[javascript]]{JavaScript} [[java]]{Java} 데이터베이스(database) [[database]]{Database} 컴퓨터 기초(computer basic) [[자료구조(data structure)]] [[각종 용어 모음]] 정보 [[book]] [[각종 사이트 모음]] "
+                "body": "프로그래밍 언어(programming language) [[javascript]]{JavaScript} [[java]]{Java} [[c]]{C} 데이터베이스(database) [[database]]{Database} 컴퓨터 기초(computer basic) [[자료구조(data structure)]] [[각종 용어 모음]] 정보 [[book]] [[각종 사이트 모음]] "
             }
     
         ,
             {
-                "id": 10,
+                "id": 15,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",

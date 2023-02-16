@@ -126,7 +126,7 @@
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-02-16
+    2023-02-17
   </span>
 
   
@@ -151,26 +151,16 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h2 id="세-줄-요약">세 줄 요약</h2>
-<ol>
-<li>변수의 이름은</li>
-<li>반드시</li>
-<li>명확하게 작성해라.</li>
-</ol>
-<h2 id="개요">개요</h2>
-<p>하루에 반을 변수의 이름으로 고민하는 모든 이들을 위해 준비한
-변수에 대한 문서</p>
-<h2 id="상세">상세</h2>
+  <h2 id="언어별-비교">언어별 비교</h2>
 <h3 id="javajava">[[java]]{Java}</h3>
-<h4 id="특징">특징</h4>
-<h5 id="변수는-선언된-블록-내에서만-사용이-가능하다">변수는 선언된 블록 내에서만 사용이 가능하다.</h5>
+<h4 id="변수는-선언된-블록-내에서만-사용이-가능하다">변수는 선언된 블록 내에서만 사용이 가능하다.</h4>
 <p>변수는 문(statement)을 통해 만들어진 블록 내에서만 사용이 가능하다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> insideBlockVariable <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>insideBlockVariable<span style="color:#f92672">);</span> <span style="color:#75715e">// 참조 가능
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>insideBlockVariable<span style="color:#f92672">);</span> <span style="color:#75715e">// 참조 불가!
+</span></span><span style="display:flex;"><span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>insideBlockVariable<span style="color:#f92672">);</span> <span style="color:#75715e">// 참조 불가 =&gt; 에러 발생
 </span></span></span></code></pre></div><h4 id="명명법">명명법</h4>
 <h5 id="필수-규칙">필수 규칙</h5>
 <table>
@@ -214,10 +204,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="용어-설명">용어 설명</h3>
-<h4 id="나의-해석">나의 해석</h4>
+<h2 id="용어-설명">용어 설명</h2>
+<h3 id="나의-해석">나의 해석</h3>
 <p>변수란 하나의 값을 저장하기 위한 이름을 가진 공간.</p>
-<h4 id="각종-설명">각종 설명</h4>
+<h3 id="각종-설명">각종 설명</h3>
 <blockquote>
 <p>프로그램은 작업을 처라하는 과정에서 필요에 따라 데이터를 메모리에 저장한다.
 이때 변수를 사용하는데, 변수(varialbe)는 값을 저장할 수 있는 메모리의 공간을
@@ -227,6 +217,22 @@
 <p><em>(이것이 자바다[1판]) p.30</em></p>
 </blockquote>
 <h2 id="팁">팁</h2>
+<h3 id="명백한-이름의-변수명을-작성-할-것">명백한 이름의 변수명을 작성 할 것</h3>
+<p>오늘 내가 작성한 코드는, 다음 날 보면 새롭고, 그 다음 날 보면 무슨 의도로
+이렇게 작성했는지 알 수 가 없다. 그렇기 때문에 적어도 명백한 이름의 변수명을
+작성해 두어서 다른 사람들에게 코드의 의도를 전하고 더 나아가 미래의 나에게
+무슨 의도로 이런 코드를 작성했는지 의도를 전하도록 하자.</p>
+<h3 id="줄임말은-최대한-피해라">줄임말은 최대한 피해라</h3>
+<p>예를들어 iLoveHer 이라는 변수명을 ilh라고 줄였다고 가정하자. 코드를 읽는 다른
+사람은 iLoveHer인지 iLeaveHere인지 Interscholastic League of Honolulu인지
+분간은 할 수가 없다. 좋은 텍스트 에디터나 IDE 있다면, 코드 자동 완성이 됨으로
+타이핑이 귀찮다고 줄임말을 쓰는 행위는 삼가하도록 하자. 만약 좋은 텍스트
+에디터를 모르겠다면 VSC, vim, Emacs 중에 골라 쓰자. (난 vim이나 emacs 쓸거다.)</p>
+<h3 id="관례적으로-줄임말을-사용하는-변수들은-줄임말을-사용-할-것">관례적으로 줄임말을 사용하는 변수들은 줄임말을 사용 할 것</h3>
+<p>예를 들어 for문 안에 사용하는 i와 같이 관례적으로 줄임말을 사용하는 경우는
+줄임말을 사용할 것. for문 안의 i를 index라고 표현해도 가독성이 올라가지 않는다.
+오히려 내가 i가 index의 약자 인지도 모르는 바보 취급 당하는 것 같아서 자존심이
+상하기도 한다.</p>
 
 
 

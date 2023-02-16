@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>수행시간 측정방법</title>
+<meta name="description" 
+      content=""
+>
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://coder-shin.github.io/index.xml"
+  title="코더 신씨"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="수행시간 측정방법"/>
+<meta name="twitter:description" content="누구보다 빠르게 난 남들과는 다르게"/>
+
+
+
+<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
+
+
+
+
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.110.0">
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://coder-shin.github.io/" class="nav-logo">
+        <img
+          src="https://coder-shin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/random" id="Random"
+              ><em class="fas fa-random fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              수행시간 측정방법
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    2023-02-17
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://coder-shin.github.io//categories/%ED%8C%81tips/">팁(tips)</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <h2 id="각-언어별-사용법">각 언어별 사용법</h2>
+<h3 id="cc">[[c]]{C}</h3>
+<h4 id="clock-함수-이용하기">clock() 함수 이용하기</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;time.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">=</span> <span style="color:#a6e22e">clock</span>();
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 여기에 수행시간을 측정하고 싶은 코드 삽입
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>stop <span style="color:#f92672">=</span> <span style="color:#a6e22e">clock</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">double</span> duration <span style="color:#f92672">=</span> (dobule)(stop <span style="color:#f92672">-</span> start) <span style="color:#f92672">/</span> CLOCKS_PER_SEC;
+</span></span></code></pre></div><p>clock() 함수는 호출 프로세스에 의하여 사용된 CPU 시간을 계산하는 함수
+clock() 함수의 반환 단위는 CLOCKS_PER_SEC</p>
+<h4 id="time-함수-이용하기">time() 함수 이용하기</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;time.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>(NULL);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 여기에 수행시간을 측정하고 싶은 코드 삽입
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>stop <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>(NULL);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">double</span> duration <span style="color:#f92672">=</span> (<span style="color:#66d9ef">double</span>) <span style="color:#a6e22e">difftime</span>(stop, start);
+</span></span></code></pre></div><p>time() 함수는 초 단위로 측정된 시간을 반환한다.</p>
+<h2 id="팁">팁</h2>
+<h3 id="수행시간-측정시-고려해야하는-것들">수행시간 측정시 고려해야하는 것들</h3>
+<ol>
+<li>알고리즘을 비교할 때에는 동일한 하드웨어를 사용해서 측정을 해야한다.
+<ul>
+<li>비효율적인 프로그램이라도 슈퍼컴퓨터에서는 빠르게 동작 할 수 있으므로
+동일한 하드웨러를 사용해야한다.</li>
+</ul>
+</li>
+<li>사용한 소프트 웨어를 동일하게 해야한다.
+<ul>
+<li>동일한 알고리즘이라도 C언어에서 작동하는 알고리즘과 Python에서 작동하는
+알고리즘의 속도가 다를 수 있기 때문에 동일한 소프트웨어를 사용해야한다.</li>
+</ul>
+</li>
+<li>실험에 사용한 데이터와 다른 데이터를 사용한 경우 완전히 다른 결과가 나올 수
+있다.
+<ul>
+<li>입력 자료의 개수가 적을 때에는 효율적이지만 개수가 많아지면 비효율적인
+알고리즘이 있기 때문에 자료마다 다른 결과가 나온다.</li>
+<li>이와 반대로 입력 자료가 적을 때에는 비효율적이지만 일정 개수를 넘으면
+효율적으로 작동하는 알고리즘도 존재하기 때문이다.</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://coder-shin.github.io//tags/%ED%8C%81tips/">팁(tips)</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+      <script src="https://utteranc.es/client.js"
+        repo="coder-shin/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/coder-shin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://coder-shin.github.io/about">Shin</a>
+      &nbsp;&copy;
+      2023
+      
+        &nbsp;/&nbsp;
+        <a href="https://coder-shin.github.io/">코더 신씨</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

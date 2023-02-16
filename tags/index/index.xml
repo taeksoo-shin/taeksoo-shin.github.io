@@ -9,16 +9,40 @@
 		
 		<managingEditor>Page(/tags/index) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Thu, 16 Feb 2023 10:51:03 +0900</lastBuildDate>
+  		<lastBuildDate>Thu, 16 Feb 2023 23:38:39 +0900</lastBuildDate>
 		
 		<atom:link href="/tags/index/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>수행시간 측정방법</title>
+			<link>https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/</link>
+			<pubDate>Thu, 16 Feb 2023 23:41:02 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/</guid>
+			<description>누구보다 빠르게 난 남들과는 다르게</description>
+		</item>
+      	
+		<item>
+			<title>c</title>
+			<link>https://coder-shin.github.io/post/c/</link>
+			<pubDate>Thu, 16 Feb 2023 23:38:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/c/</guid>
+			<description>에끼 이놈! C언어를 모르고 프로그래머라고 할 수 있겠느냐?</description>
+		</item>
+      	
+		<item>
+			<title>database</title>
+			<link>https://coder-shin.github.io/post/database/</link>
+			<pubDate>Thu, 16 Feb 2023 19:38:41 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/database/</guid>
+			<description>database라고 이야기하면 왠지 똑똑해보인다.</description>
+		</item>
+      	
 		<item>
 			<title>반복문(loop)</title>
 			<link>https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/</link>
 			<pubDate>Thu, 16 Feb 2023 18:34:50 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/</guid>
-			<description>반복문(loop)</description>
+			<description>이것은 컴퓨터가 대신 해주는 ctrl-c ctrl-v</description>
 		</item>
       	
 		<item>
@@ -26,7 +50,7 @@
 			<link>https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/</link>
 			<pubDate>Thu, 16 Feb 2023 18:34:48 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/</guid>
-			<description>조건문(conditional statement)</description>
+			<description>누구야 if문 5겹으로 만든거!</description>
 		</item>
       	
 		<item>
@@ -38,6 +62,14 @@
 		</item>
       	
 		<item>
+			<title>상수(constant)</title>
+			<link>https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/</link>
+			<pubDate>Thu, 16 Feb 2023 17:23:18 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/</guid>
+			<description>유일하게 &amp;lsquo;절대&amp;rsquo;를 사용할 수 있는 것</description>
+		</item>
+      	
+		<item>
 			<title>리터럴(literal)</title>
 			<link>https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/</link>
 			<pubDate>Thu, 16 Feb 2023 17:19:52 +0900</pubDate>
@@ -46,51 +78,19 @@
 		</item>
       	
 		<item>
+			<title>java</title>
+			<link>https://coder-shin.github.io/post/java/</link>
+			<pubDate>Thu, 16 Feb 2023 17:07:02 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/java/</guid>
+			<description>회사는 혼자 돌아다니기엔 위험하단다. 자바를 가져가거라.</description>
+		</item>
+      	
+		<item>
 			<title>변수(variable)</title>
 			<link>https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/</link>
 			<pubDate>Thu, 16 Feb 2023 10:54:35 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/</guid>
 			<description>누구야 이 변수 이름 작성한거! 어..? 왜 내 이름이 적혀있지?</description>
-		</item>
-      	
-		<item>
-			<title>각종 용어 모음</title>
-			<link>https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/</link>
-			<pubDate>Thu, 16 Feb 2023 10:51:03 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/</guid>
-			<description>너의 이름은 치히로!</description>
-		</item>
-      	
-		<item>
-			<title>자료구조(data structure)</title>
-			<link>https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/</link>
-			<pubDate>Wed, 15 Feb 2023 23:37:31 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/</guid>
-			<description>가장 효율적으로 자료를 정리 해보자</description>
-		</item>
-      	
-		<item>
-			<title>각종 사이트 모음</title>
-			<link>https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/</link>
-			<pubDate>Wed, 15 Feb 2023 23:24:05 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/</guid>
-			<description>좋은 사이트 있으면 소개시켜줘~</description>
-		</item>
-      	
-		<item>
-			<title>book</title>
-			<link>https://coder-shin.github.io/post/book/</link>
-			<pubDate>Wed, 15 Feb 2023 19:57:52 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/book/</guid>
-			<description>책에도 볼 책이 있고 안 볼 책이 있다.</description>
-		</item>
-      	
-		<item>
-			<title>javascript</title>
-			<link>https://coder-shin.github.io/post/javascript/</link>
-			<pubDate>Tue, 14 Feb 2023 21:50:43 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/javascript/</guid>
-			<description>javascript</description>
 		</item>
       	
 	</channel>
