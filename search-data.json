@@ -5,6 +5,76 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
+                "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "navigator.userAgent를 이용하는 방법 navigator.userAgent는 user agent를 string으로 보관하고 있는 읽기 전용 property이다. 이를 이용해서 사용자가 pc에서 페이지를 열람하고 있는가, 스마트폰에서 페이지를 열람하고 있는가를 확인할 수 있다.\nconst isSmartPhone = (): boolean =\u0026gt; { return /Android|iPhone/i.test(navigator.userAgent); }; 간편하게 이용할 수 있는 반면 아래와 같은 단점이 있다.\n사용자가 navigator.userAgent를 위조가 가능하다. 호환성이 좋지 않다. (참고 - https://caniuse.com/mdn-api_navigator_useragentdata) 특히 호환성이 굉장히 좋지 않기 때문에 사용하기 전에 검토를 해볼 필요가 있다.\ndetectmobilebrowsers에서 제공하는 스크립트를 이용하는 방법. http://detectmobilebrowsers.com/ 는 페이지를 어떠한 환경에서 작동하고 있는지 감지 할 수 있는 스크립트를 제공하는 사이트이다.\n편하게 스크립트를 받아서 자신의 서비스에 넣어주면 편리하게 사용가능하다.\n단 몇몇 기기에서 작동이 되지 않는다는 제보도 있기 때문에 100% 신용은 금물이다.\n팁 되도록이면 페이지를 디바이스 별로 다르게 표현하기 보다는, 사이즈를 기준으로 해서 다르게 표현하는 것이 더욱 안전한 시스템을 만든다고 생각된다.\n"
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/data-type/",
+                "title": "데이터형(data type)",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "[[database]]{데이터베이스}에서의 데이터형 INTEGER형 정수를 넣기 위한 데이터형. 소수는 넣을 수 없다.\nCHAR형 CHARACTER(문자)의 약자.\n문자열을 넣기 위한 데이터형.\nCHAR(10), CHAR(1000)과 같이 괄호를 이용해서 열 안에 넣을 수 있는 문자열의 최대 길이를 지정 가능.\n고정 문자열이다. 고정 문자열에 관한 예를 들면, CHAR(10)을 지정한 열에 \u0026lsquo;hello\u0026rsquo;를 넣었다고 가정하자. 이때 열에는 \u0026lsquo;hello \u0026lsquo;(hello + 공백 5자)가 저장된다.\nVARCHAR형 VARING(가변) CHARACTER(문자)의 약자.\n문자열을 넣기 위한 데이터형.\n가변 문자열이다. 즉 CHAR형과 다르게 최대 길이보다 작은 공간을 공백으로 채우지 않는다.\nDATE형 날짜(년월일)를 저장하는 데이터형(날짜형)이다.\n"
+            }
+    
+        ,
+            {
+                "id": 2,
+                "href": "https://coder-shin.github.io/post/dcl/",
+                "title": "DCL",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "용어 설명 나의 해석 DCL(Data Control Language)은 데이터베이스에 관한 권한을 제어하는 SQL문이다.\nCOMMIT, ROLLBACK은 TCL(Transaction Control Language)이라고 분류하기도 한다.\n각종 설명 DCL(데이터 제어 언어)은 데이터베이스에서 처리한 변경 내용을 확정하거나 취소하기 위한 것이다. 또한, RDBMS 사용자에게 처리 권한을 부여하기도 한다.\n(SQL 더 쉽게 더 깊게 p.15)\n종류 COMMIT : 변경 내용 확정 ROLLBACK : 변경 내용 취소 GRANT : 권한 부여 REVOKE : 권한 제거\n"
+            }
+    
+        ,
+            {
+                "id": 3,
+                "href": "https://coder-shin.github.io/post/dml/",
+                "title": "DML",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "용어 설명 나의 해석 DML(Data Manipulation Language)은 테이블의 행을 조작하는 SQL문이다.\n특징으로는 WHERE문을 사용 할 수 있다.\n각종 설명 DML(데이터 조작 언어)은 테이블의 행을 검색하거나 변경하기 위한 것이다.\n(SQL 더 쉽게 더 깊게 p.15)\n종류 INSERT : 등록 SELECT : 조회 UPDATE : 갱신 DELETE : 삭제\n"
+            }
+    
+        ,
+            {
+                "id": 4,
+                "href": "https://coder-shin.github.io/post/ddl/",
+                "title": "DDL",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "용어 설명 나의 해석 DDL(Data Defintion Language)은 데이터베이스 및 테이블을 생성, 삭제 하기 위해 사용하는 SQL문이다.\n특징으로는 WHERE문을 사용 할 수 없다.\n각종 설명 DDL(데이터 정의 언어)은 데이터를 저장하는 데이터베이스 및 테이블을 생성 삭제하기 위한 것이다.\n(SQL 더 쉽게 더 깊게 p.15)\n간략 설명 CREATE : 생성 DROP : 삭제 ALTER : 변경\n상세 설명 CREATE CREATE문은 데이터베이스, 테이블을 작성할 때 사용하는 [[SQL]]문이다. 기본 구문은 아래와 같다.\n데이터베이스를 생성하는 CREATE DATABASE문\nCREATE DATABASE \u0026lt;데이터베이스명\u0026gt; 테이블을 생성하는 CREATE TABLE문\nCREATE TABLE \u0026lt;테이블\u0026gt; (\u0026lt;열명1\u0026gt; \u0026lt;데이터형\u0026gt; \u0026lt;열의 제약\u0026gt;, \u0026lt;열명2\u0026gt; \u0026lt;데이터형\u0026gt; \u0026lt;열의 제약\u0026gt;, \u0026lt;열명3\u0026gt; \u0026lt;데이터형\u0026gt; \u0026lt;열의 제약\u0026gt;, ... \u0026lt;테이블의 제약1\u0026gt;, \u0026lt;테이블의 제약2\u0026gt;, \u0026lt;테이블의 제약3\u0026gt;, ...); DROP DROP문은 데이터베이스\n"
+            }
+    
+        ,
+            {
+                "id": 5,
+                "href": "https://coder-shin.github.io/post/sql/",
+                "title": "SQL",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "SQL(Structured Query Language)란? 나의 해석 데이터베이스를 조작하기 위한 특정 도메인 언어.\n각종 설명 SQL(Structured Query Language)은 관계형 데이터베이스(이하, 데이터베이스)를 제어하기 위한 언어다.\n(SQL 더 쉽게 더 깊게 p.14)\nSQL문의 종류 SQL문의 종류는 세 가지로 분류한다.\n[[DDL]]{DDL(Data Defintion Language)} [[DML]]{DML(Data Manipulation Language)} [[DCL]]{DCL(Data Control Language)} 각각의 내용은 각가의 링크를 참조할 것.\n관련링크 [[DDL]]{DDL(Data Defintion Language)} [[DML]]{DML(Data Manipulation Language)} [[DCL]]{DCL(Data Control Language)} "
+            }
+    
+        ,
+            {
+                "id": 6,
+                "href": "https://coder-shin.github.io/post/dbms/",
+                "title": "DBMS",
+                "section": "post",
+                "date" : "2023.02.17",
+                "body": "DBMS란? 나의 해석 DBMS란 데이터베이스를 관리하는 컴퓨터 소프트웨어이다.\n각종 설명 [[database]]{데이터베이스}를 관리하는 컴퓨터 시스템을 데이터베이스 관리 시스템(Database Management System)이라 하고, 줄여서 DBMS라고도 한다.\n(SQL 더 쉽게 더 깊게 p.4)\nDBMS를 이용하는 이유 다수의 사람들과 데이터를 공유하기 쉽다. 대량의 데이터를 다루기 쉽다. 별도의 프로그래밍 기술이 필요하지 않다. 만일의 사고에 대응할 수 있다. 팁 데이터베이스랑 DBMS가 같은게 아닌가? 상호 교환적으로 사용되기도 하지만 명백하게 이야기하면 다르다. 아래의 인용문을 읽어보자.\n[[database]]{데이터베이스(DB)}와 DBMS는 자주 같은 의미로 사용되기도 한다. 이 책에서는 저장할 데이터 집합을 데이터베이스, 그것을 관리하는 시스템을 DBMS라고 구별한다.\n(SQL 더 쉽게 더 깊게 p.4)\n"
+            }
+    
+        ,
+            {
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -14,7 +84,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
@@ -24,17 +94,17 @@
     
         ,
             {
-                "id": 2,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/database/",
-                "title": "database",
+                "title": "데이터베이스(database)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "팁 "
+                "body": "데이터베이스란? 나의 해석 각종 설명 이런 정보를 데이터로 저장하고, 컴퓨터를 사용해서 효율적으로 접근할 수 있도록 가공한 것을 데이터베이스(Database) 또는 줄여서 DB라고 한다.\n(SQL 더 쉽게 더 깊게 p.4)\n명명 규칙 데이터베이스나 테이블, 열 등의 이름으로 사용할 수 있는 문자는 세 가지\n영문자 숫자 언더바(_) 이름의 첫 글자는 반드시 영문이어야 한다.\n이름은 중복해서 사용해서는 안 된다.\n관련 링크 [[DBMS]] [[SQL]] [[data type]]{데이터형} "
             }
     
         ,
             {
-                "id": 3,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
                 "title": "반복문(loop)",
                 "section": "post",
@@ -44,7 +114,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -54,7 +124,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -64,7 +134,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -74,7 +144,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -84,7 +154,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
@@ -94,7 +164,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -104,7 +174,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/",
                 "title": "각종 용어 모음",
                 "section": "post",
@@ -114,7 +184,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -124,7 +194,17 @@
     
         ,
             {
-                "id": 12,
+                "id": 19,
+                "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/",
+                "title": "각종 사이트 모음",
+                "section": "post",
+                "date" : "2023.02.15",
+                "body": "자료 검색 구글( https://www.google.com ) 유튜브( https://www.youtube.com ) "
+            }
+    
+        ,
+            {
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/book/",
                 "title": "book",
                 "section": "post",
@@ -134,17 +214,17 @@
     
         ,
             {
-                "id": 13,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
                 "date" : "2023.02.14",
-                "body": "팁 "
+                "body": "팁 [[javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기]] "
             }
     
         ,
             {
-                "id": 14,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -154,12 +234,12 @@
     
         ,
             {
-                "id": 15,
+                "id": 23,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
                 "date" : "0001.01.01",
-                "body": "Me 웹 개발자입니다. 하드웨어는 키보드에만 관심있습니다. 소프트웨어는 기본적으로 TUI를 선호합니다. 변하지 않는 지식을 배우기 위해 노력 중입니다. Skills 아래의 내용은 어디까지나 주관적인 판단입니다. Javascript =\u0026gt; 구글신 없이도 왠만한 질문은 다 대답할 수 있습니다. Java =\u0026gt; 구글신과 함께라면 잘 할 수 있습니다. SQL =\u0026gt; 구글신과 함께라도 모르는게 많습니다. Shell =\u0026gt; Shell은 나의 친구! Back-end =\u0026gt; 회사 사람들이 너무 잘해서, 오히려 모르는게 많습니다. Front-end =\u0026gt; 회사 사람들이 많이 질문해 주셔서, 여러 상황에 대응 가능합니다. Database =\u0026gt; 회사 사람들이 정말 너무 잘해서, 거의 모릅니다.(최근 공부 중 입니다.) UI/UX =\u0026gt; 회사 사람들 중 할 수 있는 사람이 없어서, 제가 공부 중 입니다. Blog 블로그의 모든 글은 WTFPL 라이선스 적용됩니다. 복사해서 다른 곳으로 옮기고 싶으면 마음껏 옮기세요. 틀린 내용이 있으면 지적 해주세요. "
+                "body": "Me 웹 어플리케이션 개발자입니다. 하드웨어는 키보드에만 관심있습니다. 소프트웨어는 기본적으로 TUI를 선호합니다. 변하지 않는 지식을 배우기 위해 노력 중입니다. Skills 아래의 내용은 어디까지나 주관적인 판단입니다. Javascript =\u0026gt; 구글신 없이도 왠만한 질문은 다 대답할 수 있습니다. Java =\u0026gt; 구글신과 함께라면 잘 할 수 있습니다. SQL =\u0026gt; 구글신과 함께라도 모르는게 많습니다. Shell =\u0026gt; Shell은 나의 친구! Back-end =\u0026gt; 회사 사람들이 너무 잘해서, 오히려 모르는게 많습니다. Front-end =\u0026gt; 회사 사람들이 많이 질문해 주셔서, 여러 상황에 대응 가능합니다. Database =\u0026gt; 회사 사람들이 정말 너무 잘해서, 거의 모릅니다.(최근 공부 중 입니다.) UI/UX =\u0026gt; 회사 사람들 중 할 수 있는 사람이 없어서, 제가 공부 중 입니다. Blog 블로그의 모든 글은 WTFPL 라이선스 적용됩니다. 복사해서 다른 곳으로 옮기고 싶으면 마음껏 옮기세요. 틀린 내용이 있으면 지적 해주세요. Experience 2023 프로젝트 관리용 웹 어플리케이션 개발(angular, spring) 2022 프로젝트 관리용 웹 어플리케이션 개발(angular, spring) 자사 웹 어플리케이션 개발**(vue, spring) 자사 웹 페이지 갱신(vue, spring) 채용 관련 웹 어플리케이션 보수 및 개발(spring) 2021 자사 웹 어플리케이션 개발**(vue, spring) 소규모 식당 페이지 작성(vue, go) 채용 관련 웹 어플리케이션 보수 및 개발(spring) 2020 대규모 프로젝트 개발(ruby on rails) 사내 교육 수료 2019 (12월) 첫 회사 입사 사내 교육 수료 "
             }
     
 ]

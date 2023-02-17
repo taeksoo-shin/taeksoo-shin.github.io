@@ -9,10 +9,66 @@
 		
 		<managingEditor>Page(/categories/데이터베이스database) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Thu, 16 Feb 2023 19:38:41 +0900</lastBuildDate>
+  		<lastBuildDate>Fri, 17 Feb 2023 10:50:00 +0900</lastBuildDate>
 		
 		<atom:link href="/categories/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4database/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기</title>
+			<link>https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/</link>
+			<pubDate>Fri, 17 Feb 2023 16:07:34 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/</guid>
+			<description>난 너가 무슨 디바이스를 이용해서 접속하고 있는지 알고있다.</description>
+		</item>
+      	
+		<item>
+			<title>데이터형(data type)</title>
+			<link>https://coder-shin.github.io/post/data-type/</link>
+			<pubDate>Fri, 17 Feb 2023 10:50:00 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/data-type/</guid>
+			<description>오버플로우의 마수랑 싸우고 싶지 않으면 적절한 데이터형을 지정해라</description>
+		</item>
+      	
+		<item>
+			<title>DCL</title>
+			<link>https://coder-shin.github.io/post/dcl/</link>
+			<pubDate>Fri, 17 Feb 2023 09:16:45 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/dcl/</guid>
+			<description>DCL(Data Control Language)</description>
+		</item>
+      	
+		<item>
+			<title>DML</title>
+			<link>https://coder-shin.github.io/post/dml/</link>
+			<pubDate>Fri, 17 Feb 2023 09:16:41 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/dml/</guid>
+			<description>DML(Data Manipulation Language)</description>
+		</item>
+      	
+		<item>
+			<title>DDL</title>
+			<link>https://coder-shin.github.io/post/ddl/</link>
+			<pubDate>Fri, 17 Feb 2023 09:16:32 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/ddl/</guid>
+			<description>DDL(Data Defintion Language)</description>
+		</item>
+      	
+		<item>
+			<title>SQL</title>
+			<link>https://coder-shin.github.io/post/sql/</link>
+			<pubDate>Fri, 17 Feb 2023 08:30:13 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/sql/</guid>
+			<description>SQL</description>
+		</item>
+      	
+		<item>
+			<title>DBMS</title>
+			<link>https://coder-shin.github.io/post/dbms/</link>
+			<pubDate>Fri, 17 Feb 2023 08:14:33 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/dbms/</guid>
+			<description>데이터베이스랑 같은 용어가 아니였나?</description>
+		</item>
+      	
 		<item>
 			<title>수행시간 측정방법</title>
 			<link>https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/</link>
@@ -30,67 +86,11 @@
 		</item>
       	
 		<item>
-			<title>database</title>
+			<title>데이터베이스(database)</title>
 			<link>https://coder-shin.github.io/post/database/</link>
 			<pubDate>Thu, 16 Feb 2023 19:38:41 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/database/</guid>
 			<description>database라고 이야기하면 왠지 똑똑해보인다.</description>
-		</item>
-      	
-		<item>
-			<title>반복문(loop)</title>
-			<link>https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/</link>
-			<pubDate>Thu, 16 Feb 2023 18:34:50 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/</guid>
-			<description>이것은 컴퓨터가 대신 해주는 ctrl-c ctrl-v</description>
-		</item>
-      	
-		<item>
-			<title>조건문(conditional statement)</title>
-			<link>https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/</link>
-			<pubDate>Thu, 16 Feb 2023 18:34:48 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/</guid>
-			<description>누구야 if문 5겹으로 만든거!</description>
-		</item>
-      	
-		<item>
-			<title>제어문(control flow statement)</title>
-			<link>https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/</link>
-			<pubDate>Thu, 16 Feb 2023 17:43:16 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/</guid>
-			<description>내가 코드를 지배한다.</description>
-		</item>
-      	
-		<item>
-			<title>상수(constant)</title>
-			<link>https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/</link>
-			<pubDate>Thu, 16 Feb 2023 17:23:18 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/</guid>
-			<description>유일하게 &amp;lsquo;절대&amp;rsquo;를 사용할 수 있는 것</description>
-		</item>
-      	
-		<item>
-			<title>리터럴(literal)</title>
-			<link>https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/</link>
-			<pubDate>Thu, 16 Feb 2023 17:19:52 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/</guid>
-			<description>구별해서 사용하면 왠지 멋있는 용어</description>
-		</item>
-      	
-		<item>
-			<title>java</title>
-			<link>https://coder-shin.github.io/post/java/</link>
-			<pubDate>Thu, 16 Feb 2023 17:07:02 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/java/</guid>
-			<description>회사는 혼자 돌아다니기엔 위험하단다. 자바를 가져가거라.</description>
-		</item>
-      	
-		<item>
-			<title>변수(variable)</title>
-			<link>https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/</link>
-			<pubDate>Thu, 16 Feb 2023 10:54:35 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/</guid>
-			<description>누구야 이 변수 이름 작성한거! 어..? 왜 내 이름이 적혀있지?</description>
 		</item>
       	
 	</channel>
