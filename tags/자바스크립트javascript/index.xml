@@ -14,6 +14,14 @@
 		<atom:link href="/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8javascript/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>보수(complement)</title>
+			<link>https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/</link>
+			<pubDate>Thu, 23 Feb 2023 20:37:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/</guid>
+			<description>부족한 부부을 채운다.</description>
+		</item>
+      	
+		<item>
 			<title>순환(recursion)</title>
 			<link>https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/</link>
 			<pubDate>Thu, 23 Feb 2023 08:59:36 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Thu, 16 Feb 2023 23:41:02 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/</guid>
 			<description>누구보다 빠르게 난 남들과는 다르게</description>
-		</item>
-      	
-		<item>
-			<title>c</title>
-			<link>https://coder-shin.github.io/post/c/</link>
-			<pubDate>Thu, 16 Feb 2023 23:38:39 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/c/</guid>
-			<description>에끼 이놈! C언어를 모르고 프로그래머라고 할 수 있겠느냐?</description>
 		</item>
       	
 	</channel>
