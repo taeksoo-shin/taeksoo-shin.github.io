@@ -5,6 +5,16 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/",
+                "title": "순환(recursion)",
+                "section": "post",
+                "date" : "2023.02.23",
+                "body": "용어 설명 나의 해석 큰 문제를 작은 문제로 나누어서 해결하는 방법\n각종 설명 순환(recursion)이란 어떤 알고리즘이나 함수가 자기 자신을 호출하여 문제를 해결하는 프로그래밍 기법이다. (C언어로 쉽게 풀어쓴 자료구조(3판))\n장단점 장점 [[[반복문(loop)]]]을 사용하면 복잡해지는 문제들을 간단하게 해결 할 수 있다. 문제의 정의가 순환적으로 되어 있는 경우 순환으로 작성하는 것이 훨씬 더 간결하게 코드를 작성 할 수 있다. 단점 실행시간이 오래걸린다. 메모리 사용에 있어서 비효율적이다. 꼬리 순환과 머리 순환 꼬리 순환(tail recursion) return n * factorial(n - 1); 머리 순환(head recursion) return factorial(n - 1) * n; 팁 순환은 본질적으로 순환(recursive)인 문제나 그러한 자료구조를 다루는 프로그램에 적합 머리 순환(head recursion)의 경우나 여러 군데에서 자기 자신을 호출하는 경우(multi recursion)는 쉽게 반복전인 코드로 바꿀 수 없다. 대부분 [[반복문(loop)]]로 대처할 수 있다. "
+            }
+    
+        ,
+            {
+                "id": 1,
                 "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
                 "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
                 "section": "post",
@@ -14,7 +24,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/data-type/",
                 "title": "데이터형(data type)",
                 "section": "post",
@@ -24,7 +34,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/dcl/",
                 "title": "DCL",
                 "section": "post",
@@ -34,17 +44,17 @@
     
         ,
             {
-                "id": 3,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/dml/",
                 "title": "DML",
                 "section": "post",
                 "date" : "2023.02.17",
-                "body": "용어 설명 나의 해석 DML(Data Manipulation Language)은 테이블의 행을 조작하는 SQL문이다.\n특징으로는 WHERE문을 사용 할 수 있다.\n각종 설명 DML(데이터 조작 언어)은 테이블의 행을 검색하거나 변경하기 위한 것이다.\n(SQL 더 쉽게 더 깊게 p.15)\n종류 INSERT : 등록 SELECT : 조회 UPDATE : 갱신 DELETE : 삭제\n"
+                "body": "용어 설명 나의 해석 DML(Data Manipulation Language)은 테이블의 행을 조작하는 SQL문이다.\n특징으로는 WHERE문을 사용 할 수 있다.\n각종 구문 DML(데이터 조작 언어)은 테이블의 행을 검색하거나 변경하기 위한 것이다.\n(SQL 더 쉽게 더 깊게 p.15)\n종류 INSERT : 등록 SELECT : 조회 UPDATE : 갱신 DELETE : 삭제\n상세 설명 SELECT SELECT 문은 테이블에서 데이터를 꺼낼 때 사용하는 [[SQL]]문이다. 기본 구문은 아래와 같다.\nSELECT \u0026lt;열명\u0026gt;, ... FROM \u0026lt;테이블명\u0026gt;; SELECT문에 대한 각종 구문 SELECT 문은 많은 SQL 문 중에서도 가장 자주 사용되며 가장 기본이 되는 구문이다. SELECT 문을 마스터하는 것은 곧 SQL 문 전체를 마스터하는 것이라 해도 과언이 아니다. (SQL 더 쉽게 더 깊게 p.37)\n"
             }
     
         ,
             {
-                "id": 4,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/ddl/",
                 "title": "DDL",
                 "section": "post",
@@ -54,7 +64,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/sql/",
                 "title": "SQL",
                 "section": "post",
@@ -64,7 +74,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/dbms/",
                 "title": "DBMS",
                 "section": "post",
@@ -74,7 +84,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -84,7 +94,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
@@ -94,7 +104,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/database/",
                 "title": "데이터베이스(database)",
                 "section": "post",
@@ -104,17 +114,17 @@
     
         ,
             {
-                "id": 10,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
                 "title": "반복문(loop)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "용어 설명 나의 해석 반복문은 특정 횟수(for), 특정 조건(while)을 달성할 때 까지 \u0026lsquo;반복\u0026rsquo;하는 문(statement)이다.\n각종 설명 [[조건문(conditional statement)]]{조건문}에는 if문, switch문이 있고 반복문에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. [[조건문(conditional statement)]]{조건문}일 경우는 정상 흐름으로 돌아오지만, 반복문일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 "
+                "body": "용어 설명 나의 해석 반복문은 특정 횟수(for), 특정 조건(while)을 달성할 때 까지 \u0026lsquo;반복\u0026rsquo;하는 문(statement)이다.\n각종 설명 [[조건문(conditional statement)]]{조건문}에는 if문, switch문이 있고 반복문에는 for문, while문, do-while문이 있다. 제어문 블록이 실행 실행 완료되었을 경우 다시 제어문 처음으로 돌아갈지, 아니면 제어문 블록을 빠져나와 정상 흐름으로 다시 돌아올지는 어떤 제어문을 사용하는냐에 달려 있다. [[조건문(conditional statement)]]{조건문}일 경우는 정상 흐름으로 돌아오지만, 반복문일 경우는 제어문 처음으로 다시 되돌아가 반복 실행한다. (이것이 자바다[1판] p.108)\n팁 대부분 [[순환(recursion)]]으로 대체 할 수 있다. "
             }
     
         ,
             {
-                "id": 11,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -124,7 +134,7 @@
     
         ,
             {
-                "id": 12,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -134,7 +144,7 @@
     
         ,
             {
-                "id": 13,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -144,7 +154,7 @@
     
         ,
             {
-                "id": 14,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -154,7 +164,7 @@
     
         ,
             {
-                "id": 15,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
@@ -164,7 +174,7 @@
     
         ,
             {
-                "id": 16,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/%EB%B3%80%EC%88%98variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -174,17 +184,17 @@
     
         ,
             {
-                "id": 17,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%9A%A9%EC%96%B4-%EB%AA%A8%EC%9D%8C/",
                 "title": "각종 용어 모음",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "프로그래밍 관련 언어 [[변수(variable)]] [[상수(constant)]] [[리터럴(literal)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[반복문(loop)]] "
+                "body": "프로그래밍 관련 언어 [[변수(variable)]] [[상수(constant)]] [[리터럴(literal)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[반복문(loop)]] [[순환(recursion)]] "
             }
     
         ,
             {
-                "id": 18,
+                "id": 19,
                 "href": "https://coder-shin.github.io/post/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -194,7 +204,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/%EA%B0%81%EC%A2%85-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%AA%A8%EC%9D%8C/",
                 "title": "각종 사이트 모음",
                 "section": "post",
@@ -204,17 +214,17 @@
     
         ,
             {
-                "id": 20,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/book/",
                 "title": "book",
                 "section": "post",
                 "date" : "2023.02.15",
-                "body": "ACTIVE SQL 더 쉽게, 더 깊게[1판]\n분야: 데이터베이스 작가: 미크 저 / 김완섭 역 별점: 회독: 0 읽을 타이밍: 객체지향 사고 프로세스[5판]\n분야: 설계 작가: 맷 와이스펠드 저 / 박진수 역 별점: 회독: 0 읽을 타이밍: C언어로 쉽게 풀어쓴 자료구조[3판]\n분야: 자료구조 + 알고리즘 작가: 천인국, 공용해, 하상호 별점: 회독: 0 읽을 타이밍: 사용자를 생각하게 하지 마![2판]\n분야: UI/UX 작가: 스티브 크룩 저 / 이미령 역 별점: 회독: 0 읽을 타이밍: 이것이 자바다[1판]\n분야: 프로그래밍 언어 작가: 신용권 별점: 회독: 0 읽을 타이밍: TODO 설계 데이터베이스 프로그래밍 언어 UI/UX 마크업 언어 도구 사고(思考) 네트워크 OS 컴퓨터 자료구조 알고리즘 DONE 프로젝트가 서쪽으로 간 까닭은\n분야: 사고 작가: 다수의 작가 별점: 4 회독: 2 읽을 타이밍: 프로젝트가 잘못된 방향으로 가고 있는 것 같은 경우 함께 자라기\n분야: 사고 작가: 김창준 별점: 5 회독: 3 읽을 타이밍: 개인적으로 노력해서 기술적으로 상당한 레벨까지 도달했다고 느꼈을 때 대체 뭐가 문제야\n분야: 사고 작가: 제럴드 M. 와인버그 별점: 5 회독: 3 읽을 타이밍: 새로운 방식으로 생각하고 싶은 경우 그로스 해킹\n분야: 사고 작가: 라이언 홀리데이 별점: 4 회독: 2 읽을 타이밍: 어떠한 서비스를 만들고 싶은 경우 "
+                "body": "ACTIVE SQL 더 쉽게, 더 깊게[1판]\n분야: 데이터베이스 작가: 미크 저 / 김완섭 역 별점: 회독: 0 읽을 타이밍: 장점: 단점: 객체지향 사고 프로세스[5판]\n분야: 설계 작가: 맷 와이스펠드 저 / 박진수 역 별점: 회독: 0 읽을 타이밍: 장점: 단점: C언어로 쉽게 풀어쓴 자료구조[3판]\n분야: 자료구조 + 알고리즘 작가: 천인국, 공용해, 하상호 별점: 회독: 0 읽을 타이밍: 장점: [\u0026ldquo;수학에 대해 깊이 고민\u0026rdquo;] 단점: [\u0026ldquo;연습 문제 해답이 없다.\u0026rdquo;, \u0026ldquo;코딩 스타일이 중구난방이다.\u0026rdquo;, \u0026ldquo;테스트 안 한게 분명하다.\u0026rdquo;] 사용자를 생각하게 하지 마![2판]\n분야: UI/UX 작가: 스티브 크룩 저 / 이미령 역 별점: 회독: 0 읽을 타이밍: 장점: 단점: 이것이 자바다[1판]\n분야: 프로그래밍 언어 작가: 신용권 별점: 회독: 0 읽을 타이밍: 장점: 단점: [\u0026ldquo;기본서임에도 불구하고 자바가 처음 언어인 사람들은 절대로 알 수 없을 것 같은 개념이 조금 많다.\u0026rdquo;] TODO 설계 데이터베이스 프로그래밍 언어 UI/UX 마크업 언어 도구 사고(思考) 네트워크 OS 컴퓨터 자료구조 알고리즘 DONE 프로젝트가 서쪽으로 간 까닭은\n분야: 사고 작가: 다수의 작가 별점: 4 회독: 2 읽을 타이밍: 프로젝트가 잘못된 방향으로 가고 있는 것 같은 경우 장점: [\u0026ldquo;프로젝트가 잘못되고 있는 여러 패턴을 확인 가능.\u0026rdquo;] 단점: [\u0026ldquo;해결 방법이 명확하지 않음\u0026rdquo;] 함께 자라기\n분야: 사고 작가: 김창준 별점: 5 회독: 3 읽을 타이밍: 개인적으로 노력해서 기술적으로 상당한 레벨까지 도달했다고 느꼈을 때 장점: [\u0026ldquo;다른 사람들과 함께 성장한다는 의미를 알려준다.\u0026rdquo;, \u0026ldquo;혼자만으로는 한계가 있다는 점을 알려준다.\u0026rdquo;] 단점: [\u0026ldquo;없다.\u0026rdquo;, \u0026ldquo;혼자 개발하는 사람 아니면 당장 서점으로 달려가서 사도록.\u0026rdquo;] 대체 뭐가 문제야\n분야: 사고 작가: 제럴드 M. 와인버그 별점: 5 회독: 3 읽을 타이밍: 새로운 방식으로 생각하고 싶은 경우 장점: [\u0026ldquo;문제에 대한 새로운 시각으로 접근 가능.\u0026rdquo;] 단점: [\u0026ldquo;없다.\u0026rdquo;, \u0026ldquo;개발자가 아니라도 당장 서점으로 달려가서 사도록.\u0026rdquo;] 그로스 해킹\n분야: 사고 작가: 라이언 홀리데이 별점: 4 회독: 2 읽을 타이밍: 어떠한 서비스를 만들고 싶은 경우 장점: [\u0026ldquo;얇기 때문에 그로스 해킹이 핵심 내용만 쉽게 알 수 있음\u0026rdquo;] 단점: [\u0026ldquo;얇기 때문에 더욱 깊은 내용은 별도의 조사로 찾아봐야 함\u0026rdquo;] "
             }
     
         ,
             {
-                "id": 21,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "javascript",
                 "section": "post",
@@ -224,7 +234,7 @@
     
         ,
             {
-                "id": 22,
+                "id": 23,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -234,7 +244,7 @@
     
         ,
             {
-                "id": 23,
+                "id": 24,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
