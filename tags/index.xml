@@ -9,88 +9,88 @@
 		
 		<managingEditor>Page(/tags) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Fri, 24 Feb 2023 17:42:01 +0900</lastBuildDate>
+  		<lastBuildDate>Mon, 27 Feb 2023 08:37:43 +0900</lastBuildDate>
 		
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>SELECT</title>
-			<link>https://coder-shin.github.io/post/select/</link>
-			<pubDate>Fri, 24 Feb 2023 17:42:01 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/select/</guid>
-			<description>SELECT</description>
+			<title>scope</title>
+			<link>https://coder-shin.github.io/post/scope/</link>
+			<pubDate>Mon, 27 Feb 2023 08:37:43 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/scope/</guid>
+			<description>scope</description>
 		</item>
       	
 		<item>
-			<title>null</title>
-			<link>https://coder-shin.github.io/post/null/</link>
-			<pubDate>Fri, 24 Feb 2023 14:43:43 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/null/</guid>
-			<description>null은 값이 존재하지 않는게 아니라 상태를 알 수 없음이다.</description>
+			<title>error</title>
+			<link>https://coder-shin.github.io/post/error/</link>
+			<pubDate>Sun, 26 Feb 2023 11:55:02 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/error/</guid>
+			<description>error</description>
 		</item>
       	
 		<item>
-			<title>보수(complement)</title>
-			<link>https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/</link>
-			<pubDate>Thu, 23 Feb 2023 20:37:39 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/</guid>
-			<description>부족한 부부을 채운다.</description>
+			<title>construct</title>
+			<link>https://coder-shin.github.io/post/construct/</link>
+			<pubDate>Sun, 26 Feb 2023 11:16:32 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/construct/</guid>
+			<description>construct</description>
 		</item>
       	
 		<item>
-			<title>순환(recursion)</title>
-			<link>https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/</link>
-			<pubDate>Thu, 23 Feb 2023 08:59:36 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/</guid>
-			<description>순환(recursion)</description>
+			<title>생성자(constructor)</title>
+			<link>https://coder-shin.github.io/post/constructor/</link>
+			<pubDate>Sun, 26 Feb 2023 11:16:32 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/constructor/</guid>
+			<description>생성자 여러가지 만들어서 대응하자고 아이디어 낸 놈 누구야? 아 나였다.</description>
 		</item>
       	
 		<item>
-			<title>javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기</title>
-			<link>https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/</link>
-			<pubDate>Fri, 17 Feb 2023 16:07:34 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/</guid>
-			<description>난 너가 무슨 디바이스를 이용해서 접속하고 있는지 알고있다.</description>
+			<title>class</title>
+			<link>https://coder-shin.github.io/post/class/</link>
+			<pubDate>Sat, 25 Feb 2023 20:18:16 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/class/</guid>
+			<description>class</description>
 		</item>
       	
 		<item>
-			<title>데이터형(data type)</title>
-			<link>https://coder-shin.github.io/post/data-type/</link>
-			<pubDate>Fri, 17 Feb 2023 10:50:00 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/data-type/</guid>
-			<description>오버플로우의 마수랑 싸우고 싶지 않으면 적절한 데이터형을 지정해라</description>
+			<title>메서드(methods)</title>
+			<link>https://coder-shin.github.io/post/methods/</link>
+			<pubDate>Sat, 25 Feb 2023 20:06:31 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/methods/</guid>
+			<description>methods</description>
 		</item>
       	
 		<item>
-			<title>DCL</title>
-			<link>https://coder-shin.github.io/post/dcl/</link>
-			<pubDate>Fri, 17 Feb 2023 09:16:45 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/dcl/</guid>
-			<description>DCL(Data Control Language)</description>
+			<title>속성(attributes)</title>
+			<link>https://coder-shin.github.io/post/attributes/</link>
+			<pubDate>Sat, 25 Feb 2023 20:03:51 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/attributes/</guid>
+			<description>attributes</description>
 		</item>
       	
 		<item>
-			<title>DML</title>
-			<link>https://coder-shin.github.io/post/dml/</link>
-			<pubDate>Fri, 17 Feb 2023 09:16:41 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/dml/</guid>
-			<description>DML(Data Manipulation Language)</description>
+			<title>객체(object)</title>
+			<link>https://coder-shin.github.io/post/object/</link>
+			<pubDate>Sat, 25 Feb 2023 19:45:34 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/object/</guid>
+			<description>대체 객체란 무엇인가?</description>
 		</item>
       	
 		<item>
-			<title>DDL</title>
-			<link>https://coder-shin.github.io/post/ddl/</link>
-			<pubDate>Fri, 17 Feb 2023 09:16:32 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/ddl/</guid>
-			<description>DDL(Data Defintion Language)</description>
+			<title>객체 래퍼(object wrappers)</title>
+			<link>https://coder-shin.github.io/post/object-wrappers/</link>
+			<pubDate>Sat, 25 Feb 2023 12:08:10 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/object-wrappers/</guid>
+			<description>구조적 코드, 함수형 코드 모두 객체가 되어라 얍!</description>
 		</item>
       	
 		<item>
-			<title>SQL</title>
-			<link>https://coder-shin.github.io/post/sql/</link>
-			<pubDate>Fri, 17 Feb 2023 08:30:13 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/sql/</guid>
-			<description>SQL</description>
+			<title>함수형 프로그래밍(FP)</title>
+			<link>https://coder-shin.github.io/post/fp/</link>
+			<pubDate>Sat, 25 Feb 2023 11:51:19 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/fp/</guid>
+			<description>이걸 좋아하는 너는(나도) 아싸</description>
 		</item>
       	
 	</channel>

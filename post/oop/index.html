@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+<title>객체 지향 프로그래밍(OOP)</title>
+<meta name="description" 
+      content=""
+>
+
+  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://coder-shin.github.io/index.xml"
+  title="코더 신씨"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="객체 지향 프로그래밍(OOP)"/>
+<meta name="twitter:description" content="이걸 좋아하는 너는 인싸"/>
+
+
+
+<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
+
+
+
+
+<link
+  crossorigin="anonymous"
+  href="/css/styles.min.css"
+  integrity=""
+  rel="preload stylesheet"
+  as="style"
+/>
+
+
+  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
+
+
+
+
+<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script><meta name="generator" content="Hugo 0.110.0">
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://coder-shin.github.io/" class="nav-logo">
+        <img
+          src="https://coder-shin.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/categories" id="Category"
+              ><em class="fas fa-folder-open fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/random" id="Random"
+              ><em class="fas fa-random fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              객체 지향 프로그래밍(OOP)
+            </h1>
+          
+          
+            <div class="meta-post">
+  <span class="meta-date">
+    <em class="fa fa-calendar-alt"></em>&nbsp;
+    2023-02-26
+  </span>
+
+  
+  <span class="meta-categories">
+    &nbsp;&nbsp;&nbsp;
+      <em class="fa fa-folder-open"></em>&nbsp;
+      <a href="https://coder-shin.github.io//categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99software-engineering/">소프트웨어 공학(software engineering)</a
+      >&nbsp;
+    
+  
+  </span>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <h2 id="나의-해석">나의 해석</h2>
+<p>OOP =&gt; 인싸
+[[fp]]{FP}  =&gt; 아싸</p>
+<h2 id="중요-개념">중요 개념</h2>
+<h3 id="캡슐화encapsulation">캡슐화(encapsulation)</h3>
+<blockquote>
+<p>동일한 엔티티에서 특성들과 메서드들을 한 곳으로 합침으로 써, Math 객체의
+데이터에 대한 접근을 제어할 수 있다.
+<em>(객체지향 사고 프로세스[5판] p.7)</em></p>
+</blockquote>
+<h3 id="상속inheritance">상속(inheritance)</h3>
+<blockquote>
+<p>상속(inheritance)을 통해 클래스는 그 밖의 클래스들이 지닌 속성과 메서드를 물려받을 수 있다.
+<em>(객체지향 사고 프로세스[5판] p.25)</em></p>
+</blockquote>
+<blockquote>
+<p>오늘날에는 행위(behaviors)를 인터페이스 안에 기술해 두는 경향이 있으며,
+속성들을 상송하는 게 직접 상속의 가장 일반적인 용례
+<em>(객체지향 사고 프로세스[5판] p.26)</em></p>
+</blockquote>
+<blockquote>
+<p>상속은 is-a 관계로 간주되고 합성은 has-a 관계로 간주된다.
+<em>(객체지향 사고 프로세스[5판] p.34)</em></p>
+</blockquote>
+<h3 id="다형성polymoriphism">다형성(polymoriphism)</h3>
+<blockquote>
+<p>다형성(polymoriphism)은 문자 그대로 다양한 형상(shapes)을 의미하는 그리스
+단어다.
+<em>(객체지향 사고 프로세스[5판] p.29)</em></p>
+</blockquote>
+<blockquote>
+<p>다형성이란 비슷한 객체가 다른 방식으로 동일한 메시지에 응답 할 수 있음을
+의미한다.
+<em>(객체지향 사고 프로세스[5판] p.34)</em></p>
+</blockquote>
+<h3 id="합성composition">합성(composition)</h3>
+<blockquote>
+<p>어떤 객체를 종종 그 밖의 객체들을 사용해 구축하거나 합성할 수 있는데, 이것이
+합성이라는 개념이다.
+<em>(객체지향 사고 프로세스[5판] p.34)</em></p>
+</blockquote>
+<blockquote>
+<p>상속은 is-a 관계로 간주되고 합성은 has-a 관계로 간주된다.
+<em>(객체지향 사고 프로세스[5판] p.34)</em></p>
+</blockquote>
+<h2 id="관련-용어">관련 용어</h2>
+<ul>
+<li>[[object]]{객체(object)}</li>
+<li>[[object wrappers]]{객체 래퍼(object wrappers)}</li>
+<li>[[attributes]]{속성(attributes)}</li>
+<li>[[methods]]{메서드(methods)}</li>
+<li>[[class]]{클래스(class)}</li>
+<li>[[constructor]]{생성자(constructor)}</li>
+</ul>
+<h2 id="각종-인용">각종 인용</h2>
+
+
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://coder-shin.github.io//tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99software-engineering/">소프트웨어 공학(software engineering)</a
+            >&nbsp;
+          
+            <a href="https://coder-shin.github.io//tags/index/">index</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+      <script src="https://utteranc.es/client.js"
+        repo="coder-shin/blog-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="https://github.com/coder-shin" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://coder-shin.github.io/about">Shin</a>
+      &nbsp;&copy;
+      2023
+      
+        &nbsp;/&nbsp;
+        <a href="https://coder-shin.github.io/">코더 신씨</a>
+      
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    let content = document.querySelector('article.article');
+    if (content) {
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
+        const spaceWithDash = offset1.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset2}</a>`
+      });
+      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
+        const spaceWithDash = offset.replace(/\s+/g, '-');
+        return `<a href="../${spaceWithDash}">${offset}</a>`
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
