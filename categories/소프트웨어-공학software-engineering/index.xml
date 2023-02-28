@@ -14,6 +14,38 @@
 		<atom:link href="/categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99software-engineering/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>캡슐화(encapsulation)</title>
+			<link>https://coder-shin.github.io/post/encapsulation/</link>
+			<pubDate>Tue, 28 Feb 2023 09:03:22 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/encapsulation/</guid>
+			<description>객체는 단단해져야한다.</description>
+		</item>
+      	
+		<item>
+			<title>상속(inheritance)</title>
+			<link>https://coder-shin.github.io/post/inheritance/</link>
+			<pubDate>Tue, 28 Feb 2023 09:02:57 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/inheritance/</guid>
+			<description>지옥이 시작된다.</description>
+		</item>
+      	
+		<item>
+			<title>다형성(polymoriphism)</title>
+			<link>https://coder-shin.github.io/post/polymoriphism/</link>
+			<pubDate>Tue, 28 Feb 2023 09:02:20 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/polymoriphism/</guid>
+			<description>다 상대해주마! 다 들어와!</description>
+		</item>
+      	
+		<item>
+			<title>합성(composition)</title>
+			<link>https://coder-shin.github.io/post/composition/</link>
+			<pubDate>Tue, 28 Feb 2023 08:48:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/composition/</guid>
+			<description>상속을 넘어라</description>
+		</item>
+      	
+		<item>
 			<title>scope</title>
 			<link>https://coder-shin.github.io/post/scope/</link>
 			<pubDate>Mon, 27 Feb 2023 08:37:43 +0900</pubDate>
@@ -59,38 +91,6 @@
 			<pubDate>Sat, 25 Feb 2023 20:06:31 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/methods/</guid>
 			<description>methods</description>
-		</item>
-      	
-		<item>
-			<title>속성(attributes)</title>
-			<link>https://coder-shin.github.io/post/attributes/</link>
-			<pubDate>Sat, 25 Feb 2023 20:03:51 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/attributes/</guid>
-			<description>attributes</description>
-		</item>
-      	
-		<item>
-			<title>객체(object)</title>
-			<link>https://coder-shin.github.io/post/object/</link>
-			<pubDate>Sat, 25 Feb 2023 19:45:34 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/object/</guid>
-			<description>대체 객체란 무엇인가?</description>
-		</item>
-      	
-		<item>
-			<title>객체 래퍼(object wrappers)</title>
-			<link>https://coder-shin.github.io/post/object-wrappers/</link>
-			<pubDate>Sat, 25 Feb 2023 12:08:10 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/object-wrappers/</guid>
-			<description>구조적 코드, 함수형 코드 모두 객체가 되어라 얍!</description>
-		</item>
-      	
-		<item>
-			<title>함수형 프로그래밍(FP)</title>
-			<link>https://coder-shin.github.io/post/fp/</link>
-			<pubDate>Sat, 25 Feb 2023 11:51:19 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/fp/</guid>
-			<description>이걸 좋아하는 너는(나도) 아싸</description>
 		</item>
       	
 	</channel>
