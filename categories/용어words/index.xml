@@ -14,6 +14,30 @@
 		<atom:link href="/categories/%EC%9A%A9%EC%96%B4words/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>array</title>
+			<link>https://coder-shin.github.io/post/array/</link>
+			<pubDate>Tue, 07 Mar 2023 18:19:47 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array/</guid>
+			<description>ㅓ</description>
+		</item>
+      	
+		<item>
+			<title>include</title>
+			<link>https://coder-shin.github.io/post/include/</link>
+			<pubDate>Tue, 07 Mar 2023 18:15:53 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/include/</guid>
+			<description>포함하고 있나?</description>
+		</item>
+      	
+		<item>
+			<title>template literals</title>
+			<link>https://coder-shin.github.io/post/template-literals/</link>
+			<pubDate>Thu, 02 Mar 2023 09:41:24 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/template-literals/</guid>
+			<description>template literals</description>
+		</item>
+      	
+		<item>
 			<title>list</title>
 			<link>https://coder-shin.github.io/post/list/</link>
 			<pubDate>Thu, 02 Mar 2023 00:00:02 +0900</pubDate>
@@ -67,30 +91,6 @@
 			<pubDate>Mon, 27 Feb 2023 08:37:43 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/scope/</guid>
 			<description>scope</description>
-		</item>
-      	
-		<item>
-			<title>error</title>
-			<link>https://coder-shin.github.io/post/error/</link>
-			<pubDate>Sun, 26 Feb 2023 11:55:02 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/error/</guid>
-			<description>error</description>
-		</item>
-      	
-		<item>
-			<title>construct</title>
-			<link>https://coder-shin.github.io/post/construct/</link>
-			<pubDate>Sun, 26 Feb 2023 11:16:32 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/construct/</guid>
-			<description>construct</description>
-		</item>
-      	
-		<item>
-			<title>생성자(constructor)</title>
-			<link>https://coder-shin.github.io/post/constructor/</link>
-			<pubDate>Sun, 26 Feb 2023 11:16:32 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/constructor/</guid>
-			<description>생성자 여러가지 만들어서 대응하자고 아이디어 낸 놈 누구야? 아 나였다.</description>
 		</item>
       	
 	</channel>

@@ -5,6 +5,26 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/include/",
+                "title": "include",
+                "section": "post",
+                "date" : "2023.03.07",
+                "body": "[[array]]{배열}에 특정 값이 존재하는지 확인하기\n[[javascript]]{JavaScript} includes 함수를 사용하면 된다.\nincludes 함수의 사용법은 아래와 같다.\n대상_배열.includes(특정_값); 구체적인 사용법\nconst animals = [\u0026#39;cat\u0026#39;, \u0026#39;dog\u0026#39;] console.log(animals.includes(\u0026#39;dog\u0026#39;)); // true console.log(animals.includes(\u0026#39;lion\u0026#39;)); // false 팁 [[javascript]]{JavaScript} - 이전까지 사용한 indexOf를 사용해도 괜찮지 않을까? 결론부터 이야기 하자면, includes 함수를 사용하는 것이 훨씬 좋다. 왜냐하면 가독성적인면에서 훨씬 좋기 때문이다. includes로 작성된 코드를 보면 배열에 특정 값을 포함하고 있는가를 확인하고 있는 코드라는 것을 바로 알 수 있다. 하지만 indexOf를 이용하는 경우는? 무슨 의도로 이러한 코드를 작성했는지 면밀히 봐야지 코드 작성자의 의도를 확인 할 수 있다. 그렇기 때문에 includes 함수를 이용하는 것이 훨씬 좋다.\n인용 "
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/template-literals/",
+                "title": "template literals",
+                "section": "post",
+                "date" : "2023.03.02",
+                "body": "정리 백틱(back-tick)을 이용한다. 중괄호 내부에서 많은 것을 하는 것은 가독성이 좋지 않으므로 하지 말 것. 예시 const helloKr = \u0026#39;안녕\u0026#39;; const helloEn = \u0026#39;hello\u0026#39;; const greet = (greetingLang) =\u0026gt; (name) =\u0026gt; `${greetingLang}, ${name}` const greetKr = greet(helloKr); const greetEn = greet(helloEn); const greetToKorean = (name) =\u0026gt; { return greetKr(name); } const greetToEnglish = (name) =\u0026gt; { return greetEn(name); } console.log(greetToKorean(\u0026#39;철수\u0026#39;)); console.log(greetToEnglish(\u0026#39;John\u0026#39;)); const generatePlaceholder = (width, height) =\u0026gt; `http://placehold.it/${width}x${height}` 인용 첫쨰, 템플릿 리터럴은 따옴표 또는 쌍따옴표 대신 백틱(back-tick)()을 사용합니다. 둘째. 변수에 할당한 문자열 처럼 단순 문자열이 아니라면 특별한 지정자로 감싸야 합니다. ${stuff}` 처럼 $ 기호와 중괄호로 변수나 다른 자바스크립트 코드를 감싸는 것입니다. (자바스크립트 코딩의 기술[1판] - tip 4 템플릿 리터럴로 변수를 읽을 수 있는 문자열로 변환하라)\n가급적이면 중괄호 내부에서 많은 것을 하지 않는 것이 좋습니다. 코드가 필요 이상으로 어수선해지기 때문입니다. (자바스크립트 코딩의 기술[1판] - tip 4 템플릿 리터럴로 변수를 읽을 수 있는 문자열로 변환하라)\n"
+            }
+    
+        ,
+            {
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/list/",
                 "title": "list",
                 "section": "post",
@@ -14,7 +34,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/solid/",
                 "title": "SOLID",
                 "section": "post",
@@ -24,7 +44,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/encapsulation/",
                 "title": "캡슐화(encapsulation)",
                 "section": "post",
@@ -34,7 +54,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/inheritance/",
                 "title": "상속(inheritance)",
                 "section": "post",
@@ -44,7 +64,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/polymoriphism/",
                 "title": "다형성(polymoriphism)",
                 "section": "post",
@@ -54,7 +74,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/composition/",
                 "title": "합성(composition)",
                 "section": "post",
@@ -64,7 +84,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/scope/",
                 "title": "scope",
                 "section": "post",
@@ -74,7 +94,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/error/",
                 "title": "error",
                 "section": "post",
@@ -84,7 +104,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/construct/",
                 "title": "construct",
                 "section": "post",
@@ -94,7 +114,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/constructor/",
                 "title": "생성자(constructor)",
                 "section": "post",
@@ -104,7 +124,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/class/",
                 "title": "class",
                 "section": "post",
@@ -114,7 +134,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/methods/",
                 "title": "메서드(methods)",
                 "section": "post",
@@ -124,7 +144,7 @@
     
         ,
             {
-                "id": 12,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/attributes/",
                 "title": "속성(attributes)",
                 "section": "post",
@@ -134,7 +154,7 @@
     
         ,
             {
-                "id": 13,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/object/",
                 "title": "객체(object)",
                 "section": "post",
@@ -144,7 +164,7 @@
     
         ,
             {
-                "id": 14,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/object-wrappers/",
                 "title": "객체 래퍼(object wrappers)",
                 "section": "post",
@@ -154,7 +174,7 @@
     
         ,
             {
-                "id": 15,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/fp/",
                 "title": "함수형 프로그래밍(FP)",
                 "section": "post",
@@ -164,7 +184,7 @@
     
         ,
             {
-                "id": 16,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/oop/",
                 "title": "객체 지향 프로그래밍(OOP)",
                 "section": "post",
@@ -174,7 +194,7 @@
     
         ,
             {
-                "id": 17,
+                "id": 19,
                 "href": "https://coder-shin.github.io/post/select/",
                 "title": "SELECT",
                 "section": "post",
@@ -184,7 +204,7 @@
     
         ,
             {
-                "id": 18,
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/null/",
                 "title": "null",
                 "section": "post",
@@ -194,7 +214,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/",
                 "title": "보수(complement)",
                 "section": "post",
@@ -204,7 +224,7 @@
     
         ,
             {
-                "id": 20,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/",
                 "title": "순환(recursion)",
                 "section": "post",
@@ -214,7 +234,7 @@
     
         ,
             {
-                "id": 21,
+                "id": 23,
                 "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
                 "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
                 "section": "post",
@@ -224,7 +244,7 @@
     
         ,
             {
-                "id": 22,
+                "id": 24,
                 "href": "https://coder-shin.github.io/post/data-type/",
                 "title": "데이터형(data type)",
                 "section": "post",
@@ -234,7 +254,7 @@
     
         ,
             {
-                "id": 23,
+                "id": 25,
                 "href": "https://coder-shin.github.io/post/dcl/",
                 "title": "DCL",
                 "section": "post",
@@ -244,7 +264,7 @@
     
         ,
             {
-                "id": 24,
+                "id": 26,
                 "href": "https://coder-shin.github.io/post/dml/",
                 "title": "DML",
                 "section": "post",
@@ -254,7 +274,7 @@
     
         ,
             {
-                "id": 25,
+                "id": 27,
                 "href": "https://coder-shin.github.io/post/ddl/",
                 "title": "DDL",
                 "section": "post",
@@ -264,7 +284,7 @@
     
         ,
             {
-                "id": 26,
+                "id": 28,
                 "href": "https://coder-shin.github.io/post/sql/",
                 "title": "SQL",
                 "section": "post",
@@ -274,7 +294,7 @@
     
         ,
             {
-                "id": 27,
+                "id": 29,
                 "href": "https://coder-shin.github.io/post/dbms/",
                 "title": "DBMS",
                 "section": "post",
@@ -284,7 +304,7 @@
     
         ,
             {
-                "id": 28,
+                "id": 30,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -294,7 +314,7 @@
     
         ,
             {
-                "id": 29,
+                "id": 31,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
@@ -304,7 +324,7 @@
     
         ,
             {
-                "id": 30,
+                "id": 32,
                 "href": "https://coder-shin.github.io/post/database/",
                 "title": "데이터베이스(database)",
                 "section": "post",
@@ -314,7 +334,7 @@
     
         ,
             {
-                "id": 31,
+                "id": 33,
                 "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
                 "title": "반복문(loop)",
                 "section": "post",
@@ -324,7 +344,7 @@
     
         ,
             {
-                "id": 32,
+                "id": 34,
                 "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -334,7 +354,7 @@
     
         ,
             {
-                "id": 33,
+                "id": 35,
                 "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -344,7 +364,7 @@
     
         ,
             {
-                "id": 34,
+                "id": 36,
                 "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -354,7 +374,7 @@
     
         ,
             {
-                "id": 35,
+                "id": 37,
                 "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -364,7 +384,7 @@
     
         ,
             {
-                "id": 36,
+                "id": 38,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
@@ -374,7 +394,7 @@
     
         ,
             {
-                "id": 37,
+                "id": 39,
                 "href": "https://coder-shin.github.io/post/variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -384,7 +404,7 @@
     
         ,
             {
-                "id": 38,
+                "id": 40,
                 "href": "https://coder-shin.github.io/post/words/",
                 "title": "용어(words)",
                 "section": "post",
@@ -394,7 +414,7 @@
     
         ,
             {
-                "id": 39,
+                "id": 41,
                 "href": "https://coder-shin.github.io/post/data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -404,7 +424,7 @@
     
         ,
             {
-                "id": 40,
+                "id": 42,
                 "href": "https://coder-shin.github.io/post/sites/",
                 "title": "사이트(sites)",
                 "section": "post",
@@ -414,7 +434,7 @@
     
         ,
             {
-                "id": 41,
+                "id": 43,
                 "href": "https://coder-shin.github.io/post/books/",
                 "title": "책(books)",
                 "section": "post",
@@ -424,17 +444,17 @@
     
         ,
             {
-                "id": 42,
+                "id": 44,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "자바스크립트(JavaScript)",
                 "section": "post",
                 "date" : "2023.02.14",
-                "body": "나의 해석 이름이 비슷하지만 자바의 스크립트 버전은 아니다.\n인용 팁 [[javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기]] 관련 링크 [[variable]]{변수(variable)} [[template literals]]{(템플릿 리터럴(template literals)} "
+                "body": "나의 해석 이름이 비슷하지만 자바의 스크립트 버전은 아니다.\n인용 팁 [[javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기]] 관련 링크 [[variable]]{변수(variable)} [[template literals]]{(템플릿 리터럴(template literals)} [[include]]{include} "
             }
     
         ,
             {
-                "id": 43,
+                "id": 45,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -444,7 +464,7 @@
     
         ,
             {
-                "id": 44,
+                "id": 46,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
