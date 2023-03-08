@@ -14,11 +14,27 @@
 		<atom:link href="/categories/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8javascript/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>JVM(Java Virtual Machine)</title>
+			<link>https://coder-shin.github.io/post/jvm/</link>
+			<pubDate>Tue, 07 Mar 2023 23:25:18 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/jvm/</guid>
+			<description>대부분의 소프트웨어 회사는 이 위에서 돌아간다고 해도 과언이 아니다.</description>
+		</item>
+      	
+		<item>
+			<title>string</title>
+			<link>https://coder-shin.github.io/post/string/</link>
+			<pubDate>Tue, 07 Mar 2023 19:19:09 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/string/</guid>
+			<description>string</description>
+		</item>
+      	
+		<item>
 			<title>array</title>
 			<link>https://coder-shin.github.io/post/array/</link>
 			<pubDate>Tue, 07 Mar 2023 18:19:47 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/array/</guid>
-			<description>ㅓ</description>
+			<description>야 자바스크립트! 넌 배열 아닌 리스트인데 왜 여기있어?</description>
 		</item>
       	
 		<item>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 28 Feb 2023 09:02:20 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/polymoriphism/</guid>
 			<description>다 상대해주마! 다 들어와!</description>
-		</item>
-      	
-		<item>
-			<title>합성(composition)</title>
-			<link>https://coder-shin.github.io/post/composition/</link>
-			<pubDate>Tue, 28 Feb 2023 08:48:39 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/composition/</guid>
-			<description>상속을 넘어라</description>
-		</item>
-      	
-		<item>
-			<title>scope</title>
-			<link>https://coder-shin.github.io/post/scope/</link>
-			<pubDate>Mon, 27 Feb 2023 08:37:43 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/scope/</guid>
-			<description>scope</description>
 		</item>
       	
 	</channel>
