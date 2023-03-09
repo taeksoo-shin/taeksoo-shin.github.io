@@ -14,6 +14,14 @@
 		<atom:link href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8Dprogramming/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>열거(enum)</title>
+			<link>https://coder-shin.github.io/post/enum/</link>
+			<pubDate>Thu, 09 Mar 2023 14:51:59 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/enum/</guid>
+			<description>enum</description>
+		</item>
+      	
+		<item>
 			<title>JVM(Java Virtual Machine)</title>
 			<link>https://coder-shin.github.io/post/jvm/</link>
 			<pubDate>Tue, 07 Mar 2023 23:25:18 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Tue, 28 Feb 2023 09:02:57 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/inheritance/</guid>
 			<description>지옥이 시작된다.</description>
-		</item>
-      	
-		<item>
-			<title>다형성(polymoriphism)</title>
-			<link>https://coder-shin.github.io/post/polymoriphism/</link>
-			<pubDate>Tue, 28 Feb 2023 09:02:20 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/polymoriphism/</guid>
-			<description>다 상대해주마! 다 들어와!</description>
 		</item>
       	
 	</channel>

@@ -5,6 +5,16 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/enum/",
+                "title": "열거(enum)",
+                "section": "post",
+                "date" : "2023.03.09",
+                "body": "[[java]]{자바(Java)} 특징 한정된 값만을 가진다. 열거 상수는 객체이다. 관례 열거 상수는 대문자로 작성한다. 예시 public enum Week { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } 인용 한정된 값만을 갖는 데이터 타입이 열거 타입(enumeration type)이다. (이것이 자바다[1판]) p.171\n열거 상수는 열거 타입의 값으로 사용되는데, 관례적으로 열거 상수는 모두 대문자로 작성한다. (이것이 자바다[1판]) p.171\n"
+            }
+    
+        ,
+            {
+                "id": 1,
                 "href": "https://coder-shin.github.io/post/jvm/",
                 "title": "JVM(Java Virtual Machine)",
                 "section": "post",
@@ -14,7 +24,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/string/",
                 "title": "string",
                 "section": "post",
@@ -24,7 +34,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/array/",
                 "title": "array",
                 "section": "post",
@@ -34,7 +44,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 4,
                 "href": "https://coder-shin.github.io/post/include/",
                 "title": "include",
                 "section": "post",
@@ -44,7 +54,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/template-literals/",
                 "title": "template literals",
                 "section": "post",
@@ -54,7 +64,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/list/",
                 "title": "list",
                 "section": "post",
@@ -64,7 +74,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/solid/",
                 "title": "SOLID",
                 "section": "post",
@@ -74,7 +84,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/encapsulation/",
                 "title": "캡슐화(encapsulation)",
                 "section": "post",
@@ -84,7 +94,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/inheritance/",
                 "title": "상속(inheritance)",
                 "section": "post",
@@ -94,7 +104,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/polymoriphism/",
                 "title": "다형성(polymoriphism)",
                 "section": "post",
@@ -104,7 +114,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/composition/",
                 "title": "합성(composition)",
                 "section": "post",
@@ -114,7 +124,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/scope/",
                 "title": "scope",
                 "section": "post",
@@ -124,7 +134,7 @@
     
         ,
             {
-                "id": 12,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/error/",
                 "title": "error",
                 "section": "post",
@@ -134,7 +144,7 @@
     
         ,
             {
-                "id": 13,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/construct/",
                 "title": "construct",
                 "section": "post",
@@ -144,7 +154,7 @@
     
         ,
             {
-                "id": 14,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/constructor/",
                 "title": "생성자(constructor)",
                 "section": "post",
@@ -154,7 +164,7 @@
     
         ,
             {
-                "id": 15,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/class/",
                 "title": "class",
                 "section": "post",
@@ -164,7 +174,7 @@
     
         ,
             {
-                "id": 16,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/methods/",
                 "title": "메서드(methods)",
                 "section": "post",
@@ -174,7 +184,7 @@
     
         ,
             {
-                "id": 17,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/attributes/",
                 "title": "속성(attributes)",
                 "section": "post",
@@ -184,7 +194,7 @@
     
         ,
             {
-                "id": 18,
+                "id": 19,
                 "href": "https://coder-shin.github.io/post/object/",
                 "title": "객체(object)",
                 "section": "post",
@@ -194,7 +204,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/object-wrappers/",
                 "title": "객체 래퍼(object wrappers)",
                 "section": "post",
@@ -204,7 +214,7 @@
     
         ,
             {
-                "id": 20,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/fp/",
                 "title": "함수형 프로그래밍(FP)",
                 "section": "post",
@@ -214,7 +224,7 @@
     
         ,
             {
-                "id": 21,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/oop/",
                 "title": "객체 지향 프로그래밍(OOP)",
                 "section": "post",
@@ -224,7 +234,7 @@
     
         ,
             {
-                "id": 22,
+                "id": 23,
                 "href": "https://coder-shin.github.io/post/select/",
                 "title": "SELECT",
                 "section": "post",
@@ -234,7 +244,7 @@
     
         ,
             {
-                "id": 23,
+                "id": 24,
                 "href": "https://coder-shin.github.io/post/null/",
                 "title": "null",
                 "section": "post",
@@ -244,7 +254,7 @@
     
         ,
             {
-                "id": 24,
+                "id": 25,
                 "href": "https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/",
                 "title": "보수(complement)",
                 "section": "post",
@@ -254,7 +264,7 @@
     
         ,
             {
-                "id": 25,
+                "id": 26,
                 "href": "https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/",
                 "title": "순환(recursion)",
                 "section": "post",
@@ -264,7 +274,7 @@
     
         ,
             {
-                "id": 26,
+                "id": 27,
                 "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
                 "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
                 "section": "post",
@@ -274,7 +284,7 @@
     
         ,
             {
-                "id": 27,
+                "id": 28,
                 "href": "https://coder-shin.github.io/post/data-type/",
                 "title": "데이터형(data type)",
                 "section": "post",
@@ -284,7 +294,7 @@
     
         ,
             {
-                "id": 28,
+                "id": 29,
                 "href": "https://coder-shin.github.io/post/dcl/",
                 "title": "DCL",
                 "section": "post",
@@ -294,7 +304,7 @@
     
         ,
             {
-                "id": 29,
+                "id": 30,
                 "href": "https://coder-shin.github.io/post/dml/",
                 "title": "DML",
                 "section": "post",
@@ -304,7 +314,7 @@
     
         ,
             {
-                "id": 30,
+                "id": 31,
                 "href": "https://coder-shin.github.io/post/ddl/",
                 "title": "DDL",
                 "section": "post",
@@ -314,7 +324,7 @@
     
         ,
             {
-                "id": 31,
+                "id": 32,
                 "href": "https://coder-shin.github.io/post/sql/",
                 "title": "SQL",
                 "section": "post",
@@ -324,7 +334,7 @@
     
         ,
             {
-                "id": 32,
+                "id": 33,
                 "href": "https://coder-shin.github.io/post/dbms/",
                 "title": "DBMS",
                 "section": "post",
@@ -334,7 +344,7 @@
     
         ,
             {
-                "id": 33,
+                "id": 34,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -344,7 +354,7 @@
     
         ,
             {
-                "id": 34,
+                "id": 35,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
@@ -354,7 +364,7 @@
     
         ,
             {
-                "id": 35,
+                "id": 36,
                 "href": "https://coder-shin.github.io/post/database/",
                 "title": "데이터베이스(database)",
                 "section": "post",
@@ -364,7 +374,7 @@
     
         ,
             {
-                "id": 36,
+                "id": 37,
                 "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
                 "title": "반복문(loop)",
                 "section": "post",
@@ -374,7 +384,7 @@
     
         ,
             {
-                "id": 37,
+                "id": 38,
                 "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -384,7 +394,7 @@
     
         ,
             {
-                "id": 38,
+                "id": 39,
                 "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -394,7 +404,7 @@
     
         ,
             {
-                "id": 39,
+                "id": 40,
                 "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -404,7 +414,7 @@
     
         ,
             {
-                "id": 40,
+                "id": 41,
                 "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -414,17 +424,17 @@
     
         ,
             {
-                "id": 41,
+                "id": 42,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "나의 해석 큰 회사가 필요한 그 언어\n특징 운영체제에 독립적이다. 한 번 작성한 코드는 어디에서든 실행된다. 객체지향언어 GC(Garbage Collector)이 존재한다. 인용 팁 관련 링크 [[variable]]{변수(variable)} [[jvm]]{JVM(Java Virtual Machine)} [[string]]{문자열(string)} [[array]]{배열(array)} "
+                "body": "나의 해석 큰 회사가 필요한 그 언어\n특징 운영체제에 독립적이다. 한 번 작성한 코드는 어디에서든 실행된다. 객체지향언어 GC(Garbage Collector)이 존재한다. 인용 팁 관련 링크 [[variable]]{변수(variable)} [[jvm]]{JVM(Java Virtual Machine)} [[string]]{문자열(string)} [[array]]{배열(array)} [[enum]]{열거(enum)} "
             }
     
         ,
             {
-                "id": 42,
+                "id": 43,
                 "href": "https://coder-shin.github.io/post/variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -434,17 +444,17 @@
     
         ,
             {
-                "id": 43,
+                "id": 44,
                 "href": "https://coder-shin.github.io/post/words/",
                 "title": "용어(words)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[리터럴(literal)]] [[반복문(loop)]] [[상수(constant)]] [[순환(recursion)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[constructor]]{생성자(constructor)} [[error]]{오류(error)} [[list]]{리스트(list)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[scope]]{범위(scope)} [[string]]{문자열(string)} [[variable]]{변수(variable)} 수학 관련 언어 [[보수(complement)]] "
+                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[리터럴(literal)]] [[반복문(loop)]] [[상수(constant)]] [[순환(recursion)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[constructor]]{생성자(constructor)} [[enum]]{열거(enum)} [[error]]{오류(error)} [[list]]{리스트(list)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[scope]]{범위(scope)} [[string]]{문자열(string)} [[variable]]{변수(variable)} 수학 관련 언어 [[보수(complement)]] "
             }
     
         ,
             {
-                "id": 44,
+                "id": 45,
                 "href": "https://coder-shin.github.io/post/data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -454,7 +464,7 @@
     
         ,
             {
-                "id": 45,
+                "id": 46,
                 "href": "https://coder-shin.github.io/post/sites/",
                 "title": "사이트(sites)",
                 "section": "post",
@@ -464,7 +474,7 @@
     
         ,
             {
-                "id": 46,
+                "id": 47,
                 "href": "https://coder-shin.github.io/post/books/",
                 "title": "책(books)",
                 "section": "post",
@@ -474,7 +484,7 @@
     
         ,
             {
-                "id": 47,
+                "id": 48,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "자바스크립트(JavaScript)",
                 "section": "post",
@@ -484,7 +494,7 @@
     
         ,
             {
-                "id": 48,
+                "id": 49,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -494,7 +504,7 @@
     
         ,
             {
-                "id": 49,
+                "id": 50,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
