@@ -126,7 +126,7 @@
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-03-09
+    2023-03-10
   </span>
 
   
@@ -161,7 +161,34 @@
 <ul>
 <li>열거 상수는 대문자로 작성한다.</li>
 </ul>
+<h3 id="관련-메소드">관련 메소드</h3>
+<h4 id="name">name()</h4>
+<ul>
+<li>열거 객체가 가지고 있는 문자열을 리턴하는 메소드.</li>
+<li>열거 타입을 정의 할 때 사용한 상수 이름과 동일한 값을 리턴</li>
+</ul>
+<h4 id="ordinal">ordinal()</h4>
+<ul>
+<li>열거 객체 중 몇 번째 열거 객체인지를 리턴하는 메소드.</li>
+<li>순번은 0번 부터 시작한다.</li>
+</ul>
+<h4 id="compareto">compareTo()</h4>
+<ul>
+<li>열거_객체.compareTo(비교_대상_열거_객체)의 형태로 사용한다.</li>
+<li>열거_객체가 비교_대상_열거_객체를 기준으로 몇 번째 위치하는지를 비교한다.</li>
+<li>비교_대상_열거_객체보다 열거_객체가 앞에 위치한 경우 음수(-)가 리턴된다.</li>
+</ul>
+<h4 id="valueof">valueOf()</h4>
+<ul>
+<li>열거_객체_타입.valueOf(문자열)의 형태로 사용된다.</li>
+<li>주어진 문자열과 동일한 문자열을 가지는 열거 객체를 리턴한다.</li>
+</ul>
+<h4 id="values">values()</h4>
+<ul>
+<li>배열에 열거 타입의 모든 열거 객체들을 넣어서 리턴하는 메소드.</li>
+</ul>
 <h3 id="예시">예시</h3>
+<h4 id="기본-사용법">기본 사용법</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> Week <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    MONDAY<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>    TUESDAY<span style="color:#f92672">,</span>
