@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-<title>용어(words)</title>
+<title>순환(recursion)</title>
 <meta name="description" 
       content=""
 >
@@ -21,8 +21,8 @@
   title="코더 신씨"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="용어(words)"/>
-<meta name="twitter:description" content="너의 이름은 치히로!"/>
+<meta name="twitter:title" content="순환(recursion)"/>
+<meta name="twitter:description" content="순환(recursion)"/>
 
 
 
@@ -119,21 +119,21 @@
         <div class="post-heading">
           
             <h1>
-              용어(words)
+              순환(recursion)
             </h1>
           
           
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-03-11
+    2023-02-25
   </span>
 
   
   <span class="meta-categories">
     &nbsp;&nbsp;&nbsp;
       <em class="fa fa-folder-open"></em>&nbsp;
-      <a href="https://coder-shin.github.io//categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%B4%88computer-basic/">컴퓨터 기초(computer basic)</a
+      <a href="https://coder-shin.github.io//categories/%EC%9A%A9%EC%96%B4words/">용어(words)</a
       >&nbsp;
     
   
@@ -151,32 +151,39 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>몰랐던 단어나 개념을 모아둔 곳</p>
-<h2 id="프로그래밍-관련-언어">프로그래밍 관련 언어</h2>
+  <h2 id="용어-설명">용어 설명</h2>
+<h3 id="나의-해석">나의 해석</h3>
+<p>큰 문제를 작은 문제로 나누어서 해결하는 방법</p>
+<h3 id="각종-설명">각종 설명</h3>
+<blockquote>
+<p>순환(recursion)이란 어떤 알고리즘이나 함수가 자기 자신을 호출하여 문제를
+해결하는 프로그래밍 기법이다.
+<em>(C언어로 쉽게 풀어쓴 자료구조(3판))</em></p>
+</blockquote>
+<h2 id="장단점">장단점</h2>
+<h3 id="장점">장점</h3>
 <ul>
-<li>[[attributes]]{속성(attributes)}</li>
-<li>[[class]]{클래스(class)}</li>
-<li>[[conditional statement]]{조건문(conditional statement)}</li>
-<li>[[constant]]{상수(constant)}</li>
-<li>[[constructor]]{생성자(constructor)}</li>
-<li>[[control flow statement]]{제어문(control flow statement)}</li>
-<li>[[enum]]{열거(enum)}</li>
-<li>[[error]]{오류(error)}</li>
-<li>[[list]]{리스트(list)}</li>
-<li>[[literal]]{리터럴(literal)}</li>
-<li>[[loop]]{반복문(loop)}</li>
-<li>[[methods]]{메소드(methods)}</li>
-<li>[[null]]{null}</li>
-<li>[[object wrappers]]{객체 래퍼(object wrappers)}</li>
-<li>[[object]]{객체(object)}</li>
-<li>[[recursion]]{[순환(recursion)]}</li>
-<li>[[scope]]{범위(scope)}</li>
-<li>[[string]]{문자열(string)}</li>
-<li>[[variable]]{변수(variable)}</li>
+<li>[[[반복문(loop)]]]을 사용하면 복잡해지는 문제들을 간단하게 해결 할 수 있다.</li>
+<li>문제의 정의가 순환적으로 되어 있는 경우 순환으로 작성하는 것이 훨씬 더
+간결하게 코드를 작성 할 수 있다.</li>
 </ul>
-<h2 id="수학-관련-언어">수학 관련 언어</h2>
+<h3 id="단점">단점</h3>
 <ul>
-<li>[[보수(complement)]]</li>
+<li>실행시간이 오래걸린다.</li>
+<li>메모리 사용에 있어서 비효율적이다.</li>
+</ul>
+<h2 id="꼬리-순환과-머리-순환">꼬리 순환과 머리 순환</h2>
+<h3 id="꼬리-순환tail-recursion">꼬리 순환(tail recursion)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> n <span style="color:#f92672">*</span> <span style="color:#a6e22e">factorial</span>(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+</span></span></code></pre></div><h3 id="머리-순환head-recursion">머리 순환(head recursion)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">factorial</span>(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> n;
+</span></span></code></pre></div><h2 id="팁">팁</h2>
+<ul>
+<li>순환은 본질적으로 순환(recursive)인 문제나 그러한 자료구조를 다루는
+프로그램에 적합</li>
+<li>머리 순환(head recursion)의 경우나 여러 군데에서 자기 자신을 호출하는
+경우(multi recursion)는 쉽게 반복전인 코드로 바꿀 수 없다.</li>
+<li>대부분 [[반복문(loop)]]로 대처할 수  있다.</li>
 </ul>
 
 
@@ -185,10 +192,7 @@
       
         <div class="blog-tags">
           
-            <a href="https://coder-shin.github.io//tags/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EC%B4%88computer-basic/">컴퓨터 기초(computer basic)</a
-            >&nbsp;
-          
-            <a href="https://coder-shin.github.io//tags/index/">index</a
+            <a href="https://coder-shin.github.io//tags/%EC%9A%A9%EC%96%B4words/">용어(words)</a
             >&nbsp;
           
         </div>

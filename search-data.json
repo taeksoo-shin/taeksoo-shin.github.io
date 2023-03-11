@@ -265,7 +265,7 @@
         ,
             {
                 "id": 26,
-                "href": "https://coder-shin.github.io/post/%EC%88%9C%ED%99%98recursion/",
+                "href": "https://coder-shin.github.io/post/recursion/",
                 "title": "순환(recursion)",
                 "section": "post",
                 "date" : "2023.02.23",
@@ -375,7 +375,7 @@
         ,
             {
                 "id": 37,
-                "href": "https://coder-shin.github.io/post/%EB%B0%98%EB%B3%B5%EB%AC%B8loop/",
+                "href": "https://coder-shin.github.io/post/loop/",
                 "title": "반복문(loop)",
                 "section": "post",
                 "date" : "2023.02.16",
@@ -385,7 +385,7 @@
         ,
             {
                 "id": 38,
-                "href": "https://coder-shin.github.io/post/%EC%A1%B0%EA%B1%B4%EB%AC%B8conditional-statement/",
+                "href": "https://coder-shin.github.io/post/conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
                 "date" : "2023.02.16",
@@ -395,7 +395,7 @@
         ,
             {
                 "id": 39,
-                "href": "https://coder-shin.github.io/post/%EC%A0%9C%EC%96%B4%EB%AC%B8control-flow-statement/",
+                "href": "https://coder-shin.github.io/post/control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
                 "date" : "2023.02.16",
@@ -405,7 +405,7 @@
         ,
             {
                 "id": 40,
-                "href": "https://coder-shin.github.io/post/%EC%83%81%EC%88%98constant/",
+                "href": "https://coder-shin.github.io/post/constant/",
                 "title": "상수(constant)",
                 "section": "post",
                 "date" : "2023.02.16",
@@ -415,7 +415,7 @@
         ,
             {
                 "id": 41,
-                "href": "https://coder-shin.github.io/post/%EB%A6%AC%ED%84%B0%EB%9F%B4literal/",
+                "href": "https://coder-shin.github.io/post/literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
                 "date" : "2023.02.16",
@@ -449,7 +449,7 @@
                 "title": "용어(words)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[리터럴(literal)]] [[반복문(loop)]] [[상수(constant)]] [[순환(recursion)]] [[제어문(control flow statement)]] [[조건문(conditional statement)]] [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[constructor]]{생성자(constructor)} [[enum]]{열거(enum)} [[error]]{오류(error)} [[list]]{리스트(list)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[scope]]{범위(scope)} [[string]]{문자열(string)} [[variable]]{변수(variable)} 수학 관련 언어 [[보수(complement)]] "
+                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[conditional statement]]{조건문(conditional statement)} [[constant]]{상수(constant)} [[constructor]]{생성자(constructor)} [[control flow statement]]{제어문(control flow statement)} [[enum]]{열거(enum)} [[error]]{오류(error)} [[list]]{리스트(list)} [[literal]]{리터럴(literal)} [[loop]]{반복문(loop)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[recursion]]{[순환(recursion)]} [[scope]]{범위(scope)} [[string]]{문자열(string)} [[variable]]{변수(variable)} 수학 관련 언어 [[보수(complement)]] "
             }
     
         ,
