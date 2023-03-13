@@ -5,6 +5,66 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/spread-operator/",
+                "title": "전개 구문(spread operator)",
+                "section": "post",
+                "date" : "2023.03.13",
+                "body": "[[javascript]]{자바스크립트(JavaScript)} 개요 반복 가능한 객체\n사용처 배열 합치기 전개 구문(spread operator)를 이용하면 배열을 합치는 Array.prototype.concat()를 대신해서 배열을 간단하게 합칠 수 있다.\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const combinedArrayWithConcat = array1.concat(array2); console.log(combinedArrayWithConcat); // [1, 2, 3, 4, 5, 6] const combinedArrayWithSpread = [...array1, ...array2]; console.log(combinedArrayWithSpread); // [1, 2, 3, 4, 5, 6] 단 개인적인 의견으로는 배열을 합칠 때에는 spread operator를 사용하기 보다는 concat을 사용하는 것이 좋다고 생각한다. 왜냐하면 spread operator 자체는 배열을 합친다는 의미가 없기 때문이다. 즉 명시적으로 배열을 합친다는 의미를 가진 concat과 다르게 spread operator는 한번 더 확인 할 필요가 있기 때문에 가독성이 조금이라도 더 오를 수 있는 concat을 사용하는게 더욱 좋다고 생각된다.\n배열 복사하기 객체 합치기 객체 복사하기 함수에 인수 전달하기 Math 함수의 인수 전달하기 인용 "
+            }
+    
+        ,
+            {
+                "id": 1,
+                "href": "https://coder-shin.github.io/post/annotation/",
+                "title": "annotation",
+                "section": "post",
+                "date" : "2023.03.13",
+                "body": "[[java]]{자바(Java)} 인용 어노테이션은 다음 세 가지 용도로 사용된다.\n컴파일러에게 코드 문법 에러를 체크하도록 정보를 제콩 소프트웨어 개발 툴이 빌드나 배치 시 코드를 자동으로 생성할 수 있도록 정보를 제공 실행 시(런타임 시) 특정 기능을 실행하도록 정보를 제공 (이것이 자바다[1판]) p.268\n어노테이션을 적용할 수 있는 대상은 java.lang.annotation.ElementType 열거 상수로 다음과 같이 정의되어 있다.\nElementType 열거 상수 적용 대상 TYPE 클래스, 인터페이스, 열거 타입 ANNOTATION_TYPE 어노테이션 FIELD 필드 CONSTRUCTOR 생성자 METHOD 메소드 LOCAL_VARIABLE 로컬 변수 PACKAGE 패키지 (이것이 자바다[1판]) p.271\n사용 용도에 따라 @AnnotationName을 어느 범위까지 유지할 것인지 지정해야 한다. 쉽게 설명하면 소스상에만 유지할 건지, 컴파일된 클래스까지 유지할 건지, 런타임 시에도 유지할 건지를 지정해야 한다.\n(이것이 자바다[1판]) p.272\n어노테이션 유지 정책은 java.lang.annotation.RetentionPolicy 열거 상수로 다음과 같이 정의되어 있다.\nRetentionPolicy 열거 상수 설명 SOURCE 소스상에서만 어노테이션 정보를 유지한다. 소스 코드를 분석할 때만 의미가 있으며, 바이트 코드 파일에는 정보가 남지 않는다. CLASS 바이트 코드 파일까지 어노테이션 정보를 유지한다. 하지만 리플렉션을 이용해서 어노테이션 정보를 얻을 수는 없다. RUNTIME 바이트 코드 파일까지 어노테이션 정보를 유지하면서 리플레션을 이용해서 런타임 시에 어노테이션 정보를 얻을 수 있다. (이것이 자바다[1판]) p.272\n어노테이션 유지 정책을 지정할 때에는 @Retention 어노테이션을 사용한다.\n(이것이 자바다[1판]) p.272\n"
+            }
+    
+        ,
+            {
+                "id": 2,
+                "href": "https://coder-shin.github.io/post/access-modifier/",
+                "title": "접근 제한자(access modifier)",
+                "section": "post",
+                "date" : "2023.03.13",
+                "body": "[[java]]{자바(Java)} 사용 이유 접근해서 사용할 수 있는 멤버와 사용할 수 없는 멤버를 구분하기 위해서 사용한다.\n종류 [[java]]{자바(Java)}에서 제공하는 접근 제한자는 아래의 네 가지 종류가 있다.\npublic protected default private 각각의 특징은 아래와 같다.\npublic 접근 제한자를 사용한 멤버는 모든 클래스가 자유롭게 사용 할 수 있다. 즉 자기 자신의 클래스, 같은 패키지의 클래스, 자식 클래스, 외부 클래스가 사용 가능하다.\nprotected 접근 제한자를 사용한 멤버는 같은 패키지와 자식 클래스가 자유롭게 사용 할 수 있다. 즉 자기 자신의 클래스, 같은 패키지의 클래스, 자식 클래스가 사용 가능하다.\nprivate 접근 제한자를 사용한 멤버는 자신 이외의 클래스에서는 사용 할 수 없다. 즉 자기 자신의 클래스만이 사용 가능하다.\ndefault 접근 제한자를 사용한 멤버는 같은 패키지에 소속된 클래스에서 사용 가능하다. 즉 자기 자신의 클래스, 같은 패키지의 클래스가 사용 가능하다. (default 접근 제한자는 public, protected, private 중 어느 제한자도 사용하지 않은 경우 자동적으로 default 접근 제한자에 할당된다.)\n인용 라이브러리 클래스를 설계할 때에는 외부 클래스에서 접근할 수 있는 멤버와 접근 할 수 없는 멤버로 구분해서 필드, 생성자, 메소드를 설계하는 것이 바람직하다. \u0026hellip; 자바는 이러한 기능을 구현하기 위해 접근 제한자(Access Modifier)를 제공하고 있다.\n(이것이 자바다[1판]) p.256\npublic 접근 제한자는 외부 클래스가 자유롭게 사용할 수 있는 공개 멤버를 만든다. protected 접근 제한자는 같은 패키지 또는 자식 클래스에서 사용할 수 있는 멤버를 만든다. private 접근 제한자는 단어의 뜻 그대로 개인적인 것이라 외부에 노출되지 않는 멤버를 만든다. 위 세 가지 접근 제한자가 적용되지 않은 멤버는 default 접근 제한자를 가진다. default 접근 제한자는 같은 패키지에 소속된 클래스에서만 사용할 수 있는 멤버를 만든다.\n(이것이 자바다[1판]) p.256\n"
+            }
+    
+        ,
+            {
+                "id": 3,
+                "href": "https://coder-shin.github.io/post/import/",
+                "title": "임포트(import)",
+                "section": "post",
+                "date" : "2023.03.13",
+                "body": "[[java]]{자바(Java)} 사용 이유 다른 패키지에 속하는 클래스를 사용하기 위해 import를 이용한다.\n위치 import문은 pacakge 선언과 class 선언의 사이에 위치한다.\n* (에스터리스크) 패키지에 포함된 다수의 클래스를 사용해야 한다면 클래스별로 import문을 작성할 필요 없이 클래스 이름을 생략하고 * 를 사용해서 표현 할 수도 있다. 단 개인적인 의견으로는 static 클래스를 제외하고는 import문은 * 로 표현하기 보다는 사용할 클래스를 하나씩, import문을 이용해서 작성하는 것이 좋다고 생각한다. 왜냐하면 * 로 표현되어 있는 경우, 현재의 [[class]]{클래스(class)}와 다른 [[class]]{클래스(class)}간의 [[coupling]]{결합도(coupling)}가 얼마나 높은지 판단 할 수 없다. 그렇기 때문에 [[refactoring]]{리팩터링(refactoring)}의 판단 기준이 될 수 있는 [[coupling]]{결합도(coupling)}가 눈에 보이지 않게 된다. 결과적으로는 코드가 점점 냄새나는 코드로 변화한다.\n인용 "
+            }
+    
+        ,
+            {
+                "id": 4,
+                "href": "https://coder-shin.github.io/post/package/",
+                "title": "package",
+                "section": "post",
+                "date" : "2023.03.12",
+                "body": "[[java]]{자바(java)} 명명 규칙 언어상 규칙 숫자로 시작하면 안된다. _ 와 $를 제외한 특수 문자는 사용하면 안된다. java로 시작하면 안된다. (java로 시작하는 패키지는 자바 표준 API에서만 사용되어야 하기 때문이다.) 관례적 규칙 모두 소문자로 작성한다. 회사의 도메인의 역순으로 패키지를 작성한다. 마지막 패키지는 프로젝트 이름을 붙여준다. "
+            }
+    
+        ,
+            {
+                "id": 5,
+                "href": "https://coder-shin.github.io/post/static/",
+                "title": "static",
+                "section": "post",
+                "date" : "2023.03.11",
+                "body": "[[java]]{자바(java)} 클래스를 생성하지 않은 상태에서 사용할 수 있는 멤버, 메소드를 생성하게 해주는 기능\n인용 정적(static)은 \u0026lsquo;고정된\u0026rsquo;이란 의미를 가지고 있다. 정적 멤버는 클래스에 고정된 멤버로서 객체를 생성하지 않고 사용할 수 있는 필드와 메소드를 말한다. (이것이 자바다[1판]) p.236\n필드를 선언할 때 인스턴스 필드로 선언할 것인가, 아니면 정적 필드로 선언할 것인가의 판단 기준은 객체마다 가지고 있어야 할 데이터라면 인스턴스 핀드로 선언하고, 객체마다 가지고 있을 필요성이 없는 공용적인 데이터라면 정적 필드로 선언하는 것이 좋다. (이것이 자바다[1판]) p.236\n메소드의 경우, 인스턴스 메소드로 선언할 것인가, 아니면 정적 메소드로 선언할 것인가의 판단 기준은 인스턴스 필드를 이ㅛㅇ해서 실행해야 한다면 인스턴스 메소드로 선언하고, 인스턴스 필드를 이용하지 않는다면 정적 메소드로 선언한다. (이것이 자바다[1판]) p.237\n"
+            }
+    
+        ,
+            {
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/enum/",
                 "title": "열거(enum)",
                 "section": "post",
@@ -14,7 +74,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/jvm/",
                 "title": "JVM(Java Virtual Machine)",
                 "section": "post",
@@ -24,7 +84,7 @@
     
         ,
             {
-                "id": 2,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/string/",
                 "title": "string",
                 "section": "post",
@@ -34,7 +94,7 @@
     
         ,
             {
-                "id": 3,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/array/",
                 "title": "array",
                 "section": "post",
@@ -44,7 +104,7 @@
     
         ,
             {
-                "id": 4,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/include/",
                 "title": "include",
                 "section": "post",
@@ -54,7 +114,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/template-literals/",
                 "title": "template literals",
                 "section": "post",
@@ -64,7 +124,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/list/",
                 "title": "list",
                 "section": "post",
@@ -74,7 +134,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/solid/",
                 "title": "SOLID",
                 "section": "post",
@@ -84,7 +144,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/encapsulation/",
                 "title": "캡슐화(encapsulation)",
                 "section": "post",
@@ -94,7 +154,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/inheritance/",
                 "title": "상속(inheritance)",
                 "section": "post",
@@ -104,7 +164,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/polymoriphism/",
                 "title": "다형성(polymoriphism)",
                 "section": "post",
@@ -114,7 +174,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/composition/",
                 "title": "합성(composition)",
                 "section": "post",
@@ -124,7 +184,7 @@
     
         ,
             {
-                "id": 12,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/scope/",
                 "title": "scope",
                 "section": "post",
@@ -134,7 +194,7 @@
     
         ,
             {
-                "id": 13,
+                "id": 19,
                 "href": "https://coder-shin.github.io/post/error/",
                 "title": "error",
                 "section": "post",
@@ -144,7 +204,7 @@
     
         ,
             {
-                "id": 14,
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/construct/",
                 "title": "construct",
                 "section": "post",
@@ -154,7 +214,7 @@
     
         ,
             {
-                "id": 15,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/constructor/",
                 "title": "생성자(constructor)",
                 "section": "post",
@@ -164,7 +224,7 @@
     
         ,
             {
-                "id": 16,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/class/",
                 "title": "class",
                 "section": "post",
@@ -174,7 +234,7 @@
     
         ,
             {
-                "id": 17,
+                "id": 23,
                 "href": "https://coder-shin.github.io/post/methods/",
                 "title": "메서드(methods)",
                 "section": "post",
@@ -184,7 +244,7 @@
     
         ,
             {
-                "id": 18,
+                "id": 24,
                 "href": "https://coder-shin.github.io/post/attributes/",
                 "title": "속성(attributes)",
                 "section": "post",
@@ -194,7 +254,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 25,
                 "href": "https://coder-shin.github.io/post/object/",
                 "title": "객체(object)",
                 "section": "post",
@@ -204,7 +264,7 @@
     
         ,
             {
-                "id": 20,
+                "id": 26,
                 "href": "https://coder-shin.github.io/post/object-wrappers/",
                 "title": "객체 래퍼(object wrappers)",
                 "section": "post",
@@ -214,7 +274,7 @@
     
         ,
             {
-                "id": 21,
+                "id": 27,
                 "href": "https://coder-shin.github.io/post/fp/",
                 "title": "함수형 프로그래밍(FP)",
                 "section": "post",
@@ -224,7 +284,7 @@
     
         ,
             {
-                "id": 22,
+                "id": 28,
                 "href": "https://coder-shin.github.io/post/oop/",
                 "title": "객체 지향 프로그래밍(OOP)",
                 "section": "post",
@@ -234,7 +294,7 @@
     
         ,
             {
-                "id": 23,
+                "id": 29,
                 "href": "https://coder-shin.github.io/post/select/",
                 "title": "SELECT",
                 "section": "post",
@@ -244,7 +304,7 @@
     
         ,
             {
-                "id": 24,
+                "id": 30,
                 "href": "https://coder-shin.github.io/post/null/",
                 "title": "null",
                 "section": "post",
@@ -254,7 +314,7 @@
     
         ,
             {
-                "id": 25,
+                "id": 31,
                 "href": "https://coder-shin.github.io/post/%EB%B3%B4%EC%88%98complement/",
                 "title": "보수(complement)",
                 "section": "post",
@@ -264,7 +324,7 @@
     
         ,
             {
-                "id": 26,
+                "id": 32,
                 "href": "https://coder-shin.github.io/post/recursion/",
                 "title": "순환(recursion)",
                 "section": "post",
@@ -274,17 +334,17 @@
     
         ,
             {
-                "id": 27,
+                "id": 33,
                 "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
                 "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
                 "section": "post",
                 "date" : "2023.02.17",
-                "body": "navigator.userAgent를 이용하는 방법 navigator.userAgent는 user agent를 string으로 보관하고 있는 읽기 전용 property이다. 이를 이용해서 사용자가 pc에서 페이지를 열람하고 있는가, 스마트폰에서 페이지를 열람하고 있는가를 확인할 수 있다.\nconst isSmartPhone = (): boolean =\u0026gt; { return /Android|iPhone/i.test(navigator.userAgent); }; 간편하게 이용할 수 있는 반면 아래와 같은 단점이 있다.\n사용자가 navigator.userAgent를 위조가 가능하다. 호환성이 좋지 않다. (참고 - https://caniuse.com/mdn-api_navigator_useragentdata) 특히 호환성이 굉장히 좋지 않기 때문에 사용하기 전에 검토를 해볼 필요가 있다.\ndetectmobilebrowsers에서 제공하는 스크립트를 이용하는 방법. http://detectmobilebrowsers.com/ 는 페이지를 어떠한 환경에서 작동하고 있는지 감지 할 수 있는 스크립트를 제공하는 사이트이다.\n편하게 스크립트를 받아서 자신의 서비스에 넣어주면 편리하게 사용가능하다.\n단 몇몇 기기에서 작동이 되지 않는다는 제보도 있기 때문에 100% 신용은 금물이다.\n"
+                "body": "빠른 결론 사용하는 브라우저에 따라서 javascript로 어떤 디바이스를 사용하고 있는지 알아보는 방법이 구현되어 있지 않는 가능성이 있기 때문에, 디바이스를 대상으로 기능을 구현하기 보다는 보고 있는 브라우저의 사이즈에 따라서 기능을 달리하는 방법이 추천된다.\nnavigator.userAgent를 이용하는 방법 navigator.userAgent는 user agent를 string으로 보관하고 있는 읽기 전용 property이다. 이를 이용해서 사용자가 pc에서 페이지를 열람하고 있는가, 스마트폰에서 페이지를 열람하고 있는가를 확인할 수 있다.\nconst isSmartPhone = (): boolean =\u0026gt; { return /Android|iPhone/i.test(navigator.userAgent); }; 간편하게 이용할 수 있는 반면 아래와 같은 단점이 있다.\n사용자가 navigator.userAgent를 위조가 가능하다. 호환성이 좋지 않다. (참고 - https://caniuse.com/mdn-api_navigator_useragentdata) 특히 호환성이 굉장히 좋지 않기 때문에 사용하기 전에 검토를 해볼 필요가 있다.\ndetectmobilebrowsers에서 제공하는 스크립트를 이용하는 방법. http://detectmobilebrowsers.com/ 는 페이지를 어떠한 환경에서 작동하고 있는지 감지 할 수 있는 스크립트를 제공하는 사이트이다.\n편하게 스크립트를 받아서 자신의 서비스에 넣어주면 편리하게 사용가능하다.\n단 몇몇 기기에서 작동이 되지 않는다는 제보도 있기 때문에 100% 신용은 금물이다.\n"
             }
     
         ,
             {
-                "id": 28,
+                "id": 34,
                 "href": "https://coder-shin.github.io/post/data-type/",
                 "title": "데이터형(data type)",
                 "section": "post",
@@ -294,7 +354,7 @@
     
         ,
             {
-                "id": 29,
+                "id": 35,
                 "href": "https://coder-shin.github.io/post/dcl/",
                 "title": "DCL",
                 "section": "post",
@@ -304,7 +364,7 @@
     
         ,
             {
-                "id": 30,
+                "id": 36,
                 "href": "https://coder-shin.github.io/post/dml/",
                 "title": "DML",
                 "section": "post",
@@ -314,7 +374,7 @@
     
         ,
             {
-                "id": 31,
+                "id": 37,
                 "href": "https://coder-shin.github.io/post/ddl/",
                 "title": "DDL",
                 "section": "post",
@@ -324,7 +384,7 @@
     
         ,
             {
-                "id": 32,
+                "id": 38,
                 "href": "https://coder-shin.github.io/post/sql/",
                 "title": "SQL",
                 "section": "post",
@@ -334,7 +394,7 @@
     
         ,
             {
-                "id": 33,
+                "id": 39,
                 "href": "https://coder-shin.github.io/post/dbms/",
                 "title": "DBMS",
                 "section": "post",
@@ -344,7 +404,7 @@
     
         ,
             {
-                "id": 34,
+                "id": 40,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -354,27 +414,27 @@
     
         ,
             {
-                "id": 35,
+                "id": 41,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "나의 해석 (개인적) 과거의 선인들의 위대한 지식을 얻기 위해 필요한 언어\n각종 인용 팁 [[수행시간 측정방법]] 관련 링크 [[variable]] "
+                "body": "나의 해석 과거의 선인들의 위대한 지식을 얻기 위해 필요한 언어\n인용 팁 [[수행시간 측정방법]] 관련 링크 [[variable]]{변수(variable)} "
             }
     
         ,
             {
-                "id": 36,
+                "id": 42,
                 "href": "https://coder-shin.github.io/post/database/",
                 "title": "데이터베이스(database)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "데이터베이스란? 나의 해석 각종 설명 이런 정보를 데이터로 저장하고, 컴퓨터를 사용해서 효율적으로 접근할 수 있도록 가공한 것을 데이터베이스(Database) 또는 줄여서 DB라고 한다.\n(SQL 더 쉽게 더 깊게 p.4)\n명명 규칙 데이터베이스나 테이블, 열 등의 이름으로 사용할 수 있는 문자는 세 가지\n영문자 숫자 언더바(_) 이름의 첫 글자는 반드시 영문이어야 한다.\n이름은 중복해서 사용해서는 안 된다.\n관련 링크 [[DBMS]] [[SQL]] [[data type]]{데이터형} "
+                "body": "나의 해석 여러 정보를 유용하게 사용하기 위해서 정리한 것을 데이터베이스라고 생각한다.\n인용 이런 정보를 데이터로 저장하고, 컴퓨터를 사용해서 효율적으로 접근할 수 있도록 가공한 것을 데이터베이스(Database) 또는 줄여서 DB라고 한다.\n(SQL 더 쉽게 더 깊게 p.4)\n명명 규칙 데이터베이스나 테이블, 열 등의 이름으로 사용할 수 있는 문자는 세 가지\n영문자 숫자 언더바( _ ) 이름의 첫 글자는 반드시 영문이어야 한다.\n이름은 중복해서 사용해서는 안 된다.\n관련 링크 [[DBMS]] [[SQL]] [[data type]]{데이터형} "
             }
     
         ,
             {
-                "id": 37,
+                "id": 43,
                 "href": "https://coder-shin.github.io/post/loop/",
                 "title": "반복문(loop)",
                 "section": "post",
@@ -384,7 +444,7 @@
     
         ,
             {
-                "id": 38,
+                "id": 44,
                 "href": "https://coder-shin.github.io/post/conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -394,7 +454,7 @@
     
         ,
             {
-                "id": 39,
+                "id": 45,
                 "href": "https://coder-shin.github.io/post/control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -404,7 +464,7 @@
     
         ,
             {
-                "id": 40,
+                "id": 46,
                 "href": "https://coder-shin.github.io/post/constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -414,7 +474,7 @@
     
         ,
             {
-                "id": 41,
+                "id": 47,
                 "href": "https://coder-shin.github.io/post/literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -424,17 +484,17 @@
     
         ,
             {
-                "id": 42,
+                "id": 48,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "나의 해석 큰 회사가 필요한 그 언어\n특징 운영체제에 독립적이다. 한 번 작성한 코드는 어디에서든 실행된다. 객체지향언어 GC(Garbage Collector)이 존재한다. 인용 팁 관련 링크 [[variable]]{변수(variable)} [[jvm]]{JVM(Java Virtual Machine)} [[string]]{문자열(string)} [[array]]{배열(array)} [[enum]]{열거(enum)} "
+                "body": "나의 해석 큰 회사에서 필요한 그 언어\n특징 운영체제에 독립적이다. 한 번 작성한 코드는 어디에서든 실행된다. 객체지향언어 GC(Garbage Collector)이 존재한다. 인용 팁 관련 링크 [[variable]]{변수(variable)} [[jvm]]{JVM(Java Virtual Machine)} [[string]]{문자열(string)} [[array]]{배열(array)} [[enum]]{열거(enum)} [[static]]{static} [[package]]{패키지(package)} [[import]]{임포트(import)} [[annotation]]{어노테이션(annotation)} "
             }
     
         ,
             {
-                "id": 43,
+                "id": 49,
                 "href": "https://coder-shin.github.io/post/variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -444,17 +504,17 @@
     
         ,
             {
-                "id": 44,
+                "id": 50,
                 "href": "https://coder-shin.github.io/post/words/",
                 "title": "용어(words)",
                 "section": "post",
                 "date" : "2023.02.16",
-                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[conditional statement]]{조건문(conditional statement)} [[constant]]{상수(constant)} [[constructor]]{생성자(constructor)} [[control flow statement]]{제어문(control flow statement)} [[enum]]{열거(enum)} [[error]]{오류(error)} [[list]]{리스트(list)} [[literal]]{리터럴(literal)} [[loop]]{반복문(loop)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[recursion]]{[순환(recursion)]} [[scope]]{범위(scope)} [[string]]{문자열(string)} [[variable]]{변수(variable)} 수학 관련 언어 [[보수(complement)]] "
+                "body": "몰랐던 단어나 개념을 모아둔 곳\n프로그래밍 관련 언어 [[attributes]]{속성(attributes)} [[class]]{클래스(class)} [[conditional statement]]{조건문(conditional statement)} [[constant]]{상수(constant)} [[constructor]]{생성자(constructor)} [[control flow statement]]{제어문(control flow statement)} [[enum]]{열거(enum)} [[error]]{오류(error)} [[list]]{리스트(list)} [[literal]]{리터럴(literal)} [[loop]]{반복문(loop)} [[methods]]{메소드(methods)} [[null]]{null} [[object wrappers]]{객체 래퍼(object wrappers)} [[object]]{객체(object)} [[recursion]]{[순환(recursion)]} [[scope]]{범위(scope)} [[static]]{static} [[string]]{문자열(string)} [[variable]]{변수(variable)} [[package]]{패키지(pacakge)} [[import]]{임포트(import)} [[access modifier]]{접근 제한자(access modifier)} [[annotation]]{어노테이션(annotation)} 수학 관련 언어 [[보수(complement)]] "
             }
     
         ,
             {
-                "id": 45,
+                "id": 51,
                 "href": "https://coder-shin.github.io/post/data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -464,7 +524,7 @@
     
         ,
             {
-                "id": 46,
+                "id": 52,
                 "href": "https://coder-shin.github.io/post/sites/",
                 "title": "사이트(sites)",
                 "section": "post",
@@ -474,7 +534,7 @@
     
         ,
             {
-                "id": 47,
+                "id": 53,
                 "href": "https://coder-shin.github.io/post/books/",
                 "title": "책(books)",
                 "section": "post",
@@ -484,17 +544,17 @@
     
         ,
             {
-                "id": 48,
+                "id": 54,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "자바스크립트(JavaScript)",
                 "section": "post",
                 "date" : "2023.02.14",
-                "body": "나의 해석 이름이 비슷하지만 자바의 스크립트 버전은 아니다.\n인용 팁 [[javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기]] 관련 링크 [[variable]]{변수(variable)} [[template literals]]{(템플릿 리터럴(template literals)} [[include]]{include} "
+                "body": "나의 해석 자바와 이름이 비슷하지만 자바의 스크립트 버전은 아니다.\n인용 팁 [[javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기]] 관련 링크 [[variable]]{변수(variable)} [[template literals]]{(템플릿 리터럴(template literals)} [[include]]{include} [[spread operator]]{전개 구문(spread operator)} "
             }
     
         ,
             {
-                "id": 49,
+                "id": 55,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -504,7 +564,7 @@
     
         ,
             {
-                "id": 50,
+                "id": 56,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",

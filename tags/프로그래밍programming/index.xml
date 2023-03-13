@@ -14,6 +14,54 @@
 		<atom:link href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8Dprogramming/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>전개 구문(spread operator)</title>
+			<link>https://coder-shin.github.io/post/spread-operator/</link>
+			<pubDate>Mon, 13 Mar 2023 19:06:28 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/spread-operator/</guid>
+			<description>마법 주문 같은 연산자 &amp;hellip;</description>
+		</item>
+      	
+		<item>
+			<title>annotation</title>
+			<link>https://coder-shin.github.io/post/annotation/</link>
+			<pubDate>Mon, 13 Mar 2023 18:46:54 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/annotation/</guid>
+			<description>annotation</description>
+		</item>
+      	
+		<item>
+			<title>접근 제한자(access modifier)</title>
+			<link>https://coder-shin.github.io/post/access-modifier/</link>
+			<pubDate>Mon, 13 Mar 2023 08:47:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/access-modifier/</guid>
+			<description>제발 마음대로 private를 public으로 변경하지 말아주세요.</description>
+		</item>
+      	
+		<item>
+			<title>임포트(import)</title>
+			<link>https://coder-shin.github.io/post/import/</link>
+			<pubDate>Mon, 13 Mar 2023 07:52:03 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/import/</guid>
+			<description>상대 path로 할지 절대 path로 할지 고민하는 그것</description>
+		</item>
+      	
+		<item>
+			<title>package</title>
+			<link>https://coder-shin.github.io/post/package/</link>
+			<pubDate>Sun, 12 Mar 2023 11:47:05 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/package/</guid>
+			<description>package</description>
+		</item>
+      	
+		<item>
+			<title>static</title>
+			<link>https://coder-shin.github.io/post/static/</link>
+			<pubDate>Sat, 11 Mar 2023 14:49:27 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/static/</guid>
+			<description>어떻게 사용하는게 베스트인지 매번 고민하는 그 기능 - static</description>
+		</item>
+      	
+		<item>
 			<title>열거(enum)</title>
 			<link>https://coder-shin.github.io/post/enum/</link>
 			<pubDate>Thu, 09 Mar 2023 14:51:59 +0900</pubDate>
@@ -43,54 +91,6 @@
 			<pubDate>Tue, 07 Mar 2023 18:19:47 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/array/</guid>
 			<description>야 자바스크립트! 넌 배열 아닌 리스트인데 왜 여기있어?</description>
-		</item>
-      	
-		<item>
-			<title>include</title>
-			<link>https://coder-shin.github.io/post/include/</link>
-			<pubDate>Tue, 07 Mar 2023 18:15:53 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/include/</guid>
-			<description>포함하고 있나?</description>
-		</item>
-      	
-		<item>
-			<title>template literals</title>
-			<link>https://coder-shin.github.io/post/template-literals/</link>
-			<pubDate>Thu, 02 Mar 2023 09:41:24 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/template-literals/</guid>
-			<description>template literals</description>
-		</item>
-      	
-		<item>
-			<title>list</title>
-			<link>https://coder-shin.github.io/post/list/</link>
-			<pubDate>Thu, 02 Mar 2023 00:00:02 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/list/</guid>
-			<description>모든 프로그래밍 언어에는 다 있다는 그 데이터 구조</description>
-		</item>
-      	
-		<item>
-			<title>SOLID</title>
-			<link>https://coder-shin.github.io/post/solid/</link>
-			<pubDate>Tue, 28 Feb 2023 23:45:26 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/solid/</guid>
-			<description>코드! 단단해지기!</description>
-		</item>
-      	
-		<item>
-			<title>캡슐화(encapsulation)</title>
-			<link>https://coder-shin.github.io/post/encapsulation/</link>
-			<pubDate>Tue, 28 Feb 2023 09:03:22 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/encapsulation/</guid>
-			<description>객체는 단단해져야한다.</description>
-		</item>
-      	
-		<item>
-			<title>상속(inheritance)</title>
-			<link>https://coder-shin.github.io/post/inheritance/</link>
-			<pubDate>Tue, 28 Feb 2023 09:02:57 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/inheritance/</guid>
-			<description>지옥이 시작된다.</description>
 		</item>
       	
 	</channel>
