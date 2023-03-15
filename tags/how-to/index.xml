@@ -1,0 +1,97 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>how to on 코더 신씨</title>
+		<link>https://coder-shin.github.io/tags/how-to/</link>
+		<description>Recent content in how to </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>ko</language>
+		
+		<managingEditor>Page(/tags/how-to) (Shin)</managingEditor>
+    	
+  		<lastBuildDate>Wed, 15 Mar 2023 09:39:34 +0900</lastBuildDate>
+		
+		<atom:link href="/tags/how-to/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>배열의 마지막에 요소 추가하기(array push)</title>
+			<link>https://coder-shin.github.io/post/array-push/</link>
+			<pubDate>Wed, 15 Mar 2023 15:51:57 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array-push/</guid>
+			<description>사실 array가 아니라 list에 추가하는 방법을 알아보는 문서다.</description>
+		</item>
+      	
+		<item>
+			<title>함수에 인수 전달하기(spread in function calls)</title>
+			<link>https://coder-shin.github.io/post/spread-in-function-calls/</link>
+			<pubDate>Wed, 15 Mar 2023 09:39:34 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/spread-in-function-calls/</guid>
+			<description>apply() 넌 이제 끝났다.</description>
+		</item>
+      	
+		<item>
+			<title>배열 합치기(array concat)</title>
+			<link>https://coder-shin.github.io/post/array-concat/</link>
+			<pubDate>Wed, 15 Mar 2023 07:59:45 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array-concat/</guid>
+			<description>배열 퓨전!</description>
+		</item>
+      	
+		<item>
+			<title>전개 구문(spread operator)</title>
+			<link>https://coder-shin.github.io/post/spread-operator/</link>
+			<pubDate>Mon, 13 Mar 2023 19:06:28 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/spread-operator/</guid>
+			<description>마법 주문 같은 연산자 &amp;hellip;</description>
+		</item>
+      	
+		<item>
+			<title>annotation</title>
+			<link>https://coder-shin.github.io/post/annotation/</link>
+			<pubDate>Mon, 13 Mar 2023 18:46:54 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/annotation/</guid>
+			<description>annotation</description>
+		</item>
+      	
+		<item>
+			<title>접근 제한자(access modifier)</title>
+			<link>https://coder-shin.github.io/post/access-modifier/</link>
+			<pubDate>Mon, 13 Mar 2023 08:47:39 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/access-modifier/</guid>
+			<description>제발 마음대로 private를 public으로 변경하지 말아주세요.</description>
+		</item>
+      	
+		<item>
+			<title>임포트(import)</title>
+			<link>https://coder-shin.github.io/post/import/</link>
+			<pubDate>Mon, 13 Mar 2023 07:52:03 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/import/</guid>
+			<description>상대 path로 할지 절대 path로 할지 고민하는 그것</description>
+		</item>
+      	
+		<item>
+			<title>package</title>
+			<link>https://coder-shin.github.io/post/package/</link>
+			<pubDate>Sun, 12 Mar 2023 11:47:05 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/package/</guid>
+			<description>package</description>
+		</item>
+      	
+		<item>
+			<title>static</title>
+			<link>https://coder-shin.github.io/post/static/</link>
+			<pubDate>Sat, 11 Mar 2023 14:49:27 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/static/</guid>
+			<description>어떻게 사용하는게 베스트인지 매번 고민하는 그 기능 - static</description>
+		</item>
+      	
+		<item>
+			<title>열거(enum)</title>
+			<link>https://coder-shin.github.io/post/enum/</link>
+			<pubDate>Thu, 09 Mar 2023 14:51:59 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/enum/</guid>
+			<description>enum</description>
+		</item>
+      	
+	</channel>
+</rss>

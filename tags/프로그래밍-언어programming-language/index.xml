@@ -9,10 +9,34 @@
 		
 		<managingEditor>Page(/tags/프로그래밍-언어programming-language) (Shin)</managingEditor>
     	
-  		<lastBuildDate>Mon, 13 Mar 2023 19:06:28 +0900</lastBuildDate>
+  		<lastBuildDate>Wed, 15 Mar 2023 15:51:57 +0900</lastBuildDate>
 		
 		<atom:link href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4programming-language/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>배열의 마지막에 요소 추가하기(array push)</title>
+			<link>https://coder-shin.github.io/post/array-push/</link>
+			<pubDate>Wed, 15 Mar 2023 15:51:57 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array-push/</guid>
+			<description>사실 array가 아니라 list에 추가하는 방법을 알아보는 문서다.</description>
+		</item>
+      	
+		<item>
+			<title>함수에 인수 전달하기(spread in function calls)</title>
+			<link>https://coder-shin.github.io/post/spread-in-function-calls/</link>
+			<pubDate>Wed, 15 Mar 2023 09:39:34 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/spread-in-function-calls/</guid>
+			<description>apply() 넌 이제 끝났다.</description>
+		</item>
+      	
+		<item>
+			<title>배열 합치기(array concat)</title>
+			<link>https://coder-shin.github.io/post/array-concat/</link>
+			<pubDate>Wed, 15 Mar 2023 07:59:45 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array-concat/</guid>
+			<description>배열 퓨전!</description>
+		</item>
+      	
 		<item>
 			<title>전개 구문(spread operator)</title>
 			<link>https://coder-shin.github.io/post/spread-operator/</link>
@@ -67,30 +91,6 @@
 			<pubDate>Thu, 09 Mar 2023 14:51:59 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/enum/</guid>
 			<description>enum</description>
-		</item>
-      	
-		<item>
-			<title>JVM(Java Virtual Machine)</title>
-			<link>https://coder-shin.github.io/post/jvm/</link>
-			<pubDate>Tue, 07 Mar 2023 23:25:18 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/jvm/</guid>
-			<description>대부분의 소프트웨어 회사는 이 위에서 돌아간다고 해도 과언이 아니다.</description>
-		</item>
-      	
-		<item>
-			<title>string</title>
-			<link>https://coder-shin.github.io/post/string/</link>
-			<pubDate>Tue, 07 Mar 2023 19:19:09 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/string/</guid>
-			<description>string</description>
-		</item>
-      	
-		<item>
-			<title>array</title>
-			<link>https://coder-shin.github.io/post/array/</link>
-			<pubDate>Tue, 07 Mar 2023 18:19:47 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/array/</guid>
-			<description>야 자바스크립트! 넌 배열 아닌 리스트인데 왜 여기있어?</description>
 		</item>
       	
 	</channel>

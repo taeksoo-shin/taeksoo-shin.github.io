@@ -126,7 +126,7 @@
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-03-13
+    2023-03-15
   </span>
 
   
@@ -153,30 +153,34 @@
       
   <h2 id="javascript자바스크립트javascript">[[javascript]]{자바스크립트(JavaScript)}</h2>
 <h3 id="개요">개요</h3>
-<p>반복 가능한 객체</p>
-<h3 id="사용처">사용처</h3>
-<h4 id="배열-합치기">배열 합치기</h4>
-<p>전개 구문(spread operator)를 이용하면 배열을 합치는 Array.prototype.concat()를
-대신해서 배열을 간단하게 합칠 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>];
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">array2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">combinedArrayWithConcat</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">array1</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">array2</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">combinedArrayWithConcat</span>); <span style="color:#75715e">// [1, 2, 3, 4, 5, 6]
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">combinedArrayWithSpread</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">array1</span>, ...<span style="color:#a6e22e">array2</span>];
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">combinedArrayWithSpread</span>); <span style="color:#75715e">// [1, 2, 3, 4, 5, 6]
-</span></span></span></code></pre></div><p>단 개인적인 의견으로는 배열을 합칠 때에는 spread operator를 사용하기 보다는
-concat을 사용하는 것이 좋다고 생각한다. 왜냐하면 spread operator 자체는 배열을
-합친다는 의미가 없기 때문이다. 즉 명시적으로 배열을 합친다는 의미를 가진 concat과
-다르게 spread operator는 한번 더 확인 할 필요가 있기 때문에 가독성이 조금이라도
-더 오를 수 있는 concat을 사용하는게 더욱 좋다고 생각된다.</p>
-<h4 id="배열-복사하기">배열 복사하기</h4>
-<h4 id="객체-합치기">객체 합치기</h4>
-<h4 id="객체-복사하기">객체 복사하기</h4>
-<h4 id="함수에-인수-전달하기">함수에 인수 전달하기</h4>
-<h5 id="math-함수의-인수-전달하기">Math 함수의 인수 전달하기</h5>
+<p>반복 가능한 객체를 펼치는 연산자.</p>
+<h3 id="사용법">사용법</h3>
+<p>아래와 같은 형태로 사용한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>...<span style="color:#a6e22e">펼치고_싶은_대상</span>
+</span></span></code></pre></div><p>단 주의해야하는 점은 전개 구문(spread operator)는 단독으로 사용 할 수 없다는
+점이다. 전개 구문(spread operator)를 사용한 경우 반드시 펼친 결과를 어디에든
+넣어줘야한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>[...<span style="color:#a6e22e">펼치고_싶은_대상</span>]
+</span></span></code></pre></div><h3 id="사용처">사용처</h3>
+<ul>
+<li>[[array concat]]{배열 합치기(array concat)}</li>
+<li>배열 복사하기</li>
+<li>객체 합치기</li>
+<li>객체 복사하기</li>
+<li>[[spread in function calls]]{함수에 인수 전달하기(spread in function calls)}</li>
+</ul>
+<h3 id="주의">주의</h3>
+<h4 id="배열-이외의-대상에서는-concat과-움직임이-다르다">배열 이외의 대상에서는 concat과 움직임이 다르다.</h4>
 <h2 id="인용">인용</h2>
+<blockquote>
+<p>이 배열을 펼침 연산자(&hellip;)를 이용해 목록으로 바꿉니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cart</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Naming and Necessity&#39;</span>, <span style="color:#e6db74">&#39;Alice in Wonderland&#39;</span>];
+</span></span><span style="display:flex;"><span>...<span style="color:#a6e22e">cart</span>
+</span></span></code></pre></div><p>REPL이나 브라우저 콘솔에서 위의 코드를 실행하면 오류가 발생합니다. 문법은
+맞지만 펼침 연산자를 단독으로 사용할 수는 없습니다. 예를 들어 펼침 연산자의
+결과를 변수에 할당할 수 없습니다. 정보를 어디든 펼쳐 넣어야 합니다.</p>
+<p><em>(자바스크립트 코딩의 기술[1판] - tip 7 펼침 연산자로 배열을 본떠라)</em></p>
+</blockquote>
 
 
 
@@ -185,6 +189,9 @@ concat을 사용하는 것이 좋다고 생각한다. 왜냐하면 spread operat
         <div class="blog-tags">
           
             <a href="https://coder-shin.github.io//tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4programming-language/">프로그래밍 언어(programming language)</a
+            >&nbsp;
+          
+            <a href="https://coder-shin.github.io//tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8javascript/">자바스크립트(javascript)</a
             >&nbsp;
           
         </div>

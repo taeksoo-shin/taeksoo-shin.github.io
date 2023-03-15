@@ -126,7 +126,7 @@
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-03-02
+    2023-03-15
   </span>
 
   
@@ -151,19 +151,19 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h2 id="나의-해석">나의 해석</h2>
+  <h2 id="나의-정의">나의 정의</h2>
 <p>변수란 하나의 값을 저장하기 위한 이름을 가진 공간.</p>
-<h2 id="각종-언어에서-변수variable">각종 언어에서 변수(variable)</h2>
-<h3 id="cc">[[c]]{C}</h3>
-<h4 id="명명법">명명법</h4>
-<h5 id="필수-규칙">필수 규칙</h5>
+<h2 id="cc">[[c]]{C}</h2>
+<h3 id="명명법">명명법</h3>
+<h4 id="필수-규칙">필수 규칙</h4>
 <ul>
-<li>영문 대/소문자, &lsquo;_&rsquo;(언더바), 숫자로 만들어야 한다.</li>
+<li>영문 대/소문자, _ (언더바), 숫자로 만들어야 한다.</li>
 <li>첫 글자는 숫자가 될 수 없다.</li>
 <li>중간에 공백 문자(빈 칸이나 탭 등)를 넣을 수 없다.</li>
 <li>예약어는 사용할 수 없다.</li>
 </ul>
-<h3 id="java자바java">[[java]]{자바(Java)}</h3>
+<h2 id="java자바java">[[java]]{자바(Java)}</h2>
+<h3 id="특징">특징</h3>
 <h4 id="변수는-선언된-블록-내에서만-사용이-가능하다">변수는 선언된 블록 내에서만 사용이 가능하다.</h4>
 <p>변수는 문(statement)을 통해 만들어진 블록 내에서만 사용이 가능하다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
@@ -172,12 +172,12 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>insideBlockVariable<span style="color:#f92672">);</span> <span style="color:#75715e">// 참조 불가 =&gt; 에러 발생
-</span></span></span></code></pre></div><h4 id="명명법-1">명명법</h4>
-<h5 id="필수-규칙-1">필수 규칙</h5>
+</span></span></span></code></pre></div><h3 id="명명법-1">명명법</h3>
+<h4 id="필수-규칙-1">필수 규칙</h4>
 <ul>
-<li>첫 번째 글자는 문자이거나 &lsquo;$&rsquo;, &lsquo;_&rsquo; 이어야 하고 숫자로 시작할 수 없다.
+<li>첫 번째 글자는 문자이거나 $, _ 이어야 하고 숫자로 시작할 수 없다.
 <ul>
-<li>가능: person, $likeJquery, _underscore</li>
+<li>가능: person, $likeJquery</li>
 <li>불가능: 123hello, #likeInsta</li>
 </ul>
 </li>
@@ -192,7 +192,7 @@
 </ul>
 </li>
 </ul>
-<h5 id="관례">관례</h5>
+<h4 id="관례">관례</h4>
 <ul>
 <li>첫 문자는 영어 소문자로 시작하며 camel case를 사용한다.
 <ul>
@@ -206,14 +206,26 @@
 </li>
 </ul>
 <h2 id="javascript자바스크립트javascript">[[javascript]]{자바스크립트(JavaScript)}</h2>
-<p>[[javascript]]{자바스크립트(JavaScript)}에는 변수를 할당하기 위해 var, let,
-const 세 가지 방법이 존재한다.</p>
+<h3 id="특징-1">특징</h3>
+<h4 id="var-let-const">var, let, const</h4>
+<p>[[javascript]]{자바스크립트(JavaScript)}에는 변수를 할당하기 위해 아래의 세 가지 키워드를 사용한다.</p>
+<ul>
+<li>var</li>
+<li>let</li>
+<li>const</li>
+</ul>
 <h2 id="팁">팁</h2>
 <h3 id="명백한-이름의-변수명을-작성-할-것">명백한 이름의 변수명을 작성 할 것</h3>
-<p>오늘 내가 작성한 코드는, 다음 날 보면 새롭고, 그 다음 날 보면 무슨 의도로
-이렇게 작성했는지 알 수 가 없다. 그렇기 때문에 적어도 명백한 이름의 변수명을
-작성해 두어서 다른 사람들에게 코드의 의도를 전하고 더 나아가 미래의 나에게
-무슨 의도로 이런 코드를 작성했는지 의도를 전하도록 하자.</p>
+<p>명백한 이름의 변수명을 작성하는 것은 코드의 가독성을 높이기 위한 첫걸음이라고
+할 수 있다.</p>
+<p>일반적으로 코드는 작성하는 시간보다 읽고 이해하는데 시간이 많이 소요된다.
+이 때 변수명이 명확하지 않은 코드 베이스의 경우 변수명이 명확한 코드 베이스를
+읽는데 소모하는 시간과 에너지의 몇배는 더 사용해야지만 이해할 수 있다. 명확한
+변수명을 사용한 경우 사용하지 않아도 되는 시간과 에너지를 사용한 꼴이다.
+또한 새로운 멤버를 영입한 경우에도 변수명이 잘 정리되어 있는 경우, 빠르게
+이해해 곧장 전력인 될 가능성도 높아진다.</p>
+<p>이와 같은 이유로 코드 베이스를 더욱 빠르게 이해하고, 생산성을 높이기 위해서
+명백한 이름의 변수명을 작성하도록 하자.</p>
 <h3 id="줄임말은-최대한-피해라">줄임말은 최대한 피해라</h3>
 <p>예를들어 iLoveHer 이라는 변수명을 ilh라고 줄였다고 가정하자. 코드를 읽는 다른
 사람은 iLoveHer인지 iLeaveHere인지 Interscholastic League of Honolulu인지
