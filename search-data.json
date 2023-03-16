@@ -5,6 +5,16 @@
         
             {
                 "id": 0,
+                "href": "https://coder-shin.github.io/post/array-copy/",
+                "title": "배열 복사하기(array copy)",
+                "section": "post",
+                "date" : "2023.03.16",
+                "body": "깊은 복사(Deep copy)와 얕은 복사(Shallow copy) [[javascript]]{자바스크립트(JavaScript)} [[javascript]]{자바스크립트(JavaScript)}에서 배열을 복사하를 하는 방법은 굉장히 많다. 하나씩 알아보도록 하자.\nArray.prototypeslice (Shallow copy) Array.prototype.slice() 메서드를 사용해서 배열을 복사하는 방법은 다음과 같다.\nconst originalArray = [1, 2, 3, 4, 5]; const copiedArray = originalArray.slice(); copiedArray[0] = 999; console.log(originalArray); // [1, 2, 3, 4, 5] console.log(copiedArray); // [999, 2, 3, 4, 5] 단 배열 내부에 [[reference type]]{참조 타입(reference type)}이 있는 경우 문제가 발생할 수 있다.\nconst originalArray = [1, [2, 3], 4]; const copiedArray = originalArray.slice(); copiedArray[1][0] = 999; console.log(originalArray); // [1, [999, 3], 4] console.log(copiedArray); // [1, [999, 3], 4] 중첩된 [[reference type]]{참조 타입(reference type)}을 복사할 경우 복사본과 원본 사이에 얕은 복사(shallow copy) 관계가 생기는 문제가 생기기 때문에 발생하는 문제이다.\n[[spread operator]]{전개 구문(spread operator)}(Shallow copy) [[spread operator]]{전개 구문(spread operator)}(Shallow copy)를 사용해서 배열을 복사하는 방법은 다음과 같다.\nconst originalArray = [1, 2, 3, 4, 5]; const copiedArray = [...originalArray]; copiedArray[0] = 999; console.log(originalArray); // [1, 2, 3, 4, 5] console.log(copiedArray); // [999, 2, 3, 4, 5] 단 배열 내부에 [[reference type]]{참조 타입(reference type)}이 있는 경우 문제가 발생할 수 있다.\nconst originalArray = [1, [2, 3], 4]; const copiedArray = [...originalArray]; copiedArray[1][0] = 999; console.log(originalArray); // [1, [999, 3], 4] console.log(copiedArray); // [1, [999, 3], 4] 중첩된 [[reference type]]{참조 타입(reference type)}을 복사할 경우 복사본과 원본 사이에 얕은 복사(shallow copy) 관계가 생기는 문제가 생기기 때문에 발생하는 문제이다.\nJSON.parse와 JSON.stringify(Deep copy) 어느 것을 사용하는게 좋을까? 배열 내부에 [[reference type]]{참조 타입(reference type)}이 없다는 확신이 있다면 [[spread operator]]{전개 구문(spread operator)}을 이용하는 것이 가장 좋다고 생각한다.\n왜냐하면 [[spread operator]]{전개 구문(spread operator)} 자체가 굉장히 간결하기 때문에 다른 방법을 이용해 작성하는 것 보다 훨씬 가독성이 좋다고 생각되기 때문이다.\n배열 내부에 [[reference type]]{참조 타입(reference type)}이 존재한다면 JSON.parse와 JSON.stringify를 이용하는것이 가장 간결하다고 생각한다. 단 JSON.parse와 JSON.stringify를 그냥 사용할 경우 무슨 일을 하고 있는지 알 수 없으므로 아래와 같은 함수를 만들어서 그것을 사용하는 것이 가장 좋다고 생각된다.\nconst deepCopy = (targetArray) =\u0026gt; { return JSON.parse(JSON.stringify(targetArray)); } 배열 복사는 언제 사용하면 좋을까? 배열을 복사해서 사용하는 경우는 기존 배열을 유지한채로 배열을 조작하고 싶은 경우에 사용한다고 생각하면 된다.\n구체적으로 사용 할 수 있는 상황은 아래와 같다.\n인용 "
+            }
+    
+        ,
+            {
+                "id": 1,
                 "href": "https://coder-shin.github.io/post/array-push/",
                 "title": "배열의 마지막에 요소 추가하기(array push)",
                 "section": "post",
@@ -14,7 +24,7 @@
     
         ,
             {
-                "id": 1,
+                "id": 2,
                 "href": "https://coder-shin.github.io/post/spread-in-function-calls/",
                 "title": "함수에 인수 전달하기(spread in function calls)",
                 "section": "post",
@@ -24,27 +34,27 @@
     
         ,
             {
-                "id": 2,
+                "id": 3,
                 "href": "https://coder-shin.github.io/post/array-concat/",
                 "title": "배열 합치기(array concat)",
                 "section": "post",
                 "date" : "2023.03.15",
-                "body": "[[javascript]]{자바스크립트(javascript)} 자바스크립트에서 배열을 합치기 위해서 사용하는 방법은 Array.prototype.concat() 메서드를 사용하는 방법과 [[spread operator]]{전개 구문(spread operator)}를 사용하는 방법 크게 두 가지가 있다.\nArray.prototype.concat() 메서드를 사용하는 방법은 아래와 같다.\n배열 2개를 합치는 방법 - Array.prototype.concat()\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const combinedArrayWithConcat = array1.concat(array2); console.log(combinedArrayWithConcat); // [1, 2, 3, 4, 5, 6] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] 배열 3개를 합치는 방법 - Array.prototype.concat()\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const array3 = [7, 8, 9]; const combinedArrayWithConcat = array1.concat(array2, array3); console.log(combinedArrayWithConcat); // [1, 2, 3, 4, 5, 6, 7, 8, 9] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] console.log(array3); // [7, 8, 9] [[spread operator]]{전개 구문(spread operator)}을 사용해서 배열을 합치는 방법은 아래와 같다.\n배열 2개를 합치는 방법 - [[spread operator]]{전개 구문(spread operator)}\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const combinedArrayWithSpread = [...array1, ...array2]; console.log(combinedArrayWithSpread); // [1, 2, 3, 4, 5, 6] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] 배열 3개를 합치는 방법 - [[spread operator]]{전개 구문(spread operator)}\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const array3 = [7, 8, 9]; const combinedArrayWithSpread = [...array1, ...array2, ...array3]; console.log(combinedArrayWithSpread); // [1, 2, 3, 4, 5, 6, 7, 8, 9] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] console.log(array3); // [7, 8, 9] Array.prototype.concat()를 이용하든 [[spread operator]]{전개 구문(spread operator)}를 이용하든 동일하게 기존 배열의 변화 없이 여러 배열을 합칠 수 있다.\n개인적인 의견으로는 [[spread operator]]{전개 구문(spread operator)}를 사용하기 보다는 Array.prototype.concat() 메서드를 사용하는 것이 좋다고 생각한다. 왜냐하면 [[spread operator]]{전개 구문(spread operator)}는 여러가지 일을 가독성 좋고 심플하게 할 수 있지만, 그 자체는 배열을 합친다는 의미가 없기 때문이다. 즉 [[spread operator]]{전개 구문(spread operator)}을 사용해서 배열을 합치는 경우 명시적으로 배열을 합친다는 의미를 가진 Array.prototype.concat() 메서드와는 다르게 무슨 일을 하고 있는지 확인해볼 필요가 있다. 최대한 명시적으로 무엇을 하고 있는지 나타내는게 가독성이 좋아지기 때문에 배열을 합치는 경우에는 명식적인 의미를 지칭하는 Array.prototype.concat()을 사용하는 것을 추천한다.\n언제 사용할까? 배열 합치기를 이용하는 경우는 기본적으로 여러 데이터들을 합치는 경우 사용한다고 생각하면 된다.\n구체적인 사용 할 수 있는 상황은 아래와 같다.\n주소록 합치기: 여러 주소록을 하나의 주소록으로 합치는 경우 배열 합치기를 사용 할 수 있다. 판매 데이터 합치기: 여러 매장의 판매 데이터를 합쳐서 전체 판매 데이터를 만드는 경우 배열 합치기를 사용 할 수 있다. 또한 배열의 합침과 동시에 정렬을 변경, 필터링, 중복 제거 등을 통해서 새로운 데이터를 창출할 수 있기 때문에 배열 합치기의 사용처는 무궁무진하다.\n혹시 좋은 사용법이 있다면 댓글로 남겨두면 글에 반영하겠습니다.\n인용 "
-            }
-    
-        ,
-            {
-                "id": 3,
-                "href": "https://coder-shin.github.io/post/spread-operator/",
-                "title": "전개 구문(spread operator)",
-                "section": "post",
-                "date" : "2023.03.13",
-                "body": "[[javascript]]{자바스크립트(JavaScript)} 개요 반복 가능한 객체를 펼치는 연산자.\n사용법 아래와 같은 형태로 사용한다.\n...펼치고_싶은_대상 단 주의해야하는 점은 전개 구문(spread operator)는 단독으로 사용 할 수 없다는 점이다. 전개 구문(spread operator)를 사용한 경우 반드시 펼친 결과를 어디에든 넣어줘야한다.\n[...펼치고_싶은_대상] 사용처 [[array concat]]{배열 합치기(array concat)} 배열 복사하기 객체 합치기 객체 복사하기 [[spread in function calls]]{함수에 인수 전달하기(spread in function calls)} 주의 배열 이외의 대상에서는 concat과 움직임이 다르다. 인용 이 배열을 펼침 연산자(\u0026hellip;)를 이용해 목록으로 바꿉니다.\nconst cart = [\u0026#39;Naming and Necessity\u0026#39;, \u0026#39;Alice in Wonderland\u0026#39;]; ...cart REPL이나 브라우저 콘솔에서 위의 코드를 실행하면 오류가 발생합니다. 문법은 맞지만 펼침 연산자를 단독으로 사용할 수는 없습니다. 예를 들어 펼침 연산자의 결과를 변수에 할당할 수 없습니다. 정보를 어디든 펼쳐 넣어야 합니다.\n(자바스크립트 코딩의 기술[1판] - tip 7 펼침 연산자로 배열을 본떠라)\n"
+                "body": "[[javascript]]{자바스크립트(javascript)} [[javascript]]{자바스크립트(JavaScript)}에서 배열을 합치기 위해서 사용하는 방법은 Array.prototype.concat() 메서드를 사용하는 방법과 [[spread operator]]{전개 구문(spread operator)}를 사용하는 방법 크게 두 가지가 있다.\nArray.prototype.concat() Array.prototype.concat() 메서드를 사용하는 방법은 아래와 같다.\n배열 2개를 합치는 방법 - Array.prototype.concat()\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const combinedArrayWithConcat = array1.concat(array2); console.log(combinedArrayWithConcat); // [1, 2, 3, 4, 5, 6] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] 배열 3개를 합치는 방법 - Array.prototype.concat()\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const array3 = [7, 8, 9]; const combinedArrayWithConcat = array1.concat(array2, array3); console.log(combinedArrayWithConcat); // [1, 2, 3, 4, 5, 6, 7, 8, 9] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] console.log(array3); // [7, 8, 9] [[spread operator]]{전개 구문(spread operator)} [[spread operator]]{전개 구문(spread operator)}을 사용해서 배열을 합치는 방법은 아래와 같다.\n배열 2개를 합치는 방법 - [[spread operator]]{전개 구문(spread operator)}\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const combinedArrayWithSpread = [...array1, ...array2]; console.log(combinedArrayWithSpread); // [1, 2, 3, 4, 5, 6] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] 배열 3개를 합치는 방법 - [[spread operator]]{전개 구문(spread operator)}\nconst array1 = [1, 2, 3]; const array2 = [4, 5, 6]; const array3 = [7, 8, 9]; const combinedArrayWithSpread = [...array1, ...array2, ...array3]; console.log(combinedArrayWithSpread); // [1, 2, 3, 4, 5, 6, 7, 8, 9] console.log(array1); // [1, 2, 3] console.log(array2); // [4, 5, 6] console.log(array3); // [7, 8, 9] Array.prototype.concat()와 [[spread operator]]{전개 구문(spread operator)} 어느 것을 사용할까? Array.prototype.concat()를 이용하든 [[spread operator]]{전개 구문(spread operator)}를 이용하든 동일하게 기존 배열의 변화 없이 여러 배열을 합칠 수 있다.\n개인적인 의견으로는 [[spread operator]]{전개 구문(spread operator)}를 사용하기 보다는 Array.prototype.concat() 메서드를 사용하는 것이 좋다고 생각한다. 왜냐하면 [[spread operator]]{전개 구문(spread operator)}는 여러가지 일을 가독성 좋고 심플하게 할 수 있지만, 그 자체는 배열을 합친다는 의미가 없기 때문이다. 즉 [[spread operator]]{전개 구문(spread operator)}을 사용해서 배열을 합치는 경우 명시적으로 배열을 합친다는 의미를 가진 Array.prototype.concat() 메서드와는 다르게 무슨 일을 하고 있는지 확인해볼 필요가 있다. 최대한 명시적으로 무엇을 하고 있는지 나타내는게 가독성이 좋아지기 때문에 배열을 합치는 경우에는 명식적인 의미를 지칭하는 Array.prototype.concat()을 사용하는 것을 추천한다.\n배열 합치기는 언제 사용하면 좋을까? 배열 합치기를 이용하는 경우는 기본적으로 여러 데이터들을 합치는 경우 사용한다고 생각하면 된다.\n구체적으로 사용 할 수 있는 상황은 아래와 같다.\n주소록 합치기: 여러 주소록을 하나의 주소록으로 합치는 경우 배열 합치기를 사용 할 수 있다. 판매 데이터 합치기: 여러 매장의 판매 데이터를 합쳐서 전체 판매 데이터를 만드는 경우 배열 합치기를 사용 할 수 있다. 또한 배열의 합침과 동시에 정렬을 변경, 필터링, 중복 제거 등을 통해서 새로운 데이터를 창출할 수 있기 때문에 배열 합치기의 사용처는 무궁무진하다.\n혹시 좋은 사용법이 있다면 댓글로 남겨두면 글에 반영하겠습니다.\n인용 "
             }
     
         ,
             {
                 "id": 4,
+                "href": "https://coder-shin.github.io/post/spread-operator/",
+                "title": "전개 구문(spread operator)",
+                "section": "post",
+                "date" : "2023.03.13",
+                "body": "[[javascript]]{자바스크립트(JavaScript)} 개요 반복 가능한 객체를 펼치는 연산자.\n사용법 아래와 같은 형태로 사용한다.\n...펼치고_싶은_대상 단 주의해야하는 점은 전개 구문(spread operator)는 단독으로 사용 할 수 없다는 점이다. 전개 구문(spread operator)를 사용한 경우 반드시 펼친 결과를 어디에든 넣어줘야한다.\n[...펼치고_싶은_대상] 사용처 [[array concat]]{배열 합치기(array concat)} [[array copy]]{배열 복사하기(array copy)} 객체 합치기 객체 복사하기 [[spread in function calls]]{함수에 인수 전달하기(spread in function calls)} 주의 배열 이외의 대상에서는 concat과 움직임이 다르다. 인용 이 배열을 펼침 연산자(\u0026hellip;)를 이용해 목록으로 바꿉니다.\nconst cart = [\u0026#39;Naming and Necessity\u0026#39;, \u0026#39;Alice in Wonderland\u0026#39;]; ...cart REPL이나 브라우저 콘솔에서 위의 코드를 실행하면 오류가 발생합니다. 문법은 맞지만 펼침 연산자를 단독으로 사용할 수는 없습니다. 예를 들어 펼침 연산자의 결과를 변수에 할당할 수 없습니다. 정보를 어디든 펼쳐 넣어야 합니다.\n(자바스크립트 코딩의 기술[1판] - tip 7 펼침 연산자로 배열을 본떠라)\n"
+            }
+    
+        ,
+            {
+                "id": 5,
                 "href": "https://coder-shin.github.io/post/annotation/",
                 "title": "annotation",
                 "section": "post",
@@ -54,7 +64,7 @@
     
         ,
             {
-                "id": 5,
+                "id": 6,
                 "href": "https://coder-shin.github.io/post/access-modifier/",
                 "title": "접근 제한자(access modifier)",
                 "section": "post",
@@ -64,7 +74,7 @@
     
         ,
             {
-                "id": 6,
+                "id": 7,
                 "href": "https://coder-shin.github.io/post/import/",
                 "title": "임포트(import)",
                 "section": "post",
@@ -74,7 +84,7 @@
     
         ,
             {
-                "id": 7,
+                "id": 8,
                 "href": "https://coder-shin.github.io/post/package/",
                 "title": "package",
                 "section": "post",
@@ -84,7 +94,7 @@
     
         ,
             {
-                "id": 8,
+                "id": 9,
                 "href": "https://coder-shin.github.io/post/static/",
                 "title": "static",
                 "section": "post",
@@ -94,7 +104,7 @@
     
         ,
             {
-                "id": 9,
+                "id": 10,
                 "href": "https://coder-shin.github.io/post/enum/",
                 "title": "열거(enum)",
                 "section": "post",
@@ -104,7 +114,7 @@
     
         ,
             {
-                "id": 10,
+                "id": 11,
                 "href": "https://coder-shin.github.io/post/jvm/",
                 "title": "JVM(Java Virtual Machine)",
                 "section": "post",
@@ -114,7 +124,7 @@
     
         ,
             {
-                "id": 11,
+                "id": 12,
                 "href": "https://coder-shin.github.io/post/string/",
                 "title": "string",
                 "section": "post",
@@ -124,17 +134,17 @@
     
         ,
             {
-                "id": 12,
+                "id": 13,
                 "href": "https://coder-shin.github.io/post/array/",
                 "title": "array",
                 "section": "post",
                 "date" : "2023.03.07",
-                "body": "[[java]]{자바(Java)} 특징 선언과 동시에 저장할 수 있는 데이터 타입이 결정 한 번 생성된 배열은 길이를 늘리거나 줄일 수 없다. new 연산자를 이용해서 배열을 생성한 경우 배열의 값들은 기본값으로 초기화된다. [[javascript]]{자바스크립트(JavaScript)} 특징 일반적으로 불리는 \u0026ldquo;배열(array)\u0026rdquo; 데이터 타입이라기 보다는 \u0026ldquo;리스트(list)\u0026rdquo; 데이터 타입에 가깝다. 각종 사용법 [[array push]]{배열의 마지막에 요소 추가하기} [[array concat]]{배열 합치기} [[spread in function calls]]{함수에 배열 인수 전달하기(spread in function calls)} 인용 같은 타입의 많은 양의 데이터를 다루는 프로그램에서는 좀 더 효율적인 방법이 필요한데 이것이 배열이다. 배열은 같은 타입의 데이터를 연속된 공간에 나열시키고, 각 데이터에 인덱스(index)를 부여해 놓은 자료구조이다. (이것이 자바다[1판]) p.150\n"
+                "body": "[[java]]{자바(Java)} 특징 선언과 동시에 저장할 수 있는 데이터 타입이 결정 한 번 생성된 배열은 길이를 늘리거나 줄일 수 없다. new 연산자를 이용해서 배열을 생성한 경우 배열의 값들은 기본값으로 초기화된다. [[javascript]]{자바스크립트(JavaScript)} 특징 일반적으로 불리는 \u0026ldquo;배열(array)\u0026rdquo; 데이터 타입이라기 보다는 \u0026ldquo;리스트(list)\u0026rdquo; 데이터 타입에 가깝다. 각종 사용법 [[array push]]{배열의 마지막에 요소 추가하기(array push)} [[array concat]]{배열 합치기(array concat)} [[array copy]]{배열 복사하기(array copy)} [[spread in function calls]]{함수에 배열 인수 전달하기(spread in function calls)} 인용 같은 타입의 많은 양의 데이터를 다루는 프로그램에서는 좀 더 효율적인 방법이 필요한데 이것이 배열이다. 배열은 같은 타입의 데이터를 연속된 공간에 나열시키고, 각 데이터에 인덱스(index)를 부여해 놓은 자료구조이다. (이것이 자바다[1판]) p.150\n"
             }
     
         ,
             {
-                "id": 13,
+                "id": 14,
                 "href": "https://coder-shin.github.io/post/include/",
                 "title": "include",
                 "section": "post",
@@ -144,7 +154,7 @@
     
         ,
             {
-                "id": 14,
+                "id": 15,
                 "href": "https://coder-shin.github.io/post/template-literals/",
                 "title": "template literals",
                 "section": "post",
@@ -154,7 +164,7 @@
     
         ,
             {
-                "id": 15,
+                "id": 16,
                 "href": "https://coder-shin.github.io/post/list/",
                 "title": "list",
                 "section": "post",
@@ -164,7 +174,7 @@
     
         ,
             {
-                "id": 16,
+                "id": 17,
                 "href": "https://coder-shin.github.io/post/solid/",
                 "title": "SOLID",
                 "section": "post",
@@ -174,7 +184,7 @@
     
         ,
             {
-                "id": 17,
+                "id": 18,
                 "href": "https://coder-shin.github.io/post/encapsulation/",
                 "title": "캡슐화(encapsulation)",
                 "section": "post",
@@ -184,7 +194,7 @@
     
         ,
             {
-                "id": 18,
+                "id": 19,
                 "href": "https://coder-shin.github.io/post/inheritance/",
                 "title": "상속(inheritance)",
                 "section": "post",
@@ -194,7 +204,7 @@
     
         ,
             {
-                "id": 19,
+                "id": 20,
                 "href": "https://coder-shin.github.io/post/polymoriphism/",
                 "title": "다형성(polymoriphism)",
                 "section": "post",
@@ -204,7 +214,7 @@
     
         ,
             {
-                "id": 20,
+                "id": 21,
                 "href": "https://coder-shin.github.io/post/composition/",
                 "title": "합성(composition)",
                 "section": "post",
@@ -214,7 +224,7 @@
     
         ,
             {
-                "id": 21,
+                "id": 22,
                 "href": "https://coder-shin.github.io/post/scope/",
                 "title": "scope",
                 "section": "post",
@@ -224,7 +234,7 @@
     
         ,
             {
-                "id": 22,
+                "id": 23,
                 "href": "https://coder-shin.github.io/post/error/",
                 "title": "error",
                 "section": "post",
@@ -234,7 +244,7 @@
     
         ,
             {
-                "id": 23,
+                "id": 24,
                 "href": "https://coder-shin.github.io/post/construct/",
                 "title": "construct",
                 "section": "post",
@@ -244,7 +254,7 @@
     
         ,
             {
-                "id": 24,
+                "id": 25,
                 "href": "https://coder-shin.github.io/post/constructor/",
                 "title": "생성자(constructor)",
                 "section": "post",
@@ -254,7 +264,7 @@
     
         ,
             {
-                "id": 25,
+                "id": 26,
                 "href": "https://coder-shin.github.io/post/class/",
                 "title": "class",
                 "section": "post",
@@ -264,7 +274,7 @@
     
         ,
             {
-                "id": 26,
+                "id": 27,
                 "href": "https://coder-shin.github.io/post/methods/",
                 "title": "메서드(methods)",
                 "section": "post",
@@ -274,7 +284,7 @@
     
         ,
             {
-                "id": 27,
+                "id": 28,
                 "href": "https://coder-shin.github.io/post/attributes/",
                 "title": "속성(attributes)",
                 "section": "post",
@@ -284,7 +294,7 @@
     
         ,
             {
-                "id": 28,
+                "id": 29,
                 "href": "https://coder-shin.github.io/post/object/",
                 "title": "객체(object)",
                 "section": "post",
@@ -294,7 +304,7 @@
     
         ,
             {
-                "id": 29,
+                "id": 30,
                 "href": "https://coder-shin.github.io/post/object-wrappers/",
                 "title": "객체 래퍼(object wrappers)",
                 "section": "post",
@@ -304,7 +314,7 @@
     
         ,
             {
-                "id": 30,
+                "id": 31,
                 "href": "https://coder-shin.github.io/post/fp/",
                 "title": "함수형 프로그래밍(FP)",
                 "section": "post",
@@ -314,7 +324,7 @@
     
         ,
             {
-                "id": 31,
+                "id": 32,
                 "href": "https://coder-shin.github.io/post/oop/",
                 "title": "객체 지향 프로그래밍(OOP)",
                 "section": "post",
@@ -324,7 +334,7 @@
     
         ,
             {
-                "id": 32,
+                "id": 33,
                 "href": "https://coder-shin.github.io/post/select/",
                 "title": "SELECT",
                 "section": "post",
@@ -334,7 +344,7 @@
     
         ,
             {
-                "id": 33,
+                "id": 34,
                 "href": "https://coder-shin.github.io/post/null/",
                 "title": "null",
                 "section": "post",
@@ -344,7 +354,7 @@
     
         ,
             {
-                "id": 34,
+                "id": 35,
                 "href": "https://coder-shin.github.io/post/complement/",
                 "title": "보수(complement)",
                 "section": "post",
@@ -354,7 +364,7 @@
     
         ,
             {
-                "id": 35,
+                "id": 36,
                 "href": "https://coder-shin.github.io/post/recursion/",
                 "title": "순환(recursion)",
                 "section": "post",
@@ -364,7 +374,7 @@
     
         ,
             {
-                "id": 36,
+                "id": 37,
                 "href": "https://coder-shin.github.io/post/javascript%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80-%EC%96%B4%EB%96%A4-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0/",
                 "title": "javascript를 이용해서 사용자가 어떤 디바이스를 사용해서 접속하고 있는지 알아보기",
                 "section": "post",
@@ -374,7 +384,7 @@
     
         ,
             {
-                "id": 37,
+                "id": 38,
                 "href": "https://coder-shin.github.io/post/data-type/",
                 "title": "데이터형(data type)",
                 "section": "post",
@@ -384,7 +394,7 @@
     
         ,
             {
-                "id": 38,
+                "id": 39,
                 "href": "https://coder-shin.github.io/post/dcl/",
                 "title": "DCL",
                 "section": "post",
@@ -394,7 +404,7 @@
     
         ,
             {
-                "id": 39,
+                "id": 40,
                 "href": "https://coder-shin.github.io/post/dml/",
                 "title": "DML",
                 "section": "post",
@@ -404,7 +414,7 @@
     
         ,
             {
-                "id": 40,
+                "id": 41,
                 "href": "https://coder-shin.github.io/post/ddl/",
                 "title": "DDL",
                 "section": "post",
@@ -414,7 +424,7 @@
     
         ,
             {
-                "id": 41,
+                "id": 42,
                 "href": "https://coder-shin.github.io/post/sql/",
                 "title": "SQL",
                 "section": "post",
@@ -424,7 +434,7 @@
     
         ,
             {
-                "id": 42,
+                "id": 43,
                 "href": "https://coder-shin.github.io/post/dbms/",
                 "title": "DBMS",
                 "section": "post",
@@ -434,7 +444,7 @@
     
         ,
             {
-                "id": 43,
+                "id": 44,
                 "href": "https://coder-shin.github.io/post/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84-%EC%B8%A1%EC%A0%95%EB%B0%A9%EB%B2%95/",
                 "title": "수행시간 측정방법",
                 "section": "post",
@@ -444,7 +454,7 @@
     
         ,
             {
-                "id": 44,
+                "id": 45,
                 "href": "https://coder-shin.github.io/post/c/",
                 "title": "c",
                 "section": "post",
@@ -454,7 +464,7 @@
     
         ,
             {
-                "id": 45,
+                "id": 46,
                 "href": "https://coder-shin.github.io/post/database/",
                 "title": "데이터베이스(database)",
                 "section": "post",
@@ -464,7 +474,7 @@
     
         ,
             {
-                "id": 46,
+                "id": 47,
                 "href": "https://coder-shin.github.io/post/loop/",
                 "title": "반복문(loop)",
                 "section": "post",
@@ -474,7 +484,7 @@
     
         ,
             {
-                "id": 47,
+                "id": 48,
                 "href": "https://coder-shin.github.io/post/conditional-statement/",
                 "title": "조건문(conditional statement)",
                 "section": "post",
@@ -484,7 +494,7 @@
     
         ,
             {
-                "id": 48,
+                "id": 49,
                 "href": "https://coder-shin.github.io/post/control-flow-statement/",
                 "title": "제어문(control flow statement)",
                 "section": "post",
@@ -494,7 +504,7 @@
     
         ,
             {
-                "id": 49,
+                "id": 50,
                 "href": "https://coder-shin.github.io/post/constant/",
                 "title": "상수(constant)",
                 "section": "post",
@@ -504,7 +514,7 @@
     
         ,
             {
-                "id": 50,
+                "id": 51,
                 "href": "https://coder-shin.github.io/post/literal/",
                 "title": "리터럴(literal)",
                 "section": "post",
@@ -514,7 +524,7 @@
     
         ,
             {
-                "id": 51,
+                "id": 52,
                 "href": "https://coder-shin.github.io/post/java/",
                 "title": "java",
                 "section": "post",
@@ -524,7 +534,7 @@
     
         ,
             {
-                "id": 52,
+                "id": 53,
                 "href": "https://coder-shin.github.io/post/variable/",
                 "title": "변수(variable)",
                 "section": "post",
@@ -534,7 +544,7 @@
     
         ,
             {
-                "id": 53,
+                "id": 54,
                 "href": "https://coder-shin.github.io/post/words/",
                 "title": "용어(words)",
                 "section": "post",
@@ -544,7 +554,7 @@
     
         ,
             {
-                "id": 54,
+                "id": 55,
                 "href": "https://coder-shin.github.io/post/data-structure/",
                 "title": "자료구조(data structure)",
                 "section": "post",
@@ -554,7 +564,7 @@
     
         ,
             {
-                "id": 55,
+                "id": 56,
                 "href": "https://coder-shin.github.io/post/sites/",
                 "title": "사이트(sites)",
                 "section": "post",
@@ -564,7 +574,7 @@
     
         ,
             {
-                "id": 56,
+                "id": 57,
                 "href": "https://coder-shin.github.io/post/books/",
                 "title": "책(books)",
                 "section": "post",
@@ -574,7 +584,7 @@
     
         ,
             {
-                "id": 57,
+                "id": 58,
                 "href": "https://coder-shin.github.io/post/javascript/",
                 "title": "자바스크립트(JavaScript)",
                 "section": "post",
@@ -584,7 +594,7 @@
     
         ,
             {
-                "id": 58,
+                "id": 59,
                 "href": "https://coder-shin.github.io/post/home/",
                 "title": "index",
                 "section": "post",
@@ -594,7 +604,7 @@
     
         ,
             {
-                "id": 59,
+                "id": 60,
                 "href": "https://coder-shin.github.io/about/",
                 "title": "코더 신씨",
                 "section": "",
