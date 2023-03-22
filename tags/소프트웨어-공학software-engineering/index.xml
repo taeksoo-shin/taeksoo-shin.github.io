@@ -14,6 +14,30 @@
 		<atom:link href="/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99software-engineering/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>배열에 특정 값이 존재하는지 확인하기(array include)</title>
+			<link>https://coder-shin.github.io/post/array-include/</link>
+			<pubDate>Wed, 22 Mar 2023 08:30:48 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/array-include/</guid>
+			<description>똑똑똑, 안에 있어요?</description>
+		</item>
+      	
+		<item>
+			<title>객체 복사하기(object copy)</title>
+			<link>https://coder-shin.github.io/post/object-copy/</link>
+			<pubDate>Tue, 21 Mar 2023 22:49:36 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/object-copy/</guid>
+			<description>자바스크립트의 객체 복사하기</description>
+		</item>
+      	
+		<item>
+			<title>딕셔너리(dictionary)</title>
+			<link>https://coder-shin.github.io/post/dictionary/</link>
+			<pubDate>Tue, 21 Mar 2023 20:08:25 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/dictionary/</guid>
+			<description>key와 value</description>
+		</item>
+      	
+		<item>
 			<title>참조 타입(reference type)</title>
 			<link>https://coder-shin.github.io/post/reference-type/</link>
 			<pubDate>Thu, 16 Mar 2023 18:46:44 +0900</pubDate>
@@ -67,30 +91,6 @@
 			<pubDate>Mon, 13 Mar 2023 18:46:54 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/annotation/</guid>
 			<description>annotation</description>
-		</item>
-      	
-		<item>
-			<title>접근 제한자(access modifier)</title>
-			<link>https://coder-shin.github.io/post/access-modifier/</link>
-			<pubDate>Mon, 13 Mar 2023 08:47:39 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/access-modifier/</guid>
-			<description>제발 마음대로 private를 public으로 변경하지 말아주세요.</description>
-		</item>
-      	
-		<item>
-			<title>임포트(import)</title>
-			<link>https://coder-shin.github.io/post/import/</link>
-			<pubDate>Mon, 13 Mar 2023 07:52:03 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/import/</guid>
-			<description>상대 path로 할지 절대 path로 할지 고민하는 그것</description>
-		</item>
-      	
-		<item>
-			<title>package</title>
-			<link>https://coder-shin.github.io/post/package/</link>
-			<pubDate>Sun, 12 Mar 2023 11:47:05 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/package/</guid>
-			<description>package</description>
 		</item>
       	
 	</channel>
