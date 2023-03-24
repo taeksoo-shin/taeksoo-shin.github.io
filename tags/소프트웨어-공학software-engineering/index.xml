@@ -14,6 +14,38 @@
 		<atom:link href="/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99software-engineering/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>a</title>
+			<link>https://coder-shin.github.io/post/a/</link>
+			<pubDate>Fri, 24 Mar 2023 18:17:06 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/a/</guid>
+			<description>a</description>
+		</item>
+      	
+		<item>
+			<title>p</title>
+			<link>https://coder-shin.github.io/post/p/</link>
+			<pubDate>Fri, 24 Mar 2023 18:09:09 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/p/</guid>
+			<description>p</description>
+		</item>
+      	
+		<item>
+			<title>주석(comment)</title>
+			<link>https://coder-shin.github.io/post/comment/</link>
+			<pubDate>Fri, 24 Mar 2023 07:26:28 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/comment/</guid>
+			<description>너무 많으면 화나고, 너무 적어도 화나는 그것</description>
+		</item>
+      	
+		<item>
+			<title>HTML</title>
+			<link>https://coder-shin.github.io/post/html/</link>
+			<pubDate>Fri, 24 Mar 2023 07:23:56 +0900</pubDate>
+			<guid>https://coder-shin.github.io/post/html/</guid>
+			<description>지금 보고 있는 이 문서</description>
+		</item>
+      	
+		<item>
 			<title>배열에 특정 값이 존재하는지 확인하기(array include)</title>
 			<link>https://coder-shin.github.io/post/array-include/</link>
 			<pubDate>Wed, 22 Mar 2023 08:30:48 +0900</pubDate>
@@ -59,38 +91,6 @@
 			<pubDate>Wed, 15 Mar 2023 15:51:57 +0900</pubDate>
 			<guid>https://coder-shin.github.io/post/array-push/</guid>
 			<description>사실 array가 아니라 list에 추가하는 방법을 알아보는 문서다.</description>
-		</item>
-      	
-		<item>
-			<title>함수에 인수 전달하기(spread in function calls)</title>
-			<link>https://coder-shin.github.io/post/spread-in-function-calls/</link>
-			<pubDate>Wed, 15 Mar 2023 09:39:34 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/spread-in-function-calls/</guid>
-			<description>apply() 넌 이제 끝났다.</description>
-		</item>
-      	
-		<item>
-			<title>배열 합치기(array concat)</title>
-			<link>https://coder-shin.github.io/post/array-concat/</link>
-			<pubDate>Wed, 15 Mar 2023 07:59:45 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/array-concat/</guid>
-			<description>배열 퓨전!</description>
-		</item>
-      	
-		<item>
-			<title>전개 구문(spread operator)</title>
-			<link>https://coder-shin.github.io/post/spread-operator/</link>
-			<pubDate>Mon, 13 Mar 2023 19:06:28 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/spread-operator/</guid>
-			<description>마법 주문 같은 연산자 &amp;hellip;</description>
-		</item>
-      	
-		<item>
-			<title>annotation</title>
-			<link>https://coder-shin.github.io/post/annotation/</link>
-			<pubDate>Mon, 13 Mar 2023 18:46:54 +0900</pubDate>
-			<guid>https://coder-shin.github.io/post/annotation/</guid>
-			<description>annotation</description>
 		</item>
       	
 	</channel>
