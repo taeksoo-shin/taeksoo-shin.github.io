@@ -126,7 +126,7 @@
             <div class="meta-post">
   <span class="meta-date">
     <em class="fa fa-calendar-alt"></em>&nbsp;
-    2023-03-22
+    2023-03-26
   </span>
 
   
@@ -155,13 +155,75 @@
 <h3 id="objectassign-메서드-이용하기shallow-copy">Object.assign() 메서드 이용하기(Shallow copy)</h3>
 <p>Object.assign()은 객체로부터 대상 객체로 속성을 복사하는 메서드이다.</p>
 <p>단 주의해야하는 점이 2 가지 있다. 첫 번째로 주의해야하는 점은 얕은 복사(Shallow
-copy)이다. 그렇기 때문에 중첩된 객체를 포함되어 있는 경우 참조값만 복사된다.
-구체적인 예는 다음과 같다.</p>
-<p>두 번째로 이 메서드는 새로운 객체를 만들지 않고 대상 객체를 수정한다는 점이다.
-구체적인 예는 다음과 같다.</p>
-<h3 id="jsonparse와-jsonstringify-이용하기deep-copy">JSON.parse()와 JSON.stringify() 이용하기(Deep copy)</h3>
-<p>단 이 방법은 value의 값에 따라서 데이터가 유실, 변경 되는 경우가 발생하기
-때문에 주의가 필요하다.</p>
+copy)이다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj1</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span> } };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj2</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">obj1</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">obj2</span>.<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>); <span style="color:#75715e">// { a: 0, b: { c: 1 } }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj2</span>); <span style="color:#75715e">// { a: 0, b: { c: 1 } }
+</span></span></span></code></pre></div><p>두 번째로 이 메서드는 새로운 객체를 만들지 않고 대상 객체를 수정한다는 점이다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">o1</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">o2</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">o3</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>(<span style="color:#a6e22e">o1</span>, <span style="color:#a6e22e">o2</span>, <span style="color:#a6e22e">o3</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj</span>); <span style="color:#75715e">// { a: 1, b: 2, c: 3 }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">o1</span>); <span style="color:#75715e">// { a: 1, b: 2, c: 3 }
+</span></span></span></code></pre></div><p>즉 Object.assign() 메서드를 객체 복사에 사용하기 위해서는 아래의 두가지를
+기억하고 사용하면 된다.</p>
+<ol>
+<li>object가 겹쳐있는 경우는 사용하지 않는다.</li>
+<li>Object.assign() 메서드의 첫번째 인수는 빈 객체를 넣</li>
+</ol>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">obj</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// { a: 1 }
+</span></span></span></code></pre></div><h3 id="spread-operator전개-구문spread-operator-이용하기shallow-copy">[[spread operator]]{전개 구문(spread operator)} 이용하기(Shallow copy)</h3>
+<p>[[spread operator]]{전개 구문(spread operator)}를 사용하면 객체를 복사할 수
+있다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">obj</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// { a: 1 }
+</span></span></span></code></pre></div><p>단 [[spread operator]]{전개 구문(spread operator)}를 이용한 방법은 얕은 복사(Shallow copy)이기
+때문에 사용시 주의가 필요하다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span> } };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">obj</span> };
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj</span>);  <span style="color:#75715e">// { a: 0, b: { c: 1 } }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// { a: 0, b: { c: 1 } }
+</span></span></span></code></pre></div><h3 id="jsonparse와-jsonstringify-이용하기deep-copy">JSON.parse()와 JSON.stringify() 이용하기(Deep copy)</h3>
+<p>JSON.parse()와 JSON.stringify()를 사용하면 객체를 복사할 수 있다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">obj</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// { a: 1 }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj</span>); <span style="color:#75715e">// { a: 1 }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">copy</span>); <span style="color:#75715e">// { a: 2 }
+</span></span></span></code></pre></div><p>이 방법은 Deep copy이므로 객체 안의 객체도 복사를 한다.</p>
+<p>구체적인 예는 다음과 같다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span> } };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">copy</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">obj</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copy</span>.<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj1</span>); <span style="color:#75715e">// { a: 0, b: { c: 0 } }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">obj2</span>); <span style="color:#75715e">// { a: 0, b: { c: 1 } }
+</span></span></span></code></pre></div><p>단 JSON.parse()와 JSON.stringify()를 이용한 방법은 value의 값에 따라서 데이터가
+유실, 변경 되는 경우가 발생하기 때문에 사용시 주의가 필요하다.</p>
+<p>구체적인 예는 다음과 같다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">obj</span> <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">NaN</span>,
@@ -197,8 +259,11 @@ copy)이다. 그렇기 때문에 중첩된 객체를 포함되어 있는 경우 
 <h3 id="underscorejs-라이브러리의-clone-메서드-이용하기deep-copy">Underscore.js 라이브러리의 clone() 메서드 이용하기(Deep copy)</h3>
 <h3 id="ramda-라이브러리의-clone-메서드-이용하기deep-copy">Ramda 라이브러리의 clone() 메서드 이용하기(Deep copy)</h3>
 <h2 id="무엇을-사용하는게-좋을까">무엇을 사용하는게 좋을까?</h2>
-<p>만약 사용하고 있는 node의 버전이 17 이상인 경우는 structuredClone()을 사용하면
-현재(2023) 기준으로 모든 브라우저에서 문제 없이 사용가능하기 떄문에</p>
+<p>각각의 상황에 따라 사용을 다르게 하는 것이 좋다.</p>
+<p>node 버전이 17 이상 + deep copy를 하고 싶은 경우 =&gt; structuredClone()을 이용할 것
+node 버전이 17 미만 + deep copy를 하고 싶은 경우 =&gt; Lodash, Underscore.js, Ramda의 외부 라이브러리를 사용 할 것
+node 버전이 17 이상 + deep copy가 필요 없는 경우 =&gt; [[spread operator]]{전개 구문(spread operator)}를 이용 할 것
+node 버전이 17 미만 + deep copy가 필요 없는 경우 =&gt; [[spread operator]]{전개 구문(spread operator)}를 이용 할 것</p>
 
 
 
