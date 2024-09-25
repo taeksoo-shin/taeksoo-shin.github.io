@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Categories on 코더 신씨</title>
-		<link>https://coder-shin.github.io/categories/</link>
+		<title>Categories on 리뷰 전문</title>
+		<link>http://localhost:1313/categories/</link>
 		<description>Recent content in Categories </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
@@ -9,7 +9,17 @@
 		
 		<managingEditor>Page(/categories) (Shin)</managingEditor>
     	
+  		<lastBuildDate>Thu, 17 Feb 2022 09:06:20 +0900</lastBuildDate>
+		
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>index</title>
+			<link>http://localhost:1313/post/home/</link>
+			<pubDate>Thu, 17 Feb 2022 09:06:20 +0900</pubDate>
+			<guid>http://localhost:1313/post/home/</guid>
+			<description>전체 인덱스</description>
+		</item>
+      	
 	</channel>
 </rss>

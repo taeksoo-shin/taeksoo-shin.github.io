@@ -1,205 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-<title>Search</title>
-<meta name="description" 
-      content=""
->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/base.css">
+    <script defer crossorigin="anonymous" src="/js/flexsearch.bundle.js" integrity=""></script>
 
-  
-
-
-
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link
-  rel="alternate"
-  type="application/rss+xml"
-  href="https://coder-shin.github.io/index.xml"
-  title="코더 신씨"
-/>
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Search"/>
-<meta name="twitter:description" content=""/>
-
-
-
-<link rel="stylesheet" href="https://coder-shin.github.io/fontawesome/css/all.min.css" />
-
-
-
-
-<link
-  crossorigin="anonymous"
-  href="/css/styles.min.css"
-  integrity=""
-  rel="preload stylesheet"
-  as="style"
-/>
-
-
-  <link rel="stylesheet" href="https://coder-shin.github.io/css/custom.css" />
-
-
-
-
-<script defer crossorigin="anonymous" src="/js/instantpage.min.js" integrity=""></script>
-  <script defer crossorigin="anonymous" src="/js/flexsearch.bundle.js" integrity=""></script>
-
-  
-  
-
-  
-  
-  <script defer crossorigin="anonymous" src="/js/en.search.6287243e3872211df3528a6d4b1b08a957885aba553a411dd1098b3ab5f20fa4.js" integrity="sha256-YockPjhyIR3zUoptSxsIqVeIWrpVOkEd0QmLOrXyD6Q="></script><meta name="generator" content="Hugo 0.121.2">
-  </head>
-  <body>
     
-  
-
-
-
-
-  <header>
-    <nav class="navbar">
-  <div class="nav">
-    
-      <a href="https://coder-shin.github.io/" class="nav-logo">
-        <img
-          src="https://coder-shin.github.io/images/icon.png"
-          width="50"
-          height="50"
-          alt="Logo"
-        />
-      </a>
     
 
-    <ul class="nav-links">
-      
-        
-          <li>
-            <a href="/about/" id="About"
-              ><em class="fas fa-user fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/tags" id="Tags"
-              ><em class="fas fa-tag fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/categories" id="Category"
-              ><em class="fas fa-folder-open fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/search" id="Search"
-              ><em class="fas fa-search fa-lg"></em
-            ></a>
-          </li>
-          
-      
-        
-          <li>
-            <a href="/random" id="Random"
-              ><em class="fas fa-random fa-lg"></em
-            ></a>
-          </li>
-          
-      
-    </ul>
-  </div>
-</nav>
+    
+    
 
-    <div class="intro-header">
-      <div class="container">
-        <div class="page-heading">
-          
-            <h1>
-              Search
-            </h1>
-          
-          
-        </div>
-      </div>
-    </div>
+    <script defer crossorigin="anonymous" src="/js/ko.search.ee21f9d02a7d75b98de81065400ac6b37c3092c1e05bb1132441d3f97365fe2b.js" integrity="sha256-7iH50Cp9dbmN6BBlQArGs3wwksHgW7ETJEHT&#43;XNl/is="></script></head>
+<body>
+  <header id="main-header">
+    <div class="site-name">코더 신씨</div>
   </header>
-  
+  <nav id="main-nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/search/">Search</a></li>
+    </ul>
+  </nav>
 
+  <main class="main">
     
   <div class="searchBoxContainer">
     <input
       type="text"
       id="searchBox"
       class="searchBox"
-      placeholder="Search..."
     />
   </div>
+
   <div id="searchResults" class="searchResults"></div>
-    <footer>
-  
 
-<div class="social-icons">
-  
-    
-    
-      
-      <a href="https://github.com/coder-shin" name="github">
-        <em class="fab fa-github"></em>
-      </a>
-    
-  
+  <style>
+.searchBoxContainer {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  margin: 10px auto 50px auto;
+}
 
-  
-</div>
+input.searchBox {
+  position: absolute;
+  width: 100%;
+  padding: 0 35px 0 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  outline: 0;
+  font-size: 16px;
+  color: #707070;
+  background-color:#f6f6f6;
+  border: solid 1px #c9c9c9;
+  box-sizing: border-box;
+}
 
+.searchResults {
+  display: none;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  top: 210px;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
 
-  
-  <div class="container">
-    <p class="credits copyright">
-      <a href="https://coder-shin.github.io/about">Shin</a>
-      &nbsp;&copy;
-      0001
-      
-        &nbsp;/&nbsp;
-        <a href="https://coder-shin.github.io/">코더 신씨</a>
-      
-    </p>
+.searchResultPage {
+  padding: 14px
+}
 
-    <p class="credits theme-by">
-      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
-      Theme
-      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
-    </p>
-  </div>
-</footer>
+.searchResultTitle {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px 0;
+}
 
-<script>
-  (function() {
-    let content = document.querySelector('article.article');
-    if (content) {
-      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]\{(.+?)\}/g, function(match, offset1, offset2) {
-        const spaceWithDash = offset1.replace(/\s+/g, '-');
-        return `<a href="../${spaceWithDash}">${offset2}</a>`
-      });
-      content.innerHTML = content.innerHTML.replace(/\[\[(.+?)\]\]/g, function(match, offset) {
-        const spaceWithDash = offset.replace(/\s+/g, '-');
-        return `<a href="../${spaceWithDash}">${offset}</a>`
-      });
-    }
-  })();
-</script>
+.searchResultBody {
+  font-size: 16px;
+}
 
+  </style>
+  </main>
 
-  </body>
+  <footer>
+    <a href="https://taeksoo-shin.github.io/">https://taeksoo-shin.github.io/</a>
+    <p>&copy;2024 코더 신씨</p>
+  </footer>
+</body>
 </html>
+

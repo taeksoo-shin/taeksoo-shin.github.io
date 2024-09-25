@@ -1,15 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>코더 신씨 on 코더 신씨</title>
-		<link>https://coder-shin.github.io/</link>
-		<description>Recent content in 코더 신씨 </description>
-		<generator>Hugo -- gohugo.io</generator>
-		
-  		<language>ko</language>
-		
-		<managingEditor>Page(&#34;코더 신씨&#34;) (Shin)</managingEditor>
-    	
-		<atom:link href="/" rel="self" type="application/rss+xml" />
-		
-	</channel>
+  <channel>
+    <title>코더 신씨</title>
+    <link>https://taeksoo-shin.github.io/</link>
+    <description>Recent content on 코더 신씨</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://taeksoo-shin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://taeksoo-shin.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://taeksoo-shin.github.io/about/</guid>
+      <description>&lt;h2 id=&#34;me&#34;&gt;Me&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;소프트웨어 개발자&lt;/li&gt;&#xA;&lt;li&gt;초심자&lt;/li&gt;&#xA;&lt;li&gt;일본, 도쿄에 거주 중&lt;/li&gt;&#xA;&lt;li&gt;회사에서 주로 프론트 개발을 하고 있음&lt;/li&gt;&#xA;&lt;li&gt;모든 개발자가 이용하는 소프트웨어를 강제적으로 VIM 바인딩으로 설정하면&#xA;개발자의 어깨 통증을 완화시킬 수 있다고 주장 중&lt;/li&gt;&#xA;&lt;li&gt;세상에서 가장 완벽한 사이트는 &lt;a href=&#34;http://abehiroshi.la.coocan.jp/&#34;&gt;아베 히로시의 홈페이지(외부 페이지)&lt;/a&gt;라고 생각함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;blog&#34;&gt;Blog&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;hugo, HTML, CSS 그리고 약간의 md 지식을 이용해서 만든 블로그&lt;/li&gt;&#xA;&lt;li&gt;틀린 정보가 있을 수 있음&lt;/li&gt;&#xA;&lt;li&gt;이 블로그의 모든 글은 개인적인 의견이므로 너무 진지하게 받아들이지 말 것&lt;/li&gt;&#xA;&lt;li&gt;모든 글은 출처만 남기고 마음대로 사용해도 괜찮음&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:cu7898@gmail.com&#34;&gt;cu7898@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>https://taeksoo-shin.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://taeksoo-shin.github.io/search/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

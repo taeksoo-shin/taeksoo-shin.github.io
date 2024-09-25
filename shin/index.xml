@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shin on 코더 신씨</title>
+    <link>https://taeksoo-shin.github.io/shin/</link>
+    <description>Recent content in Shin on 코더 신씨</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <atom:link href="https://taeksoo-shin.github.io/shin/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

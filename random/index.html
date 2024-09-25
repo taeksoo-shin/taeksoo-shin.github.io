@@ -1,12 +1,35 @@
-<script>
-    
-    const searchDataURL = '\/search-data.json'
+<!DOCTYPE html>
+<html lang="ko">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random</title>
+  <link rel="stylesheet" href="/css/reset.css">
+</head>
+<body>
+  <header>
+    <h1>코더 신씨</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
 
-    fetch(searchDataURL)
-        .then(pages => pages.json())
-        .then(pages => {
-            const randomPage = pages[Math.floor(Math.random() * pages.length)];
-            window.location.href = randomPage.href;
-        });
-</script>
+  <main>
+    
+  <article>
+    <h2>Random</h2>
+    <p><small>Published on January 1, 0001</small></p>
+    <div>
+      
+    </div>
+  </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Hugo Blog</p>
+  </footer>
+</body>
+</html>
 
