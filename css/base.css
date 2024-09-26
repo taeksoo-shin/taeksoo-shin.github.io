@@ -56,8 +56,13 @@ main {
 }
 
 #main-header .site-name {
-  font-size: 2rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#main-header .site-name a {
+    color: #333333;
+    text-decoration: none;
 }
 
 #main-header {
@@ -111,21 +116,64 @@ article .content ul li {
   padding: 5px 0;
   line-height: 20px;
   text-indent: 5px;
-  display: flex;
-  align-items: flex-start;
 }
 
-article .content ul li a {
-  display: contents;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-article .content ul li::before {
-  content: '•';
-  font-weight: bold;
-  margin-right: 10px;
-  font-size: 20px;
-    flex-shrink: 0; /* 아이콘이 줄바꿈되어 밀리지 않도록 고정 */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
 
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+ul.post-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.post-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+ul.post-list li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+ul.post-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1em;
 }
 
 footer {
@@ -135,3 +183,4 @@ footer {
   margin-right: auto;
   text-align: center;
 }
+
